@@ -55,12 +55,12 @@ p@rot = quaternion(radians(rand), v@up);
 ```C#
 // Attribute transfer COLOR (and P) from other inputs
 // set a wrangle to run over points
-int handle = pcopen(@OpInput2, "P", @P, chf("rad"), chi("num"));
+int handle = pcopen(@OpInput2, "P", @P, chf("search_radius"), chi("num_of_Points"));
 vector lookup_P = pcfilter(handle, "P"); //Average P from second input
 vector lookup_Cd = pcfilter(handle, "Cd"); //Average Cd from second input
 i@many = pcnumfound(handle);
 if(i@many>0){
      @Cd = lookup_Cd;
-     v@P = lerp(v@P, lookup_P, chf("mix"));
+     v@P = lerp(v@P, lookup_P, chf("Position_mix"));
 }
 ```
