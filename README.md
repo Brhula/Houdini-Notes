@@ -4,6 +4,7 @@ Colección de "snippets" (trozos de código) para realizar funciones concretas. 
 
 **Eliminar primer y ultimo punto de una primitiva (típicamente curvas)**
 ```C#
+// Delete first and last curve points
 //set a wrangle to run over primitives
 int primpts[] = primpoints(0,@primnum);
 removepoint(0,primpts[0]);
@@ -11,9 +12,10 @@ removepoint(0,primpts[-1]);
 ```
 
 **Borrar puntos de forma aleatoria según una tolerancia** 
-_This snippet will delete random points based on the threshold slider_
+
 ```C#
-//set a wrangle to run over points
+// This snippet will delete random points based on the threshold slider
+// set a wrangle to run over points
 if ( rand(@ptnum) > ch('threshold') ) {
    removepoint(0,@ptnum);
 }
