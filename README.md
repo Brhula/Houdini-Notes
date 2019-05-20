@@ -50,3 +50,17 @@ float angle = ch("rot_amount");
 float rand = fit01(random(@ptnum+311),0,angle);
 p@rot = quaternion(radians(rand), v@up);
 ```
+
+**Transfer de color (y P, posición) desde el segundo input.**
+```C#
+// Attribute transfer COLOR (and P) from other inputs
+// set a wrangle to run over points
+int handle = pcopen(@OpInput2, "P", @P, chf("rad"), chi("num"));
+vector lookup_P = pcfilter(handle, "P"); //Average P from second input
+vector lookup_Cd = pcfilter(handle, "Cd"); //Average Cd from second input
+i@many = pcnumfound(handle);
+if(i@many>0){
+     @Cd = lookup_Cd;
+     v@P = lerp(v@P, lookup_P, chf("mix"));
+}
+```
