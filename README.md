@@ -10,4 +10,11 @@ removepoint(0,primpts[0]);
 removepoint(0,primpts[-1]);
 ```
 
-
+**Borrar puntos de forma aleatoria según una tolerancia**
+__This snippet will delete random points based on the threshold slider__
+```C#
+//set a wrangle to run over points
+if ( rand(@ptnum) > ch('threshold') ) {
+   removepoint(0,@ptnum);
+}
+```
