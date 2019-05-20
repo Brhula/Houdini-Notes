@@ -32,3 +32,10 @@ v@P -= dist;
 // set a wrangle to run over points
 v@N=set(fit01(rand(@ptnum),-1,1),fit01(rand(@ptnum+1),-1,1),fit01(rand(@ptnum+2),-1,1));
 ```
+**Tamaño aleatorio de los puntos, dando maximo, minimo y semilla** 
+```C#
+// SOP Random pscale with Ramp, Seed, Min and Max
+// set a wrangle to run over points
+@pscale = fit01(chramp("Width", rand(@ptnum  + ch("Seed"))), ch("Min"), ch("Max"));
+```
+
