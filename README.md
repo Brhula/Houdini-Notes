@@ -10,9 +10,7 @@ int primpts[] = primpoints(0,@primnum);
 removepoint(0,primpts[0]);
 removepoint(0,primpts[-1]);
 ```
-
 **Borrar puntos de forma aleatoria según una tolerancia** 
-
 ```C#
 // This snippet will delete random points based on the threshold slider
 // set a wrangle to run over points
@@ -21,11 +19,16 @@ if ( rand(@ptnum) > ch('threshold') ) {
 }
 ```
 **Centrar el pivot y mover al origen de coordenadas** 
-
 ```C#
 //  Center Pivot and Move to Origin
 // set a wrangle to run over points
 vector centroid = getbbox_center(0);
 vector dist = centroid - 0;
 v@P -= dist;
+```
+**Normales aleatorias en los puntos** 
+```C#
+// Random normals
+// set a wrangle to run over points
+v@N=set(fit01(rand(@ptnum),-1,1),fit01(rand(@ptnum+1),-1,1),fit01(rand(@ptnum+2),-1,1));
 ```
