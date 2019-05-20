@@ -20,3 +20,12 @@ if ( rand(@ptnum) > ch('threshold') ) {
    removepoint(0,@ptnum);
 }
 ```
+**Centrar el pivot y mover al origen de coordenadas** 
+
+```C#
+//  Center Pivot and Move to Origin
+// set a wrangle to run over points
+vector centroid = getbbox_center(0);
+vector dist = centroid - 0;
+v@P -= dist;
+```
