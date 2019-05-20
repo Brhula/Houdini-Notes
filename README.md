@@ -39,4 +39,13 @@ v@N=set(fit01(rand(@ptnum),-1,1),fit01(rand(@ptnum+1),-1,1),fit01(rand(@ptnum+2)
 // set a wrangle to run over points
 @pscale = fit01(chramp("Width", rand(@ptnum  + ch("Seed"))), ch("Min"), ch("Max"));
 ```
-
+**Tamaño aleatorio de los puntos, dando maximo, minimo y semilla** 
+```C#
+// SOP Random Rotation Wrangle
+// if v@up exists, delete first line
+// set a wrangle to run over points
+v@up = {0.0, 1.0, 0.0};
+float angle = ch("rot_amount");
+float rand = fit01(random(@ptnum+311),0,angle);
+p@rot = quaternion(radians(rand), v@up);
+```
