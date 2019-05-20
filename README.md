@@ -64,3 +64,15 @@ if(i@many>0){
      v@P = lerp(v@P, lookup_P, chf("Position_mix"));
 }
 ```
+**Grosor de curva mediante rampa**
+```C#
+// set a wrangle to run over points
+// Custom Width Along Curve
+// 
+// needs uvtexture node set to "rows and columns" or "spline"
+// running over points before it
+
+float blend = chramp("blend",@uv[0]);
+float width = chf("width");
+@pscale=blend*width;
+```
