@@ -39,7 +39,7 @@ v@N=set(fit01(rand(@ptnum),-1,1),fit01(rand(@ptnum+1),-1,1),fit01(rand(@ptnum+2)
 // set a wrangle to run over points
 @pscale = fit01(chramp("Width", rand(@ptnum  + ch("Seed"))), ch("Min"), ch("Max"));
 ```
-**Rotacoión aleatoria en puntos, ajustada mediante una rampa.**
+**Rotación aleatoria en puntos, ajustada mediante una rampa.**
 Borrar v@up en caso que ya exista.
 ```C#
 // SOP Random Rotation Wrangle
