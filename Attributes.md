@@ -1,6 +1,6 @@
-####Common Geometry Attributes
+### Common Geometry Attributes
 
-Frequently used attributes. Houdini knows to cast these to the appropriate VEX datatype.
+**Frequently used attributes. Houdini knows to cast these to the appropriate VEX datatype.**
 // Int
 @id         // A unique number that remains the same throughout a simulation.
 
