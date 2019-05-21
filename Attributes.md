@@ -1,6 +1,7 @@
 ### Common Geometry Attributes
 
 **Frequently used attributes. Houdini knows to cast these to the appropriate VEX datatype.**
+```C#
 // Int
 @id         // A unique number that remains the same throughout a simulation.
 
@@ -27,3 +28,4 @@
 // String
 @name       // A unique name identifying which primitives belong to which piece.  Also used to label volumes.
 @instance   // Path of an object node to be instanced at render time.
+```
