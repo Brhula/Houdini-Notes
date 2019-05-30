@@ -2,5 +2,5 @@
 Houdini Notes
 
 VEX: <br />
-  [snippets](VEX.md) <br />
-  [attibutes](Attributes.md) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;  [snippets](VEX.md) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;  [attibutes](Attributes.md) <br />
