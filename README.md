@@ -1,6 +1,6 @@
 # Houdini-Notes
 Houdini Notes
 
-VEX:
+VEX:  
   [snippets](VEX.md)  
   [attibutes](Attributes.md)  
