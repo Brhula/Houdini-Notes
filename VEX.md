@@ -56,6 +56,16 @@ if(i@many>0){
      v@P = lerp(v@P, lookup_P, chf("Position_mix"));
 }
 ```
+
+**POINTCLOUD // Eliminar puntos aislados con una tolerancia.**
+```C#
+// POINTCLOUD: remove isolated point giving a thresold
+int pts[] = nearpoints(0, @P, chf(""radius""),2);
+if (len(pts)==1){
+    removepoint(0,@ptnum);
+}
+```
+
 **CURVAS // Grosor de curva mediante rampa**
 ```C#
 // set a wrangle to run over points
