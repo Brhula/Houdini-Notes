@@ -1,3 +1,5 @@
+hijack from http://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html
+
 ### Common Geometry Attributes
 
 **Frequently used attributes. Houdini knows to cast these to the appropriate VEX datatype.**
