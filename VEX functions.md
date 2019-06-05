@@ -13,3 +13,8 @@ float  fit01(float value, float nmin, float nmax) ; // de (0, 1) a nuevo rango
 // CLAMP Returns value clamped between min and max.
 float  clamp(float value, float min, float max);
 ```
+**VECTORS. Funciones con vectores**
+```C#
+float  distance(vector a, vector b); // DISTANCE: distancia entre dos puntos
+float  length(vector v); // LENGTH: longitud (magnitud) de un vector
+```
