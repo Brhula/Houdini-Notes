@@ -2,7 +2,8 @@
 
 Para utilizar en el nodo "wrangler":  
 
-**POINT**
+**Funciones para hacer calculos con datos, pueden ser vectores, enteros o numeros reales.**   
+Mirar documentación para comprobar variantes con otros tipos de datos.
 ```C#
 // LERP Performs bilinear interpolation between the values.
 float  lerp(float value1, float value2, float amount);
