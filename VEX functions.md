@@ -17,4 +17,7 @@ float  clamp(float value, float min, float max);
 ```C#
 float  distance(vector a, vector b); // DISTANCE: distancia entre dos puntos
 float  length(vector v); // LENGTH: longitud (magnitud) de un vector
+// RELBBOX : Returns the relative position of the point given with respect to the bounding box of the primitives in the geometry.
+vector  relbbox(<geometry>geometry, vector position);
+
 ```
