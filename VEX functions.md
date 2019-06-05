@@ -12,7 +12,8 @@ float  fit(float value, float omin, float omax, float nmin, float nmax);
 float  fit01(float value, float nmin, float nmax) ; // de (0, 1) a nuevo rango 
 // CLAMP Returns value clamped between min and max.
 float  clamp(float value, float min, float max);
-int floor(float n); // FLOOR: Returns the largest integer less than or equal to the argument.
+float floor(float n); // FLOOR: Returns the largest integer less than or equal to the argument.
+float ceil(float n); // CEIL: Returns the smallest integer greater than or equal to the argument.
 ```
 **VECTORS. Funciones con vectores**
 ```C#
