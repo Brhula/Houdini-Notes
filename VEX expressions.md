@@ -1,6 +1,6 @@
 ### VEX expressions  
 
-Para utilizar en el nodo "GROUP EXPRESSION" o en un "wrangler":  
+Para utilizar en el nodo "GROUP EXPRESSION" o en un "wrangler". En "GROUP EXPRESSIONS" nodeben haber espacios, de lo contrario las expresiones no funcionan:  
 
 **POINT**
 ```C#
