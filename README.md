@@ -5,5 +5,6 @@ Houdini Notes <br />
 
 
 VEX: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;  [Expressions](VEX_expressions.md) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [snippets](VEX_snippets.md) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [attibutes](Attributes.md) <br />
