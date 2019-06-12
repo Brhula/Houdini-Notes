@@ -56,7 +56,13 @@ if(i@many>0){
      v@P = lerp(v@P, lookup_P, chf("Position_mix"));
 }
 ```
-
+**PUNTOS // orientar objeto a un punto ("look at"). Deforma el objeto**
+```C#
+// set a wrangle to run over points
+vector pp = point(1,"P",0);//point to look at (2ond input)
+matrix3 mm = lookat(@P,pp);
+@P*=mm;
+```
 **POINTCLOUD // Eliminar puntos aislados con una tolerancia.**
 ```C#
 // POINTCLOUD: remove isolated point giving a thresold
