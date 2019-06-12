@@ -1,12 +1,19 @@
+
+### Declaración de atributos
+
+Al declarar atributos se pueden inicializar con una constante:
+```C++
+float @mass = 1;
+vector @up = {0, 1, 0};
+```
+Esto es util por dos motivos:
+- Damos un valor por defecto al atributo: si el atributo existe (por ejemplo, @mass), la asignación se ignora. Sino existe, se inicializa.
+- Al especificar el tipo de atributo así, Vex ya entiende que tipo es. despues se puede utilizr simplemente @up en vez de v@up.
+
 Al declarar atributos, a la derecha del `=` no puede haber calculos, solo constantes o literales:
 ```C++
-// Esto da error
-vector @up = set(0, 1, 0); 
-// forma correcta:
-vector @up;
-@up = set(0, 1, 0);
-// o bien
-vector @up = {0,1,0};
+float @mass = 1 / area;  // Error
+vector @up = set(0, 1, 0);  // Error
 ```
 
 hijack from http://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html
