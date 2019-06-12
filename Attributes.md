@@ -7,8 +7,8 @@ float @mass = 1;
 vector @up = {0, 1, 0};
 ```
 Esto es util por dos motivos:
-- Damos un valor por defecto al atributo: si el atributo existe (por ejemplo, @mass), la asignación se ignora. Sino existe, se inicializa.
-- Al especificar el tipo de atributo así, Vex ya entiende que tipo es. despues se puede utilizr simplemente @up en vez de v@up.
+- Damos un valor por defecto al atributo: si el atributo existe (por ejemplo, @mass), la asignación se ignora. Si no existe, se inicializa.
+- Al especificar el tipo de atributo así, Vex ya entiende que tipo es. despues se puede utilizar simplemente @up en vez de v@up.
 
 Al declarar atributos, a la derecha del `=` no puede haber calculos, solo constantes o literales:
 ```C++
