@@ -1,4 +1,13 @@
-Al declarar atributos, a la derecha del `=` no puede haber calculos, solo constantes o literales.
+Al declarar atributos, a la derecha del `=` no puede haber calculos, solo constantes o literales:
+```C++
+// Esto da error
+vector @up = set(0, 1, 0); 
+// forma correcta:
+vector @up;
+@up = set(0, 1, 0);
+// o bien
+vector @up = {0,1,0};
+```
 
 hijack from http://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html
 
