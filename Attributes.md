@@ -1,3 +1,5 @@
+Al declarar atributos, a la derecha del `=` no puede haber calculos, solo constantes o literales.
+
 hijack from http://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html
 
 ### Common Geometry Attributes
