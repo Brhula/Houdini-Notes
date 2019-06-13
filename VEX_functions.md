@@ -23,3 +23,7 @@ float  length(vector v); // LENGTH: longitud (magnitud) de un vector
 vector  relbbox(<geometry>geometry, vector position);
 
 ```
+**GEOMETRIA. Funciones con geometria**
+```C#
+void  getbbox(<geometry> geometry, vector &min, vector &max); // pone en "min" y "max" los valores del bounding box
+```
