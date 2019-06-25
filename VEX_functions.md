@@ -15,6 +15,12 @@ float  clamp(float value, float min, float max);
 float floor(float n); // FLOOR: Returns the largest integer less than or equal to the argument.
 float ceil(float n); // CEIL: Returns the smallest integer greater than or equal to the argument.
 ```
+**Cambio de tipo de datos.**   
+Otras combinacione posibles.
+```C#
+string  itoa(int number) ; // Convierte Integer a Ascii (string)
+string  sprintf(string format, ...);
+```
 **VECTORS. Funciones con vectores**
 ```C#
 float  distance(vector a, vector b); // DISTANCE: distancia entre dos puntos
