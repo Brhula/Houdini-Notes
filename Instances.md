@@ -1,6 +1,6 @@
 ###  ATRIBUTOS para Copy e Instance
 
-Al copiar e instanciar, Houdini comprueba la existencia de lossiguientes  atributos asociados a los puntos.
+Al copiar e instanciar, Houdini comprueba la existencia de los siguientes  atributos asociados a los puntos.
 
 ```C++
 p@orient                    // Orientacion (Quaternion).
