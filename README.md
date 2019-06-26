@@ -8,3 +8,6 @@ VEX: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [Expressions](VEX_expressions.md) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [snippets](VEX_snippets.md) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [attibutes](Attributes.md) <br />
+
+REDSHIFT: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;  [Redshift HOUDIN notes](Redshift_notes.md) <br />
