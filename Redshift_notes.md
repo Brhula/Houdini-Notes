@@ -1,6 +1,7 @@
 
+**Render de una secuencia sin licencia**   
 
-Parahacer render de una secuencia sin licencia: desactivar “Report Errors/Warnings to the ROP Node” en el nodo "RS ROP"
+Hay que desactivar en la pestaña "main" el check  “Report Errors/Warnings to the ROP Node” del nodo "RS ROP". De lo contrario el render se para en cuanto la licencia falla.
 
    
   
