@@ -33,6 +33,6 @@ Volume samples (lights) //  VDBs and volumes noise
 - Shadow density: densidad de las sombras. Valores bajos para nubes más transparentes
 	
 **TIPS:**   
-- Volumen mas o menos opaco: incrementat tanto el "Absortion coefficient" como el "scatter coefficient" al mismo tiempo mas brillante o  más oscuro: modificar solamente "scatter coefficient"
-- Color de todo el volumen: modificar "scatter tint". Utilizar la rampa para remapear según la densidad: Izquierda--> menos denso, derecha--> más densidad
+- *Volumen mas o menos opaco:* incrementat tanto el "Absortion coefficient" como el "scatter coefficient" al mismo tiempo mas brillante o  más oscuro: modificar solamente "scatter coefficient"
+- *Color de todo el volumen:* modificar "scatter tint". Utilizar la rampa para remapear según la densidad: Izquierda--> menos denso, derecha--> más densidad
 	
