@@ -40,3 +40,6 @@ else {
 }
 
 ```
+### Documentación adicional
+
+[VOP Fast Point Instancing](http://www.sidefx.com/docs/houdini/nodes/vop/ptinstance)
