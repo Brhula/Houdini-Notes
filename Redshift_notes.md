@@ -7,7 +7,8 @@ Hay que desactivar en la pestaña "main" el check  “Report Errors/Warnings to 
 
    
   
-**NOISE (reduce)**
+**NOISE (reducir ruido)**   
+Parámetro a tocar // Tipo de ruido al que afecta.
 ```C#
 Unified samples         //  Motion blur and depth of field noise   
 light samples           //  Shadows and direct specular noise   
