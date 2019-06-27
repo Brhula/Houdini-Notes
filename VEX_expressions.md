@@ -5,7 +5,7 @@ En "GROUP EXPRESSIONS" no deben haber espacios, de lo contrario **las expresione
 
 **POINT**
 ```C#
-// "t" is the name of the group
+// VEX Create a GROUP
 f@group_t = @P.x<0; // group "t" with all points/primitives where X coordinate is less than 0
 
 f@group_r = rand(@ptnum) < 0.5; // new group "r" with 50% of the points/primitives
