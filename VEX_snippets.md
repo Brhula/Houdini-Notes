@@ -16,6 +16,26 @@ vector centroid = getbbox_center(0);
 vector dist = centroid - 0;
 v@P -= dist;
 ```
+**PRIMITIVA // Crear un punto en el centroide de cada primitiva** 
+```C#
+// Create points on centroid of primitive
+// set a wrangle to run over primitives
+int prim_points[];
+vector accum_pos, pos;
+accum_pos = {0, 0, 0};
+
+for (int i = 0; i < primvertexcount(geoself(), @primnum); i++)
+{
+    int vtx_index = vertexindex(geoself(), @primnum, i);
+    int vtx_point = vertexpoint(geoself(), vtx_index); 
+    prim_points[i] = vtx_point;
+    getattribute(@OpInput1, pos, "point", "P", vtx_point, 0);
+    accum_pos += pos;
+}
+
+addpoint(geoself(), accum_pos / len(prim_points));
+removeprim(geoself(), @primnum, 1);
+```
 **PUNTOS // Borrar puntos de forma aleatoria según una tolerancia** 
 ```C#
 // This snippet will delete random points based on the threshold slider
