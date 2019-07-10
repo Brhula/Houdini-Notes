@@ -89,6 +89,28 @@ vector pp = point(1,"P",0);//point to look at (2ond input)
 matrix3 mm = lookat(@P,pp);
 @P*=mm;
 ```
+**PUNTOS // Normal en la bitangent (al estilo polyFrame pero más estable)**
+```C#
+// set a wrangle to run over points
+int prim_points[];
+vector pos_A, pos_B, dir;
+
+addattrib(geoself(), "point", "N", {0, 0, 0});
+prim_points = primpoints(geoself(), @primnum);
+for ( int i = 0; i < len(prim_points); i++ ){
+    getattribute(@OpInput1, pos_A, "point", "P", prim_points[i], 0);
+    if ( i == 0) {
+        getattribute(@OpInput1, pos_B, "point", "P", prim_points[1], 0);
+        dir = normalize(pos_B - pos_A);
+    }
+    else {
+        getattribute(@OpInput1, pos_B, "point", "P", prim_points[i - 1], 0);
+        dir = normalize(pos_A - pos_B);
+    }
+    setattrib(geoself(), "point", "N", prim_points[i], 0, dir, "set");
+}
+```
+
 **POINTCLOUD // Eliminar puntos aislados con una tolerancia.**
 ```C#
 // POINTCLOUD: remove isolated point giving a thresold
