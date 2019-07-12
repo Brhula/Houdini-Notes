@@ -57,6 +57,12 @@ v@N=set(fit01(rand(@ptnum),-1,1),fit01(rand(@ptnum+1),-1,1),fit01(rand(@ptnum+2)
 // set a wrangle to run over points
 @pscale = fit01(chramp("Width", rand(@ptnum  + ch("Seed"))), ch("Min"), ch("Max"));
 ```
+**PUNTOS // Rotación de puntos (para instancias y copias). De euler a quaternion** 
+```C#
+// Random rotation of points (instances)
+float angle = fit01(rand(@ptnum),0,360);
+p@orient = eulertoquaternion(radians(set(0, angle, 0)), 0);
+```
 **PUNTOS // Rotación aleatoria en puntos, ajustada mediante una rampa.**
 Borrar v@up en caso que ya exista.
 ```C#
