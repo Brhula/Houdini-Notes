@@ -36,6 +36,13 @@ for (int i = 0; i < primvertexcount(geoself(), @primnum); i++)
 addpoint(geoself(), accum_pos / len(prim_points));
 removeprim(geoself(), @primnum, 1);
 ```
+versión simplificada:   
+```C#
+// RUN over  primitives
+addpoint(0, @P); // add point to "centroid" of primitive
+removeprim(0, @primnum, 1); // delete primitive (optional)
+```
+
 **PUNTOS // Borrar puntos de forma aleatoria según una tolerancia** 
 ```C#
 // This snippet will delete random points based on the threshold slider
