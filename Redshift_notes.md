@@ -1,7 +1,7 @@
 ### Redshift en HOUDINI   
 
 
-**Render de una secuencia sin licencia**   
+**Render de una secuencia sin licencia (con WaterMark)**   
 
 Hay que desactivar en la pestaña "main" el check  “Report Errors/Warnings to the ROP Node” del nodo "RS ROP". De lo contrario el render se para en cuanto la licencia falla.
 
