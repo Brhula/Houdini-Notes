@@ -10,5 +10,9 @@ VEX: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [snippets](VEX_snippets.md) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [attibutes](Attributes.md) <br />
 
+VELLUM: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;  [Vellum Notes](VELLUM_notes.md) <br />
+
+
 REDSHIFT: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [Redshift HOUDIN notes](Redshift_notes.md) <br />
