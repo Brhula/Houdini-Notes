@@ -3,6 +3,10 @@
 Notas de varios tipos sobre "Vellum".  
 
 **NOTAS.**   
+
+PREPARAR para SIMULAR:
+- "Always sanity test pscale": El valor pscale se hereda de la geometria de entrada (input). Comprobar siempre si funciona.
+
 MEJORAR SIMULACIÓN:   
   1) probar incrementando ""sub-steps"".   
   2) comprobar ""Thickness"", dependiendo de la escala de la escena.   
