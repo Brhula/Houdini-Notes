@@ -5,6 +5,10 @@
 
 Hay que desactivar en la pestaña "main" el check  “Report Errors/Warnings to the ROP Node” del nodo "RS ROP". De lo contrario el render se para en cuanto la licencia falla.
 
+**Instancias (copy to points y similares)**   
+
+Hay que activar en la pestaña "Instancing" en las opciones de Redshift del objeto la opción "instancing using --> Redshift Point Clouds". De lo contrario el render va muy lento.
+
    
   
 **NOISE (reducir ruido)**   
