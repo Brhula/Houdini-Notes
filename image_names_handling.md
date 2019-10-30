@@ -1,5 +1,5 @@
 ### Manipular nombre en el campo "file"   
-padzero: para añadir ceros al numero de frame   
+padzero: para añadir ceros al numero de frame. En caso de numeración sin ceros, eliminarlo.   
 
 Looping (de 0  a 250):   
 ```C++
