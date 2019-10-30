@@ -6,6 +6,7 @@ Colección de "snippets" (trozos de código) para realizar funciones concretas. 
 - [Shades of Orange](http://shadesoforange.de/wrangles/)   
 - [lex.ikoon](http://lex.ikoon.cz/vex-snippets/)   
 - [TOSIN AKINWOYE](https://tosinakinwoye.com/2017/01/23/houdini-vex-snippets/)   
+- [Kiryha](https://github.com/kiryha/Houdini/wiki/vex-snippets)   
 
 
 **OBJETO // Centrar el pivot y mover al origen de coordenadas** 
