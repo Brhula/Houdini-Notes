@@ -82,7 +82,19 @@ float angle = ch("rot_amount");
 float rand = fit01(random(@ptnum+311),0,angle);
 p@rot = quaternion(radians(rand), v@up);
 ```
+**PUNTOS // Rotación en ejes locales con QUATERNIONS**
+```C#
+// Si ya hay atributo @orient eliminar la linea de abajo
+@orient = quaternion(maketransform(normalize(-@P),{0,1,0}));
 
+vector4 pitch = quaternion({1,0,0}*ch('pitch'));
+vector4 yaw   = quaternion({0,1,0}*ch('yaw'));
+vector4 roll  = quaternion({0,0,1}*ch('roll'));
+
+@orient = qmultiply(@orient, pitch);
+@orient = qmultiply(@orient, yaw);
+@orient = qmultiply(@orient, roll);
+```
 **PUNTOS // Transfer de color (y P, posición) desde el segundo input.**
 ```C#
 // Attribute transfer COLOR (and P) from other inputs
