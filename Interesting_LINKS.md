@@ -2,7 +2,7 @@
 
 [Houdini – Tips & Tricks / Kristian Jungk](https://www.kristianjungk.com/en/about/tipps-tricks/houdini/)   
 [Spare Inputs in Houdini](http://www.particle-effects.com/2019/05/spare-inputs-in-houdini.html)   
-[Multiple Object Switching in Copy to Points](https://www.youtube.com/watch?v=rSkLItyvBdE)   
+[Multiple Object Switching in Copy to Points (Video)](https://www.youtube.com/watch?v=rSkLItyvBdE)   
 ### VEX
 
 [10 Useful VEX Snippets for Group Expression Node](https://www.cg.tips/houdini/vex/group-expression-vex-snippet/)   
@@ -17,3 +17,6 @@
 
 [Alembic: from Maya to Houdini and back again.](https://www.toadstorm.com/blog/?p=435)   
 
+### MATRIX
+
+[OpenGl Matrix math](https://www.ntu.edu.sg/home/ehchua/programming/opengl/CG_BasicsTheory.html#zz-4.2)   
