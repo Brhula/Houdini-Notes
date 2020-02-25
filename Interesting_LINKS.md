@@ -1,7 +1,7 @@
-### Documentación adicional
+### Houdini Tricks and Tips
 
 [Houdini – Tips & Tricks / Kristian Jungk](https://www.kristianjungk.com/en/about/tipps-tricks/houdini/)
-
+[Spare Inputs in Houdini](http://www.particle-effects.com/2019/05/spare-inputs-in-houdini.html)
 ### VEX
 
 [10 Useful VEX Snippets for Group Expression Node](https://www.cg.tips/houdini/vex/group-expression-vex-snippet/)   
