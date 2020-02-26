@@ -42,4 +42,5 @@ else {
 ```
 ### Documentación adicional
 
-[Point Instance procedural](http://www.sidefx.com/docs/houdini/nodes/vop/ptinstance)
+[Point Instance procedural](http://www.sidefx.com/docs/houdini/nodes/vop/ptinstance)   
+[Optimize copies - stamping or not](https://forums.odforce.net/topic/25971-optimize-copies-stamping-or-not-solved/?page=2&tab=comments#comment-151013)   
