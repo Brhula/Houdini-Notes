@@ -42,7 +42,7 @@ else {
 ```
 ### ORIENTACION
 
-Con Quaternions. En este caso, manual, excepto "yaw" que es automatica en 360 grados (2 * PI radianes)
+Con "quaternions". En este caso, manual, excepto "yaw" que es automatica en 360 grados (2 * PI radianes)
 
 ```C++
 @orient = quaternion(maketransform(normalize(-@P),{0,1,0}));
@@ -55,6 +55,20 @@ vector4 roll  = quaternion({0,0,1}*ch('roll'));
 @orient = qmultiply(@orient, pitch);
 @orient = qmultiply(@orient, yaw);
 @orient = qmultiply(@orient, roll);
+
+```
+Receta general con "quaternions"
+```C++
+float angle = rand(@ptnum) * 360; // Angulo random
+angle = radians(angle); // convertimos a radianes
+// axis es el eje de las Y.
+// Si queremos que gire respecto a la normal a la superficie: vector axis = @N;
+vector axis = {0,1,0}; 
+matrix3 m = ident(); // Matriz identidad
+ 
+rotate(m, angle, axis); // Calcula la matriz de rotacion al rotar "angle" respecto al eje "axis".
+ 
+@orient = quaternion(m);
 
 ```
 ### Documentación adicional
