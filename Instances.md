@@ -61,9 +61,9 @@ Receta general con "quaternions"
 ```C++
 float angle = rand(@ptnum) * 360; // Angulo random
 angle = radians(angle); // convertimos a radianes
-// axis es el eje de las Y.
-// Si queremos que gire respecto a la normal a la superficie: vector axis = @N;
-vector axis = {0,1,0}; 
+
+// vector axis = @N; // axis orientada a la normal a la superficie: 
+vector axis = {0,1,0}; // axis es el eje de las Y.
 matrix3 m = ident(); // Matriz identidad
  
 rotate(m, angle, axis); // Calcula la matriz de rotacion al rotar "angle" respecto al eje "axis".
