@@ -71,6 +71,11 @@ rotate(m, angle, axis); // Calcula la matriz de rotacion al rotar "angle" respec
 @orient = quaternion(m);
 
 ```
+Orientamos todos los puntos hacia el {0,0,0}
+```C++
+@orient = quaternion(maketransform(normalize(-@P),{0,1,0}));
+```
+
 ### Documentación adicional
 
 [Point Instance procedural](http://www.sidefx.com/docs/houdini/nodes/vop/ptinstance)   
