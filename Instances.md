@@ -73,6 +73,7 @@ rotate(m, angle, axis); // Calcula la matriz de rotacion al rotar "angle" respec
 ```
 Orientamos todos los puntos hacia el {0,0,0}
 ```C++
+// matrix3  maketransform(vector zaxis, vector yaxis)
 @orient = quaternion(maketransform(normalize(-@P),{0,1,0}));
 ```
 
