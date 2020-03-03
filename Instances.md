@@ -40,6 +40,23 @@ else {
 }
 
 ```
+### ORIENTACION
+
+Con Quaternions. En este caso, manual, excepto "yaw" que es automatica en 360 grados (2 * PI radianes)
+
+```C++
+@orient = quaternion(maketransform(normalize(-@P),{0,1,0}));
+
+vector4 pitch = quaternion({1,0,0}*ch('pitch'));
+vector4 yaw   = quaternion({0,1,0}*(rand(@ptnum) * 3.14 * 2.0));
+// vector4 yaw   = quaternion({0,1,0}*ch('yaw'));
+vector4 roll  = quaternion({0,0,1}*ch('roll'));
+
+@orient = qmultiply(@orient, pitch);
+@orient = qmultiply(@orient, yaw);
+@orient = qmultiply(@orient, roll);
+
+```
 ### Documentación adicional
 
 [Point Instance procedural](http://www.sidefx.com/docs/houdini/nodes/vop/ptinstance)   
