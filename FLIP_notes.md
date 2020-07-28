@@ -1,7 +1,8 @@
-### FLIP NOTES
+## FLIP NOTES
 
 **BEFORE START SIMULATION:**
 
+### on FLIP NODE
 **Solver "Splashy VS Swirly Kernel"**
 #### Solver "Splashy VS Swirly Kernel"   
 "Splashy (default): tipico de simulaciones con alta energía, como oceanos, rios.   
