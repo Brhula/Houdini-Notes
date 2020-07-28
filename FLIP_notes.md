@@ -1,5 +1,9 @@
 ## FLIP NOTES
 
+Si estamos emitiendo fluido, el fotograma inicial de la simulación debe tener geometria desde la que emitir. De lo contrario el solver se quejará.   
+
+En la simulación FLIP se utilizan " volumes" y "grid", por ello las colisiones funcionan mejor con "volumes".   
+
 ### BEFORE START SIMULATION:   
 **Check collision geometry**   
 Uncheck "Display geometry" and check "Collision Guide" to see the shape of the objext.. Allways check size and shape of colliders, default values are usually terrible
@@ -18,7 +22,8 @@ Los objetos de colisión deben tener volumen, para generar la supeficie correcta
 **Flip fluid Object**   
 Usually Density is 2 or 3 times bigger than Viscosity (Viscosity = 1000 => Density = 3000)
 
-
+**PARTICLE SEPARATION**   
+Comprobar la "particle separation" con respecto al tamaño de la simulación, para ver si es mucho o poco (todo está en unidades de H)
 
 ### on FLIP NODE
 **Solver "Splashy VS Swirly Kernel"**
@@ -38,4 +43,12 @@ La escala o sensación del liquido se dirige por el ""particle separation"". Si 
 Escala del radio de la particula. A mayor tamaño, más volumen ocupa la particula pero tiene menos detalle   
 
 **Grid Scale**   
-Factor de escalado del volumen que se utiliza para hacer el calculo de la velocidad de las particulas. Puede hacer que el efecto mas "fino" (thinner) o mas "basto". Reducirlo lo hace más fino
+Factor de escalado del volumen que se utiliza para hacer el calculo de la velocidad de las particulas. Puede hacer que el efecto mas "fino" (thinner) o mas "basto". Reducirlo lo hace más fino   
+
+### HOW TO / TIPS AND TRICKS   
+
+**Kill FLIP particle at some age (VEX)**   
+1) Activate ""life"" at ""Source Volume"" 
+2) Activate ""Age Particles"" at ""FLIP Solver""
+3) Create a pop Wrangler with code:   
+    `if (@dead==1) removepoint(0,@ptnum);`
