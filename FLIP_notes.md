@@ -9,6 +9,17 @@ Uncheck "Display geometry" and check "Collision Guide" to see the shape of the o
 - uncheck ""integer frames values"" in animation preferences   
 - Scrub timeline with substeps to check animation behaving"   
 
+**Check "FLIP Object"**   
+En "GUIDES" activar "Collision" y comprobar que tiene suficiente resolución. Si no, activar "Collision separation" y bajar el valor para que tenga el colisionador más resolución   
+
+**Objetos cerrados o con grosor**   
+Los objetos de colisión deben tener volumen, para generar la supeficie correctamente (es volumetrica). Vale la pena visualizar el volumen para asegurarse que sigue razonablemente la superficie.
+
+**Flip fluid Object**   
+Usually Density is 2 or 3 times bigger than Viscosity (Viscosity = 1000 => Density = 3000)
+
+
+
 ### on FLIP NODE
 **Solver "Splashy VS Swirly Kernel"**
 "Splashy (default): tipico de simulaciones con alta energía, como oceanos, rios.   
