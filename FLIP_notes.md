@@ -1,10 +1,16 @@
 ## FLIP NOTES
 
-**BEFORE START SIMULATION:**
+### BEFORE START SIMULATION:   
+**Check collision geometry**   
+Uncheck "Display geometry" and check "Collision Guide" to see the shape of the objext.. Allways check size and shape of colliders, default values are usually terrible
+
+**Check animation**   
+- Deactivate ""brain"" to avoid simulations   
+- uncheck ""integer frames values"" in animation preferences   
+- Scrub timeline with substeps to check animation behaving"   
 
 ### on FLIP NODE
 **Solver "Splashy VS Swirly Kernel"**
-#### Solver "Splashy VS Swirly Kernel"   
 "Splashy (default): tipico de simulaciones con alta energía, como oceanos, rios.   
 Swirly: para simulaciones con alta vorticidad, donde hay que reducir el ruido de superficie al maximo. Como simulacione de pequeña escala o lava.Los fluidos viscosos utilizan el ""swilry"""   
 
