@@ -48,7 +48,12 @@ Factor de escalado del volumen que se utiliza para hacer el calculo de la veloci
 ### HOW TO / TIPS AND TRICKS   
 
 **Kill FLIP particle at some age (VEX)**   
-1) Activate ""life"" at ""Source Volume"" 
-2) Activate ""Age Particles"" at ""FLIP Solver""
-3) Create a pop Wrangler with code:   
+- Activate ""life"" at ""Source Volume"" 
+- Activate ""Age Particles"" at ""FLIP Solver""
+- Create a pop Wrangler with code:   
     `if (@dead==1) removepoint(0,@ptnum);`
+
+**H17 use SOP volume fields**   
+- create vector velocity on points (Geometry)
+- Use ""Volume rasterize attribute"" to create ""v"" volume
+- On DOP, use ""volume source"" DOP to convert ""v"" source volume to ""vel"""
