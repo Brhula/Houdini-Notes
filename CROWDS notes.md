@@ -5,7 +5,9 @@
 Los agentes son particulas con informacion adicional en los "intrinsics".   
 
 
-Nodos interesantes:
+***Nodos interesantes:***
+
+steer forces are normalised, so playing with the weights is key
 
 **Agent**: 
 
