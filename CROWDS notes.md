@@ -1,6 +1,6 @@
 ### CROWD notas ###   
 
-
+Los agentes son particulas con informacion adicional en los "intrinsics".
 
 
 Nodos interesantes:
