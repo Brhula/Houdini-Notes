@@ -17,7 +17,7 @@ Nodos interesantes en DOP:
 
 **POP Steer wander** : Incorpora aleatoriedad al movimiento (parecido a turbulencia)   
 
-**POP Steer separate** : Aplica fuerzas para mover a los agentes/particulas entre ellos.   
+**POP Steer separate** : Aplica fuerzas para mover a los agentes/particulas entre ellos. Steer Separate is a more subtle effect, and allows agents to speed up or brake to avoid collisions. Not as much as I'd like though. It also includes a sense of FOV for each agent to determine how aware they are.   
 
 **POP Steer avoid** : Aplica fuerzas de ANTICIPACION para evitar potenciales colisiones futuras entre agentes/particulas. Steer Avoid is a repulsion, like a pop interact, or another way to think of it is agent personal space. Turn it up too high and it behaves like pop grains; agents separate too quickly and too uniform, it loses the natural chaos of a crowd. It's required of course, but at small values.   
 
