@@ -1,6 +1,8 @@
 ### CROWD notas ###   
 
-Los agentes son particulas con informacion adicional en los "intrinsics".
+[CgWiki sobre Crowds](https://www.tokeru.com/cgwiki/index.php?title=HoudiniCrowd)   
+
+Los agentes son particulas con informacion adicional en los "intrinsics".   
 
 
 Nodos interesantes:
