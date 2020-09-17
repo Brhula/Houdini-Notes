@@ -1,6 +1,6 @@
 ### GENERAL   
 [FX REFEERNCES and TUTORIALS](http://ref-fx.com/)   
-[FX REFEERNCES and TUTORIALS](https://www.johnkunz.com/resources)
+[FX Resources](https://www.johnkunz.com/resources)
 ### Houdini Tricks and Tips
 
 [Houdini – Tips & Tricks / Kristian Jungk](https://www.kristianjungk.com/en/about/tipps-tricks/houdini/)   
