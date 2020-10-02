@@ -1,14 +1,14 @@
 
-### ALEMBIC
+### ALEMBIC exports to Maya
 
 Alembic "need to know" things:   
-- Pack Geometry before exporting to send a Maya Shape node   
-- Last node in Houdini befor 
+- Pack Geometry for every group of primitives before exporting. Every paked geo will appear as a Maya "shape" node.   
+- Name of last node in Houdini before "ROP Alembic" node will appear as the root transform in Maya.
 
 ### MAYA MEL scripts to help   
 
 **Change all objects selected for a new one inside Maya**   
-This helps 
+   
 ```C++
 // Substitute obects 
 
