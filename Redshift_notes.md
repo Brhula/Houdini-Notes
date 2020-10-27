@@ -26,7 +26,9 @@ Use node "Bump Blender" to combine Normal and Bump mapping.
 - Gloss / Glossiness:  connect to "reflexion roughness" and on "advanced" tab check "convert glossiness to roughness". 
 - AO (if needed) : overall color / diffuse weight / or multiply by diffuse color
 - Normal : Texture node connected to a "Bump map" node with "tangent space". : Bump Input (on RS material) or Bump Map (o Redshift Material, the exit node)
-- Height /Displacement : 
+- Height / Displacement : Displacement node and to "Displacement"   
+
+![Alt text](images/RedShift_PBR.jpg?raw=true "Title")   
 
 **VOLUME Rendering**   
 - Add "Volume" shader to object   
