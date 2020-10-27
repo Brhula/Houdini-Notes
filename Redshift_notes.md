@@ -21,12 +21,13 @@ Volume samples (lights) //  VDBs and volumes noise
 **PBR Materials**   
 Toggle "Gamma override" check on "texture" node if dealing with gray scale images.   
 Use node "Bump Blender" to combine Normal and Bump mapping.   
-- Albedo/Diffuse/Base/Color : diffuse color
-- Roughness : reflexion roughness
-- Gloss / Glossiness:  connect to "reflexion roughness" and on "advanced" tab check "convert glossiness to roughness". 
-- AO (if needed) : overall color / diffuse weight / or multiply by diffuse color
-- Normal : Texture node connected to a "Bump map" node with "tangent space". : Bump Input (on RS material) or Bump Map (o Redshift Material, the exit node)
+- Albedo/Diffuse/Base/Color : diffuse color   
+- Roughness : reflexion roughness   
+- Gloss / Glossiness:  connect to "reflexion roughness" and on "advanced" tab check "convert glossiness to roughness".    
+- AO (if needed) : overall color / diffuse weight / or multiply by diffuse color   
+- Normal : Texture node connected to a "Bump map" node with "tangent space". : Bump Input (on RS material) or Bump Map (o Redshift Material, the exit node)   
 - Height / Displacement : Displacement node and to "Displacement"   
+- Metal / Metalness : Reflection Metalness (and change "Fresnel Type" to "Metalness")   
 
 ![Alt text](images/RedShift_PBR.jpg?raw=true "Title")   
 
