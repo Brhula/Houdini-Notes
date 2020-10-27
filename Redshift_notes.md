@@ -23,9 +23,10 @@ Toggle "Gamma override" check on "texture" node if dealing with gray scale image
 Use node "Bump Blender" to combine Normal and Bump mapping.   
 - Albedo/Diffuse/Base/Color : diffuse color
 - Roughness : reflexion roughness
+- Gloss / Glossiness:  connect to "reflexion roughness" and on "advanced" tab check "convert glossiness to roughness". 
 - AO (if needed) : overall color / diffuse weight / or multiply by diffuse color
 - Normal : Texture node connected to a "Bump map" node with "tangent space". : Bump Input (on RS material) or Bump Map (o Redshift Material, the exit node)
-
+- Height /Displacement : 
 
 **VOLUME Rendering**   
 - Add "Volume" shader to object   
