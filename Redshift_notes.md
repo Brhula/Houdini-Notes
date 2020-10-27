@@ -27,7 +27,7 @@ Use node "Bump Blender" to combine Normal and Bump mapping.
 - AO (if needed) : overall color / diffuse weight / or multiply by diffuse color   
 - Normal : Texture node connected to a "Bump map" node with "tangent space". : Bump Input (on RS material) or Bump Map (o Redshift Material, the exit node)   
 - Height / Displacement : Displacement node and to "Displacement"   
-- Metal / Metalness : Reflection Metalness (and change "Fresnel Type" to "Metalness")   
+- Metal / Metalness : Reflection Metalness (change "Fresnel Type" to "Metalness" and "BRDF" to "GGX")   
 
 ![Alt text](images/RedShift_PBR.jpg?raw=true "Title")   
 
