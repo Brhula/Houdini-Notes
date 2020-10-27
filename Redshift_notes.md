@@ -19,7 +19,8 @@ GI samples              //  GI noise
 Volume samples (lights) //  VDBs and volumes noise 
 ```
 **PBR Materials**   
-Toggle "Gamma override" check on "texture" node if dealing with gray scale images.
+Toggle "Gamma override" check on "texture" node if dealing with gray scale images.   
+Use node "Bump Blender" to combine Normal and Bump mapping.   
 - Albedo/Diffuse/Base/Color : diffuse color
 - Roughness : reflexion roughness
 - AO (if needed) : overall color / diffuse weight / or multiply by diffuse color
