@@ -8,8 +8,6 @@ Hay que desactivar en la pestaña "main" el check  “Report Errors/Warnings to 
 **Instancias (copy to points y similares)**   
 
 Hay que activar en la pestaña "Instancing" en las opciones de Redshift del objeto la opción "instancing using --> Redshift Point Clouds". De lo contrario el render va muy lento.
-
-   
   
 **NOISE (reducir ruido)**   
 Parámetro a tocar // Tipo de ruido al que afecta.
@@ -20,6 +18,13 @@ Shader samples          //  Indirect specular noise
 GI samples              //  GI noise   
 Volume samples (lights) //  VDBs and volumes noise 
 ```
+**PBR Materials**   
+Toggle "Gamma override" check on "texture" node if dealing with gray scale images.
+- Albedo/Diffuse/Base/Color : diffuse color
+- Roughness : reflexion roughness
+- AO (if needed) : overall color / diffuse weight / or multiply by diffuse color
+- Normal : Texture node connected to a "Bump map" node with "tangent space". : Bump Input (on RS material) or Bump Map (o Redshift Material, the exit node)
+
 
 **VOLUME Rendering**   
 - Add "Volume" shader to object   
@@ -29,7 +34,6 @@ Volume samples (lights) //  VDBs and volumes noise
 - Increase "Samples" on the "Volume" tab in the lights, to avoid noise   
 - Turn ON "Global Illumination" to let the fire "light" the volume   
 - Check "advanced" tab in Volume shader to remap HEAT or TEMPERATURE and bring the numbers down (HEAT value is usually lower than TEMPERATURE). Like mapping 50 to 1 for TEMPERATURE  and 15 to 1 on HEAT
-	
 	
 **VOLUME Shader**   
 - Absortion: (like "transparency") cuanto más alto, más denso el humo
