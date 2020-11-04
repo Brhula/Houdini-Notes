@@ -15,7 +15,8 @@ MEJORAR SIMULACIÓN:
      Si son pequeños, tendremos más errores de simulación."   
 
 ANIMACIONES GUIADAS:
-- Para guiar animaciones se  
+- Para guiar animaciones se   
+
 **QUE HACER PARA:**   
 - Aumentar la friccion del tejido : En el solver (en SOPS) hay un parametro "Static Threshold" que lo controla el atributo "friction" (si no hay atributo "friction" entonces val 1 por defecto). Esta a 0.5, si lo subimos el tejido aumenta la friccion.   
 
