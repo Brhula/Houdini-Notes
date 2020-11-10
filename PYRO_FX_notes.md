@@ -15,6 +15,8 @@
 El Pyro ahora deberia colisionar con el objeto SOP.
 
 **Si el humo pasa a traves del objeto de colision**   
+
+Esto no siempre es necesario. Solo si atraviesa. En general deberia funcionar bien.   
 Bajar el "Time Scale" (a 0.5 o 0.25) para que detecte mejor las colisiones.   
 Subir los sub-steps del DOP no parece funcionar muy bien.   
 Luego, para hacer la cache, poner un TimeWarp para recuperar velocidad original.   
