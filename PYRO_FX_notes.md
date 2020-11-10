@@ -11,10 +11,9 @@
    - y en "Volume"-->"Mode"  poner "Volume sample"
 - Conectar el "static object" al "merge" despues del Pyro Solver.
 
-**Check animation**   
-- Deactivate ""brain"" to avoid simulations   
-- uncheck ""integer frames values"" in animation preferences   
-- Scrub timeline with substeps to check animation behaving"   
+**Si el humo pasa a traves del objeto de colision**  
+Bajar el "Time Scale" (a 0.5 o 0.25) para que detecte mejor las colisiones.   
+Subir los sub-steps del DOP no parece funcionar muy bien.   
+Luego, para hacer la cache, poner un TimeWarp para recuperar velocidad original.   
 
-**Check "FLIP Object"**   
-En "GUIDES" activar "Collision" y comprobar que tiene suficiente resolución. Si no, activar "Collision separation" y bajar el valor para que tenga el colisionador más resolución   
+ 
