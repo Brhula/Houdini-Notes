@@ -4,7 +4,7 @@
 
 ### COLISIONES con PYRO:   
 **Utilzar VDB para el calculo de colisiones**   
-- utilizar "VDB convert to polygon" SOP.   
+- utilizar "VDB from polygon" SOP con "distance VDB" y una resolucion suficiente para que no tenga agujeros.   
 - En DOPs, usar nodo "static object", y:   
    - Poner en "SOP Path" el VDB de SOP
    - "Collision detection" en "Use volume collision"
