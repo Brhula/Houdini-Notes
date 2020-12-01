@@ -7,7 +7,7 @@ En la simulación FLIP se utilizan " volumes" y "grid", por ello las colisiones 
 ### BEFORE START SIMULATION:   
 <ins>**Particle separation**</ins>: para hacer mas o menos detallado el fluido   
 
-<ins>**Constraint iterations**</ins>: Iteraciones para mantener el "particle separation", cuanto mayor, mejor se conserva el 2particle separation".   
+<ins>**Constraint iterations**</ins>: Iteraciones para mantener el "particle separation", cuanto mayor, mejor se conserva el "particle separation".   
 El valor por defecto (5) funciona para el solver de "white water". Valores bajos hacen mas "tendrils", valore altos juntan mas el liquido.   
 Lo tipico es empezar a partir de 20 e ir subiendo, para que el liquido tenga mas consistencia.   
 Indica el numero de particulas de grosor ("number of particles that is the larges thickness of the fluid") que tendra el liquido    
