@@ -12,7 +12,7 @@ El valor por defecto (5) funciona para el solver de "white water". Valores bajos
 Lo tipico es empezar a partir de 20 e ir subiendo, para que el liquido tenga mas consistencia.   
 Indica el numero de particulas de grosor ("number of particles that is the larges thickness of the fluid") que tendra el liquido    
 
-**Constraint stiffness**: "Fuerza de cohesion", para obligar a las particulas a estar juntas. Poner numero alto aqui (100, 200, 400, ...). Cuento mayor el numero, menor la tolerancia a desviaciones del "goal", pero si es alto **puede introducir inestabilidad**.   
+**Constraint stiffness**: "Fuerza de cohesion", para obligar a las particulas a estar juntas. Poner numero alto aqui (100, 200, 400, ...). Cuento mayor el numero, menor la tolerancia a desviaciones del "goal", pero si es alto <ins>puede introducir inestabilidad</ins>.   
 
 **Viscosiy**: El valor inicial es muy bajo. Probar a partir de 0.1 hast el 1 (tambien puede superar el 1 segun como). Al aumentar la viscosidad, deben aparecer menos "grupos" de particulas.    
 
