@@ -52,6 +52,21 @@ if ( rand(@ptnum) > ch('threshold') ) {
    removepoint(0,@ptnum);
 }
 ```
+**PUNTOS // Borrar puntos fuera de la vista de la CAMARA (con una tolerancia)** 
+```C#
+// Clip points from camera
+vector _ndc = toNDC("/obj/cam1", @P);
+
+float _errorx = ch("errorx");
+float _errory = ch("errory");
+float _errorz = ch("errorz");
+
+if ((_ndc[0] < 0 - _errorx) || (_ndc[0] > 1 + _errorx))   removepoint(geoself(), @ptnum);
+if ((_ndc[1] < 0 - _errory) || (_ndc[1] > 1 + _errory))   removepoint(geoself(), @ptnum);
+if ((_ndc[2] > 0 + _errorz))   removepoint(geoself(), @ptnum);
+```
+
+
 **PUNTOS // Normales aleatorias en los puntos** 
 ```C#
 // Random normals
