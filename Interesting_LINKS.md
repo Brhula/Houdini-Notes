@@ -1,6 +1,7 @@
 ### GENERAL   
 [FX REFEERNCES and TUTORIALS](http://ref-fx.com/)   
-[FX Resources](https://www.johnkunz.com/resources)
+[FX Resources](https://www.johnkunz.com/resources)   
+[FX Tips and Notes](https://www.katexagoraris.com/)   
 
 ### IMPORTANT HOUDINI RESOURCES FOR LEARNING
 [CgWiki](https://www.tokeru.com/cgwiki/index.php?title=Main_Page)   
