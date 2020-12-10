@@ -43,7 +43,12 @@ versión simplificada:
 addpoint(0, @P); // add point to "centroid" of primitive
 removeprim(0, @primnum, 1); // delete primitive (optional)
 ```
-
+**PUNTOS // BLENSHAPE entre dos inputs mediante un atributo "mask"** 
+```C#
+// Blenshape utilizando "@mask" para selecciona input
+// set a wrangle to run over points
+@P = lerp(@P,point(1,"P", @ptnum),@mask);
+```
 **PUNTOS // Borrar puntos de forma aleatoria según una tolerancia** 
 ```C#
 // This snippet will delete random points based on the threshold slider
