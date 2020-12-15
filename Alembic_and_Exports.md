@@ -1,6 +1,8 @@
 
 ### ALEMBIC exports to Maya
 
+https://medium.com/@jessicabeckenbach/exporting-alembic-files-from-houdini-using-the-path-attribute-ac9f34f5ab1
+
 ![Alt Text](https://i.pinimg.com/originals/bc/f9/2c/bcf92cbfaa5610387a6a9dd92f37de9b.gif)
 ![Alt Text](https://3.bp.blogspot.com/-dOwQHkdXIm8/W0wmWYkkW2I/AAAAAAABsHg/_Oh6UYu6vVAgb_a-91eFa5XKOUO7oBBpwCLcBGAs/s1600/Houdini%2BEngine%2Bfor%2BAutodesk%2BMaya%2Band%2B3ds%2BMax.png)
 Alembic "need to know" things:   
