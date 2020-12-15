@@ -50,3 +50,6 @@ Use node "Bump Blender" to combine Normal and Bump mapping.
 - *Volumen mas o menos opaco:* incrementat tanto el "Absortion coefficient" como el "scatter coefficient" al mismo tiempo mas brillante o  más oscuro: modificar solamente "scatter coefficient"
 - *Color de todo el volumen:* modificar "scatter tint". Utilizar la rampa para remapear según la densidad: Izquierda--> menos denso, derecha--> más densidad
 	
+**WARNINGS:**   
+- *Texturas:* Parece que los ficheros ".pic" de Houdini no le gustan. Hace cosas raras en el render.   
+	
