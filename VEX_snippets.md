@@ -78,7 +78,7 @@ if ((_ndc[2] > 0 + _errorz))   removepoint(geoself(), @ptnum);
 // set a wrangle to run over points
 v@N=set(fit01(rand(@ptnum),-1,1),fit01(rand(@ptnum+1),-1,1),fit01(rand(@ptnum+2),-1,1));
 ```
-**PUNTOS // Tamaño aleatorio de los puntos, dando maximo, minimo y semilla** 
+**PUNTOS // Tamaño aleatorio de los puntos, dando maximo, minimo, semilla y RAMPA de distribucion** 
 ```C#
 // SOP Random pscale with Ramp, Seed, Min and Max
 // change @ptnum for @id in POPs
