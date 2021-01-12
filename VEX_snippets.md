@@ -115,6 +115,13 @@ vector4 roll  = quaternion({0,0,1}*ch('roll'));
 @orient = qmultiply(@orient, yaw);
 @orient = qmultiply(@orient, roll);
 ```
+**PUNTOS // RAMPA de color en un eje segun Bounding Box**
+```C#
+vector min, max;
+getbbox(0, min, max);
+@Cd = vector(chramp("reMap",fit(@P.y, min.y, max.y, 0,1)));
+```
+
 **PUNTOS // Transfer de color (y P, posición) desde el segundo input.**
 ```C#
 // Attribute transfer COLOR (and P) from other inputs
