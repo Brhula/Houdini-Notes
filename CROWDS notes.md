@@ -4,7 +4,7 @@
 [Few notes on Crowd Sim](https://tosinakinwoye.com/2018/10/25/a-few-notes-on-houdini-crowd-simulations/)   
 [SIDEFX Intro to crowds 2020](https://www.sidefx.com/tutorials/intro-to-crowds/)   
 [SIDEFX crowds example with bats 2019](https://www.sidefx.com/tutorials/crowd-workshop/)   
-
+***
 Los agentes son particulas con informacion adicional en los "intrinsics":
 - agentclipnames : name of current clip
 - agentcliptimes : contiene el "time" en el que se encuentra el clip. Se puede manipular directamente. Por ejemplo:
