@@ -2,8 +2,10 @@
 
 [CgWiki sobre Crowds](https://www.tokeru.com/cgwiki/index.php?title=HoudiniCrowd)   
 [Few notes on Crowd Sim](https://tosinakinwoye.com/2018/10/25/a-few-notes-on-houdini-crowd-simulations/)   
+[SIDEFX Intro to crowds 2020](https://www.sidefx.com/tutorials/intro-to-crowds/)   
 
-Los agentes son particulas con informacion adicional en los "intrinsics".   
+Los agentes son particulas con informacion adicional en los "intrinsics":
+- agentclipnames : name of current clip
 Aumentar los "sub-steps" en el DOP hace que mejore el comportamiento en giros y obstaculos ("espasmos" en los agentes).
 
 ***Nodos interesantes:***
