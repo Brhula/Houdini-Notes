@@ -7,6 +7,13 @@
 
 Los agentes son particulas con informacion adicional en los "intrinsics":
 - agentclipnames : name of current clip
+- agentcliptimes : contiene el "time" en el que se encuentra el clip. Se puede manipular directamente. Por ejemplo:
+```C++
+float t[];
+t[0] = @startoffset + @Time/@pscale*2;
+setagentcliptimes(0,@primnum,t);
+```
+
 Aumentar los "sub-steps" en el DOP hace que mejore el comportamiento en giros y obstaculos ("espasmos" en los agentes).
 
 ***Nodos interesantes:***
