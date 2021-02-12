@@ -9,6 +9,12 @@ Colección de "snippets" (trozos de código) para realizar funciones concretas. 
 - [Kiryha](https://github.com/kiryha/Houdini/wiki/vex-snippets)   
 
 
+**OBTENER INFORMACION INTERESANTE PARA PROCESAR //** 
+```C#
+vector dir = normalize(v@v);    // direccion del vector de velocidad
+float speed = length(v@v);      // Magnitud de la velocidad
+```
+
 **OBJETO // Centrar el pivot y mover al origen de coordenadas** 
 ```C#
 //  Center Pivot and Move to Origin
