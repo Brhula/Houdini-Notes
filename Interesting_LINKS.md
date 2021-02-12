@@ -31,3 +31,8 @@
 ### MATRIX
 
 [OpenGl Matrix math](https://www.ntu.edu.sg/home/ehchua/programming/opengl/CG_BasicsTheory.html#zz-4.2)   
+
+### PYTHON in HOUDINI
+
+[vfxbrain intro to PYTHOM](https://vfxbrain.wordpress.com/2016/03/15/python-in-houdini/)   
+
