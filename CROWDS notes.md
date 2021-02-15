@@ -20,7 +20,7 @@ Aumentar los "sub-steps" en el DOP hace que mejore el comportamiento en giros y 
 
 steer forces are normalised, so playing with the weights is key
 
-**Agent**: 
+**Agent**: Nodo basico para importar el "agente" (el modelo fbx/rig/etc). Se puede poner el modelo en T-pose y luego incorporar animaciones.
 
 **Agent Prep**: Permite a los pies quedarse quietos cuando pisan el suelo. Para que no patine. Pone una cadena de IK junto con un CHOP para fijar las piernas.
 
