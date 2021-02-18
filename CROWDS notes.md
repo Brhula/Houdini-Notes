@@ -1,11 +1,16 @@
-### CROWD notas ###   
+## CROWD notas ##   
 
 [CgWiki sobre Crowds](https://www.tokeru.com/cgwiki/index.php?title=HoudiniCrowd)   
 [Few notes on Crowd Sim](https://tosinakinwoye.com/2018/10/25/a-few-notes-on-houdini-crowd-simulations/)   
 [SIDEFX Intro to crowds 2020](https://www.sidefx.com/tutorials/intro-to-crowds/)   
 [SIDEFX crowds example with bats 2019](https://www.sidefx.com/tutorials/crowd-workshop/)   
-***
-Los agentes son particulas con informacion adicional en los "intrinsics":
+### NOTAS ###   
+Los agentes son particulas con informacion adicional en los "intrinsics".   
+Si la particula tienen velocidad inicial ("v"), entonces ignora el parametro "heading".   
+Aumentar los "sub-steps" en el DOP hace que mejore el comportamiento en giros y obstaculos ("espasmos" en los agentes).   
+
+
+### "Intrinsics" interesantes:
 - agentclipnames : name of current clip
 - agentcliptimes : contiene el "time" en el que se encuentra el clip. Se puede manipular directamente. Por ejemplo:
 ```C++
@@ -14,7 +19,7 @@ t[0] = @startoffset + @Time/@pscale*2;
 setagentcliptimes(0,@primnum,t);
 ```
 
-Aumentar los "sub-steps" en el DOP hace que mejore el comportamiento en giros y obstaculos ("espasmos" en los agentes).
+
 
 ***Nodos interesantes:***
 
