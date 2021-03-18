@@ -1,7 +1,9 @@
 ## PYRO FX NOTES
 
-   
-
+- **TEMPERATURE DIFFUSION** : Hace que el gas se expanda mmas o menos. Mayor numero, mayor difusion / expansion   
+- **COOLING RATE** : Baja la temperatura.   
+   - Valor alto --> Temperatura mas baja   
+   - Valor bajo --> Temperatura mas alta    
 ### COLISIONES con PYRO:   
 **Utilzar VDB para el calculo de colisiones**   
 - utilizar "VDB from polygon" SOP con "distance VDB" y una resolucion suficiente para que no tenga agujeros.   
