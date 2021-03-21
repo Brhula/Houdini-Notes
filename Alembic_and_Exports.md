@@ -12,7 +12,7 @@ Y que en Maya aparezca con una jerarquía en el Outliner (para mejorar organizac
 - para cada elemento que queramos que aparezca por separado, hacer un ""name"" attribute. Se puede utilizar el nodo ""name"" (SOP)
 - En el "ROP Alembic" utilizar:
    - Partition Mode en "use attribute value" con el nombre "name". Los objetos tendrán un "shape" separado
-   - "Build Hierarchy deom Attribute" con el nombre del atrubute "name" para generar el path completo ransform )
+   - "Build Hierarchy from Attribute" con el nombre del atrubute "name" para generar el path completo ransform )
 
 
 
