@@ -3,11 +3,19 @@
 
 https://medium.com/@jessicabeckenbach/exporting-alembic-files-from-houdini-using-the-path-attribute-ac9f34f5ab1
 
-![Alt Text](https://i.pinimg.com/originals/bc/f9/2c/bcf92cbfaa5610387a6a9dd92f37de9b.gif)
-![Alt Text](https://3.bp.blogspot.com/-dOwQHkdXIm8/W0wmWYkkW2I/AAAAAAABsHg/_Oh6UYu6vVAgb_a-91eFa5XKOUO7oBBpwCLcBGAs/s1600/Houdini%2BEngine%2Bfor%2BAutodesk%2BMaya%2Band%2B3ds%2BMax.png)
 Alembic "need to know" things:   
 - Pack Geometry for every group of primitives before exporting. Every paked geo will appear as a Maya "shape" node.   
 - Name of last node in Houdini before "ROP Alembic" node will appear as the root transform in Maya.
+
+### Exportar GEO con cambios de topologia a Maya   
+
+Como por ejemplo exportar GEO con numero de puntos y caras animado como ALEMBIC (tipo boolenas animadas) o meshes FLIP.
+El metodo es hacer un "stitch" fde la secuancia de alembics de salida:
+- Generar secuencia de Alembics (tipo name.$F4.abc)
+- Importar la secuencia  alembics de nuevo en Houdini
+- Hacer un "unpack" y "attribute delete" (de lo no necesario)
+- Grabar un nuevo alembic con el resultado en un solo fichero (stitch)
+
 
 ### MAYA MEL scripts to help   
 
