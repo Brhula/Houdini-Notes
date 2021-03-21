@@ -7,6 +7,15 @@ Alembic "need to know" things:
 - Pack Geometry for every group of primitives before exporting. Every paked geo will appear as a Maya "shape" node.   
 - Name of last node in Houdini before "ROP Alembic" node will appear as the root transform in Maya.
 
+### Exportar GEO a Maya   
+Y que en Maya aparezca con una jerarquía en el Outliner (para mejorar organizacion):
+- para cada elemento que queramos que aparezca por separado, hacer un ""name"" attribute. Se puede utilizar el nodo ""name"" (SOP)
+- En el "ROP Alembic" utilizar:
+   - Partition Mode en "use attribute value" con el nombre "name". Los objetos tendrán un "shape" separado
+   - "Build Hierarchy deom Attribute" con el nombre del atrubute "name" para generar el path completo ransform )
+
+
+
 ### Exportar GEO con cambios de topologia a Maya   
 
 Como por ejemplo exportar GEO con numero de puntos y caras animado como ALEMBIC (tipo boolenas animadas) o meshes FLIP.
