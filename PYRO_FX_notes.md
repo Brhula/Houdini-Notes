@@ -1,9 +1,16 @@
 ## PYRO FX NOTES
 
+### WORKFLOW tipico:   
+
+Particles -> convert to vdb -> smoke solver -> add disturbance
+
+
 - **TEMPERATURE DIFFUSION** : Hace que el gas se expanda mmas o menos. Mayor numero, mayor difusion / expansion   
 - **COOLING RATE** : Baja la temperatura.   
    - Valor alto --> Temperatura mas baja   
    - Valor bajo --> Temperatura mas alta    
+- **DISSIPATION** : [0-1]como de rapido desaparece es gas. Numeros mas altos hacen desaparecer mas rapido.   
+- **DISTURBANCE** : Anyade ruido blanco a la simulcaion, para romper uniformidad. Sirve para romper "mushrooms". Demasiado y sera muy evidente.
 ### COLISIONES con PYRO:   
 **Utilzar VDB para el calculo de colisiones**   
 - utilizar "VDB from polygon" SOP con "distance VDB" y una resolucion suficiente para que no tenga agujeros.   
