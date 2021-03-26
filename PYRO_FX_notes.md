@@ -10,7 +10,11 @@ Particles -> convert to vdb -> smoke solver -> add disturbance
    - Valor alto --> Temperatura mas baja   
    - Valor bajo --> Temperatura mas alta    
 - **DISSIPATION** : [0-1]como de rapido desaparece es gas. Numeros mas altos hacen desaparecer mas rapido.   
-- **DISTURBANCE** : Anyade ruido blanco a la simulcaion, para romper uniformidad. Sirve para romper "mushrooms". Demasiado y sera muy evidente.
+- **DISTURBANCE** : Anyade ruido blanco a la simulcaion, para romper uniformidad. Sirve para romper "mushrooms". Demasiado y sera muy evidente.   
+
+### MICROSOLVERS:   
+- **DISTURBANCE** : 
+
 ### COLISIONES con PYRO:   
 **Utilzar VDB para el calculo de colisiones**   
 - utilizar "VDB from polygon" SOP con "distance VDB" y una resolucion suficiente para que no tenga agujeros.   
@@ -30,4 +34,6 @@ Bajar el "Time Scale" (a 0.5 o 0.25) para que detecte mejor las colisiones.
 Subir los sub-steps del DOP no parece funcionar muy bien.   
 Luego, para hacer la cache, poner un TimeWarp para recuperar velocidad original.   
 
- 
+
+### QUE HACER PARA:   
+- **ELIMINAR "MUSHROMS"**: Utilizar el micro-solver de "disturbance" para romper las bolas tipo "champinon" (mushrooms).
