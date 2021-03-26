@@ -36,4 +36,4 @@ Luego, para hacer la cache, poner un TimeWarp para recuperar velocidad original.
 
 
 ### QUE HACER PARA:   
-- **ELIMINAR "MUSHROMS"**: Utilizar el micro-solver de "disturbance" para romper las bolas tipo "champinon" (mushrooms).
+- **ELIMINAR "MUSHROMS"**: Utilizar el micro-solver de "disturbance" para romper las bolas tipo "champinon" (mushrooms). Se pueden incorporar varios micro-solvers de "disturbance" con diferente "block-size" (en unidade Houdini) para romper los "mushrooms" a diferentes tanaños. Un caso tipico seria poner 3 micro-solvers con un block-size de (0.3 , 0.1 y 0.033).   
