@@ -13,7 +13,7 @@ Particles -> convert to vdb -> smoke solver -> add disturbance
 - **DISTURBANCE** : Anyade ruido blanco a la simulcaion, para romper uniformidad. Sirve para romper "mushrooms". Demasiado y sera muy evidente.   
 
 ### MICROSOLVERS:   
-- **DISTURBANCE** : 
+- **DISTURBANCE** : Agrega detalles finos a una simulación de humo aplicando fuerzas de "perturbación" a la velocidad. Recomendado para romper "mushrooms". Es buena idea aplicar varios con diferentes parametros  (tipicamente "block-size").   
 
 ### COLISIONES con PYRO:   
 **Utilzar VDB para el calculo de colisiones**   
