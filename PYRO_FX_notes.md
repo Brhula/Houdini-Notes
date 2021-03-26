@@ -14,7 +14,9 @@ Particles -> convert to vdb -> smoke solver -> add disturbance
 
 ### MICROSOLVERS:   
 - **DISTURBANCE (v2.0)** : Agrega detalles finos a una simulación de humo aplicando fuerzas de "perturbación" a la velocidad. Recomendado para romper "mushrooms". Es buena idea aplicar varios con diferentes parametros  (tipicamente "block-size").   
-
+   - Strength : fuerza del efecto   
+   - Threshold range : toma el input (densidad tipicamente) y lo remapea como 0-1 para multiplicarlo por "disturbance" (strength). Cualquier valor por encima de 0.05 no se vera afectado (valores con mayor densidad), cuanto más cerca de 0  más se vera afectado. Basicamente lo que hace es potenciar el efecto en los bordes del humo para conseguir más detalle.   
+   
 ### COLISIONES con PYRO:   
 **Utilzar VDB para el calculo de colisiones**   
 - utilizar "VDB from polygon" SOP con "distance VDB" y una resolucion suficiente para que no tenga agujeros.   
@@ -36,4 +38,8 @@ Luego, para hacer la cache, poner un TimeWarp para recuperar velocidad original.
 
 
 ### QUE HACER PARA:   
-- **ELIMINAR "MUSHROMS"**: Utilizar el micro-solver de "disturbance" para romper las bolas tipo "champinon" (mushrooms). Se pueden incorporar varios micro-solvers de "disturbance" con diferente "block-size" (en unidade Houdini) para romper los "mushrooms" a diferentes tanaños. Un caso tipico seria poner 3 micro-solvers con un block-size de (0.3 , 0.1 y 0.033).   
+- **ELIMINAR "MUSHROMS"**: Utilizar el micro-solver de "disturbance" para romper las bolas tipo "champiñon" (mushrooms). Se pueden incorporar varios micro-solvers de "disturbance" con diferente "block-size" (que indican el tamaño del efecto, en unidade Houdini) para romper los "mushrooms" a diferentes tanaños. Un caso tipico seria poner 3 micro-solvers con un block-size de (0.3 , 0.1 y 0.033).   
+- **QUE UNA FUERZA/MICROSOLVER AFECTE SOLO A UNA ZONA:**   
+   - Crear un objeto (SOP) y convertirlo a fog VDB y ponerle un nombre. Se utilizara el nombre como "mascara" para confinar el efecto.
+   - En DOP (simulación) creamos un nodo "volume source" que apunte al objeto creado (de SOP), y como parametro "source volume" ponemos el nombre del fog VDB, y como "target" el nombre del nuevo campo que queramos utilizar (tipicamente el mismo). Se conecta a PYRO en la entrada SOURCING
+   - En el micro-solver se pone el nombre del campo en el apartado "control field". Esto limitara el microsolver a la mascara.
