@@ -2,9 +2,13 @@
 
 ### WORKFLOW tipico:   
 
-Particles -> convert to vdb -> smoke solver -> add disturbance
+(1) Particles --> (2) convert to vdb --> (3) smoke/pyro solver --> (4) add disturbance
+### (1) PARTICLES: 
+- Normalmente se hace un set-up con un sistema de particulas para crear el "source" del pyro/smoke.
+- La velocidad (v) así como la escala (pscale) influyen despues en como se comportara el solver. Es interesante que tengan variación (randomness)
+- Típicamente empezaremos con  poca velocidad y escala, y progresivamente iremos aumentando. Si es una explosión, con pocos frames deberia funcionar.
 
-
+### PARAMETROS INCLUIDOS EN EL SOLVER: 
 - **TEMPERATURE DIFFUSION** : Hace que el gas se expanda mmas o menos. Mayor numero, mayor difusion / expansion   
 - **COOLING RATE** : Baja la temperatura.   
    - Valor alto --> Temperatura mas baja   
