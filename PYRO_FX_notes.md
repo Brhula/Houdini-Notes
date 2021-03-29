@@ -7,6 +7,8 @@
 - Normalmente se hace un set-up con un sistema de particulas para crear el "source" del pyro/smoke.
 - La velocidad (v) así como la escala (pscale) influyen despues en como se comportara el solver. Es interesante que tengan variación (randomness)
 - Típicamente empezaremos con  poca velocidad y escala, y progresivamente iremos aumentando. Si es una explosión, con pocos frames deberia funcionar.
+### (2) PARTICLES to VOLUMES  (convert to VDB): 
+
 
 ### PARAMETROS INCLUIDOS EN EL SOLVER: 
 - **TEMPERATURE DIFFUSION** : Hace que el gas se expanda mmas o menos. Mayor numero, mayor difusion / expansion   
