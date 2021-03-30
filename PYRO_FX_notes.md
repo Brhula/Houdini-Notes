@@ -51,4 +51,7 @@ Luego, para hacer la cache, poner un TimeWarp para recuperar velocidad original.
 - **QUE UNA FUERZA/MICROSOLVER AFECTE SOLO A UNA ZONA:**   
    - Crear un objeto (SOP) y convertirlo a fog VDB y ponerle un nombre. Se utilizara el nombre como "mascara" para confinar el efecto.
    - En DOP (simulación) creamos un nodo "volume source" que apunte al objeto creado (de SOP), y como parametro "source volume" ponemos el nombre del fog VDB, y como "target" el nombre del nuevo campo que queramos utilizar (tipicamente el mismo). Se conecta a PYRO en la entrada SOURCING
-   - En el micro-solver se pone el nombre del campo en el apartado "control field". Esto limitara el microsolver a la mascara.
+   - En el micro-solver se pone el nombre del campo en el apartado "control field". Esto limitara el microsolver a la mascara.   
+- **SIMULAR EL VIENTO SUAVE QUE MUEVE EL HUMO:**   
+   - Incluir un nodo (o mas de uno) de "turbulence", con settings suaves para que mueva un poco el humo.   
+   - Incorporar un nodo de "DRAG FORCE" a la simulacion, para que vaya frenando progresivamente las fuerzas que impulsaron originariamente el humo (un escape, explosion, etc.). Eso le da realismo al frenar el humo, y el "turbulence" se encarga de que no se quede completamente parado.
