@@ -14,6 +14,11 @@ Colección de "snippets" (trozos de código) para realizar funciones concretas. 
 vector dir = normalize(v@v);    // direccion del vector de velocidad
 float speed = length(v@v);      // Magnitud de la velocidad
 ```
+**MOSTRAR SOLO "WIREFRAME" en el VIEWPORT** 
+```C#
+// wrangler run over DETAIL (once)
+i@gl_wireframe = 1;
+```
 
 **OBJETO // Centrar el pivot y mover al origen de coordenadas** 
 ```C#
