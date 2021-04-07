@@ -9,12 +9,12 @@ Colección de "snippets" (trozos de código) para realizar funciones concretas. 
 - [Kiryha](https://github.com/kiryha/Houdini/wiki/vex-snippets)   
 
 
-**OBTENER INFORMACION INTERESANTE PARA PROCESAR //** 
+**OBTENER INFORMACION INTERESANTE PARA PROCESAR** 
 ```C#
 vector dir = normalize(v@v);    // direccion del vector de velocidad
 float speed = length(v@v);      // Magnitud de la velocidad
 ```
-**MOSTRAR SOLO "WIREFRAME" en el VIEWPORT** 
+**DETAIL // MOSTRAR SOLO "WIREFRAME" en el VIEWPORT** 
 ```C#
 // wrangler run over DETAIL (once)
 i@gl_wireframe = 1;
