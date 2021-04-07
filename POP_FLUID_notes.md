@@ -1,6 +1,6 @@
 ## POP FLUID NOTES
 
-PBD Fluid solver (Position Based Dynamics). Solver interesante para fluidos a pequenya escala (gotas y demas). Bastante rapido y estable (!).
+PBD Fluid solver (Position Based Dynamics). Solver interesante para fluidos a pequeña escala (gotas y demás). Bastante rápido y estable (!).
 
 En la simulación FLIP se utilizan " volumes" y "grid", por ello las colisiones funcionan mejor con "volumes".   
 
