@@ -204,3 +204,19 @@ int primpts[] = primpoints(0,@primnum);
 removepoint(0,primpts[0]);  // First point
 removepoint(0,primpts[-1]); // Last point
 ```
+**CURVAS // MULTI CARVE: hacer un carve animado en el que las curvas no acaban todas al mismo tiempo**
+```C#
+// MULTI CARVE. Needs a "mesure" SOP node with computed @perimeter for prims
+//set a wrangle to run over primitives
+#include <groom.h>
+
+float turbulence = rand(@primnum); // get a random number
+int start_effect = 1;
+int end_effect   = 100;
+int shif_in_frames = 50; // decalaje del efecto en frames.
+
+f@dist = fit(@Frame - turbulence*shif_in_frames, start_effect, end_effect, 0.0, 1.0);
+adjustPrimLength(0, @primnum, @perimeter, @perimeter * @dist);
+```
+
+
