@@ -216,6 +216,7 @@ int end_effect   = 100;
 int shif_in_frames = 50; // decalaje del efecto en frames.
 
 f@dist = fit(@Frame - turbulence*shif_in_frames, start_effect, end_effect, 0.0, 1.0);
+// void adjustPrimLength(const int geo, prim; const float currentlength, targetlength)
 adjustPrimLength(0, @primnum, @perimeter, @perimeter * @dist);
 ```
 
