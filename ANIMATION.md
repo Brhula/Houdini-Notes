@@ -6,4 +6,4 @@ SHIFT+middle mouse button : añadir el canal que se selecciona al "Animation edi
 ***ANIMATION EDITOR shortcuts***   
    
 CONTROL + click on keyframe : mover libremente el keyframe en tiempo y valor   
-
+CONTROL drag en la tangente : cambiar solo la longitud sin cambiar el "slope" (angulo del keyframe)   
