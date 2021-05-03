@@ -21,7 +21,7 @@ i@gl_wireframe = 1;
 ```
 **PRIMITIVE // MOSTRAR en ROJO N-GONGS** 
 ```C#
-// wrangler run over PIRMITIVE (once)
+// wrangler run over PRIMITIVE (once)
 if (primvertexcount(0, @primnum) > 4) // Si se quieren motrar triangulos poner "<"
 {@Cd = set(1, 0, 0);}
 ```
