@@ -19,7 +19,12 @@ float speed = length(v@v);      // Magnitud de la velocidad
 // wrangler run over DETAIL (once)
 i@gl_wireframe = 1;
 ```
-
+**PRIMITIVE // MOSTRAR en ROJO N-GONGS** 
+```C#
+// wrangler run over PIRMITIVE (once)
+if (primvertexcount(0, @primnum) > 4) // Si se quieren motrar triangulos poner "<"
+{@Cd = set(1, 0, 0);}
+```
 **OBJETO // Centrar el pivot y mover al origen de coordenadas** 
 ```C#
 //  Center Pivot and Move to Origin
