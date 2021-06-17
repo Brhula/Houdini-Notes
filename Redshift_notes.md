@@ -50,7 +50,10 @@ Use node "Bump Blender" to combine Normal and Bump mapping.
 - Scatter:  (like "diffuse") tiende a hacer más brillante el humo
 - Emission: (like "incandescence") para fuego. Utilizar "head" o "Temperature" para conseguir la incandescencia del fuego.
 - Shadow density: densidad de las sombras. Valores bajos para nubes más transparentes
-	
+
+### STRANDS and CURVES   
+- No admite color (u otros atributos) por "point", solo por cada curva. Los colores (Cd) son uno por curva. Si hay que hacer render con mas de un color hay que transformarlo a "mesh"
+
 ### TIPS:   
 - *Volumen mas o menos opaco:* incrementat tanto el "Absortion coefficient" como el "scatter coefficient" al mismo tiempo mas brillante o  más oscuro: modificar solamente "scatter coefficient"
 - *Color de todo el volumen:* modificar "scatter tint". Utilizar la rampa para remapear según la densidad: Izquierda--> menos denso, derecha--> más densidad
