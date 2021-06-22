@@ -53,6 +53,7 @@ Use node "Bump Blender" to combine Normal and Bump mapping.
 
 ### STRANDS and CURVES   
 - No admite color (u otros atributos) por "point", solo por cada curva. Los colores (Cd) son uno por curva. Si hay que hacer render con mas de un color hay que transformarlo a "mesh"
+- Para tener strands/curvas con colores diferentes, colorear "por primitiva" y luego hacer un "attribute promote" a "points". De esta forma si pilla los colores (para cada curva completa). Entonces se puede pillar el "RS color data" en el shader.
 
 ### TIPS:   
 - *Volumen mas o menos opaco:* incrementat tanto el "Absortion coefficient" como el "scatter coefficient" al mismo tiempo mas brillante o  más oscuro: modificar solamente "scatter coefficient"
