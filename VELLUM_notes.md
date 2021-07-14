@@ -5,7 +5,10 @@ Notas de varios tipos sobre "Vellum".
 **NOTAS.**   
 
 PREPARAR para SIMULAR:
-- "Always sanity test pscale": El valor pscale se hereda de la geometria de entrada (input). Comprobar siempre si funciona.
+- "Always sanity test pscale": El valor pscale se hereda de la geometria de entrada (input). Comprobar siempre si funciona.   
+- ESCALA: es importante ya que 1 unidad Houdini es un metro. Escalar la escena para que encaje correctamente en estos parametros.   
+- Intentar poner las UVs cuanto antes, para que no tengamos que rehacer cosas despues de haber simulado.   
+- El nodo "remesh" es muy util para conseguir una "mesh" que tenga una subdivision triangular similar en todas partes. Evita "artifacts".
 
 MEJORAR SIMULACIÓN:   
   1) probar incrementando ""sub-steps"".   
@@ -17,6 +20,9 @@ MEJORAR SIMULACIÓN:
 ANIMACIONES GUIADAS:
 - Para guiar animaciones se   
 
+CLOTH:
+- Empezar con "substeps" de 4. Menos hace el comportamiento del cloth poco creible. 
+
 **QUE HACER PARA:**   
 - **Aumentar la friccion del tejido** : En el solver (en SOPS) hay un parametro "Static Threshold" que lo controla el atributo "friction" (si no hay atributo "friction" entonces su valor 1 por defecto). Esta a 0.5, si lo subimos el tejido aumenta la friccion y resbala menos.   
 
@@ -27,4 +33,5 @@ Se fija en el ""vellum constraint"". Al iniciar la simulación, si hay puntos qu
 
 **Nodos.**   
 Otras combinacione posibles.
+
 
