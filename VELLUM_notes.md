@@ -26,7 +26,7 @@ CLOTH:
 **CLOTH VELLUM CONSTRAINT:**   
 - STIFFNESS: Cuan elastico es el tejido. Por defecto (1e+10) tiene un valor en el que no se estira o comprime. Tocandolo un poco se consiguen efectos interesantes.   
 - Con "STIFFNESS-->Rest Length Scale" podemos controlar la longitud del cloth. Para hacerlo mas grande o pequenyo. Es interesante utilizar "paint attributes" para pintar una mascara que aisle partes que queremos cambiar el comportamiento.
-- BEND: Cuento puede doblarse cada poligono sobre si mismo. Valores altos hacen el tejido con menos arrugas. Valores bajos permiten mas arrugas.
+- BEND: Cuento puede doblarse cada poligono sobre si mismo. Valores altos hacen el tejido con menos arrugas. Valores bajos permiten mas arrugas. ATENCION: la resolucion del "mesh" juega un papel importante en cuanto se puede arrugar. Pocos polygonos, pocas arrugas....
 
 **QUE HACER PARA:**   
 - **Aumentar la friccion del tejido** : En el solver (en SOPS) hay un parametro "Static Threshold" que lo controla el atributo "friction" (si no hay atributo "friction" entonces su valor 1 por defecto). Esta a 0.5, si lo subimos el tejido aumenta la friccion y resbala menos.   
