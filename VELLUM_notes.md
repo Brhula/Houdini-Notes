@@ -2,10 +2,17 @@
 
 Notas de varios tipos sobre "Vellum".  
 
+**ATRIBUTOS/PARAMETROS.**   
+
+- MASS: Afecta a como interaciona con las "POP forces" y como de fuertes son los "constraints". Cuanto mayor, mas "peso" de la tela. Cuanto menor, mas "liviana" la tela.   
+- DENSITY (depende de MASS): Multiplicador de la masa. Forma rápida de tocar todo el "peso" del tejido cuando Vellum calcula la masa. Adminte multiplicarlo por un atributo.   
+- THICKNESS: grosor del punto. Se almacana en "pscale".   
+
 **NOTAS.**   
 
-PREPARAR para SIMULAR:
-- "Always sanity test pscale": El valor pscale se hereda de la geometria de entrada (input). Comprobar siempre si funciona.   
+PREPARAR para SIMULAR:   
+
+- "Always sanity test pscale": El valor pscale ("thickness") se hereda de la geometria de entrada (input). Comprobar siempre si funciona.   
 - ESCALA: es importante ya que 1 unidad Houdini es un metro. Escalar la escena para que encaje correctamente en estos parametros.   
 - Intentar poner las UVs cuanto antes, para que no tengamos que rehacer cosas despues de haber simulado.   
 - El nodo "remesh" es muy util para conseguir una "mesh" que tenga una subdivision triangular similar en todas partes. Evita "artifacts".
