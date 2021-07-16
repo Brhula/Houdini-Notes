@@ -28,7 +28,7 @@ ANIMACIONES GUIADAS:
 - Para guiar animaciones se   
 
 CLOTH:
-- Empezar con "substeps" de 4. Menos hace el comportamiento del cloth poco creible. 
+- Empezar con "substeps" de 4 o 5. Menos hace el comportamiento del cloth poco creible al hacerlo muy elastico.   
 
 **CLOTH VELLUM CONSTRAINT:**   
 - STIFFNESS: Cuan elastico es el tejido. Por defecto (1e+10) tiene un valor en el que no se estira o comprime. Tocandolo un poco se consiguen efectos interesantes.   
