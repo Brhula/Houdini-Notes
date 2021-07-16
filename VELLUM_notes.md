@@ -37,7 +37,8 @@ CLOTH:
 
 **QUE HACER PARA:**   
 - **Aumentar la friccion del tejido** : En el solver (en SOPS) hay un parametro "Static Threshold" que lo controla el atributo "friction" (si no hay atributo "friction" entonces su valor 1 por defecto). Esta a 0.5, si lo subimos el tejido aumenta la friccion y resbala menos.   
-- Hacer "pin" de una parte del mesh: para que sea independiente de la resulucion del "mesh", utilizar un "group node" con el "Keep in Bounding Regions" activado. Eso nos da un volument en que los puntos que esten dentro perteneceran al grupo.
+- **Hacer "pin" de una parte del mesh** : para que sea independiente de la resulucion del "mesh", utilizar un "group node" con el "Keep in Bounding Regions" activado. Eso nos da un volument en que los puntos que esten dentro perteneceran al grupo.
+- **Mas o menos arrugas** : Cambiar el "bend stiffness". Menos valor = más arrugas. Mas valor = menos arrugas. Si es cero, muchas arrugas...   
 
 **PARAMETROS.**   
 Thickness: "es el parametro ""pscale"", que sirve para saber la escala de los puntos iniciales.   
