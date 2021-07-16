@@ -5,7 +5,7 @@ Notas de varios tipos sobre "Vellum".
 **ATRIBUTOS/PARAMETROS.**   
 
 - MASS: Afecta a como interaciona con las "POP forces" y como de fuertes son los "constraints". Cuanto mayor, mas "peso" de la tela. Cuanto menor, mas "liviana" la tela.   
-- DENSITY (depende de MASS): Multiplicador de la masa. Forma rápida de tocar todo el "peso" del tejido cuando Vellum calcula la masa. Adminte multiplicarlo por un atributo.   
+- DENSITY (depende de MASS): Multiplicador de la masa. Forma rápida de tocar todo el "peso" del tejido cuando Vellum calcula la masa. Admite multiplicarlo por un atributo.   
 - THICKNESS: grosor del punto. Se almacana en "pscale".   
 
 **NOTAS.**   
