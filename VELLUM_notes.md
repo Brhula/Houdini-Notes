@@ -18,7 +18,7 @@ PREPARAR para SIMULAR:
 - El nodo "remesh" es muy util para conseguir una "mesh" que tenga una subdivision triangular similar en todas partes. Evita "artifacts".
 
 MEJORAR SIMULACIÓN:   
-  1) probar incrementando ""sub-steps"".   
+  1) probar incrementando ""sub-steps"".En cloth es conveniente comenzar con 4 o 5.   
   2) comprobar ""Thickness"", dependiendo de la escala de la escena.   
      Si son muy grandes, la escena se ralentiza (calculo de colisión), y pueden aparecer ""spikes"" y protusiones   
      (el solver se vuelve tonto).   
