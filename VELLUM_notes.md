@@ -24,8 +24,8 @@ MEJORAR SIMULACIÓN:
      (el solver se vuelve tonto).   
      Si son pequeños, tendremos más errores de simulación."   
 
-ANIMACIONES GUIADAS:
-- Para guiar animaciones se   
+ANIMACIONES:
+- NO se puede animar parametros a nivel de objetos (SOP). Hay que hacerlo dentro del solver (DOP). Constraints y parámetros deben animarse dentro del sistema de dinamicas.   
 
 CLOTH:
 - Empezar con "substeps" de 4 o 5. Menos hace el comportamiento del cloth poco creible al hacerlo muy elastico.   
@@ -45,7 +45,5 @@ Thickness: "es el parametro ""pscale"", que sirve para saber la escala de los pu
 Se fija en el ""vellum constraint"". Al iniciar la simulación, si hay puntos que se interseccionan, vellum escalará los puntos conflictivos para que el  solver no explote.
 - Debe ser lo suficientemente pequeño para que permita las arrugas."
 
-**Nodos.**   
-Otras combinacione posibles.
 
 
