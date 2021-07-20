@@ -13,7 +13,13 @@ Colección de "snippets" (trozos de código) para realizar funciones concretas. 
 ```C#
 vector dir = normalize(v@v);    // direccion del vector de velocidad
 float speed = length(v@v);      // Magnitud de la velocidad
-```
+```   
+Distancia desde el centro del objeto:
+```C#
+vector center = getbbox_center(0);
+@dist = distance(@P, center);
+```   
+
 **DETAIL // MOSTRAR SOLO "WIREFRAME" en el VIEWPORT** 
 ```C#
 // wrangler run over DETAIL (once)
