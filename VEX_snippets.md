@@ -39,10 +39,14 @@ vector centroid = getbbox_center(0);
 vector dist = centroid - 0;
 v@P -= dist;
 ```
+**OBJETO // Aplicar una vibración (noise) en el eje de las Y** 
+```C#
+// Noise on Y // set a wrangle to run over points
+@P += set(0,(noise(@Time*10)-0.5), 0);
+```
 **PRIMITIVA // Crear un punto en el centroide de cada primitiva** 
 ```C#
-// Create points on centroid of primitive
-// set a wrangle to run over primitives
+// Create points on centroid of primitive // set a wrangle to run over primitives
 int prim_points[];
 vector accum_pos, pos;
 accum_pos = {0, 0, 0};
@@ -67,14 +71,12 @@ removeprim(0, @primnum, 1); // delete primitive (optional)
 ```
 **PUNTOS // BLENSHAPE entre dos inputs mediante un atributo "mask"** 
 ```C#
-// Blenshape utilizando "@mask" para selecciona input
-// set a wrangle to run over points
+// Blenshape utilizando "@mask" para selecciona input // set a wrangle to run over points
 @P = lerp(@P,point(1,"P", @ptnum),@mask);
 ```
 **PUNTOS // Borrar puntos de forma aleatoria según una tolerancia** 
 ```C#
-// This snippet will delete random points based on the threshold slider
-// set a wrangle to run over points
+// This snippet will delete random points based on the threshold slider // set a wrangle to run over points
 if ( rand(@ptnum) > ch('threshold') ) {
    removepoint(0,@ptnum);
 }
@@ -96,14 +98,12 @@ if ((_ndc[2] > 0 + _errorz))   removepoint(geoself(), @ptnum);
 
 **PUNTOS // Normales aleatorias en los puntos** 
 ```C#
-// Random normals
-// set a wrangle to run over points
+// Random normals // set a wrangle to run over points
 v@N=set(fit01(rand(@ptnum),-1,1),fit01(rand(@ptnum+1),-1,1),fit01(rand(@ptnum+2),-1,1));
 ```
 **PUNTOS // Tamaño aleatorio de los puntos, dando maximo, minimo, semilla y RAMPA de distribucion** 
 ```C#
-// SOP Random pscale with Ramp, Seed, Min and Max
-// change @ptnum for @id in POPs
+// SOP Random pscale with Ramp, Seed, Min and Max // change @ptnum for @id in POPs
 // set a wrangle to run over points
 @pscale = fit01(chramp("Width", rand(@ptnum  + ch("Seed"))), ch("Min"), ch("Max"));
 ```
@@ -117,8 +117,7 @@ p@orient = eulertoquaternion(radians(set(0, angle, 0)), 0);
 Borrar v@up en caso que ya exista.
 ```C#
 // SOP Random Rotation Wrangle
-// if v@up exists, delete first line
-// set a wrangle to run over points
+// if v@up exists, delete first line // set a wrangle to run over points
 v@up = {0.0, 1.0, 0.0};
 float angle = ch("rot_amount");
 float rand = fit01(random(@ptnum+311),0,angle);
@@ -146,8 +145,7 @@ getbbox(0, min, max);
 
 **PUNTOS // Transfer de color (y P, posición) desde el segundo input.**
 ```C#
-// Attribute transfer COLOR (and P) from other inputs
-// set a wrangle to run over points
+// Attribute transfer COLOR (and P) from other inputs // set a wrangle to run over points
 int handle = pcopen(@OpInput2, "P", @P, chf("search_radius"), chi("num_of_Points"));
 vector lookup_P = pcfilter(handle, "P"); //Average P from second input
 vector lookup_Cd = pcfilter(handle, "Cd"); //Average Cd from second input
@@ -197,8 +195,7 @@ if (len(pts)==1){
 
 **CURVAS // Grosor de curva mediante rampa**
 ```C#
-// set a wrangle to run over points
-// Custom Width Along Curve
+// Custom Width Along Curve // set a wrangle to run over points
 // 
 // needs uvtexture node set to "rows and columns" or "spline"
 // running over points before it
@@ -209,16 +206,14 @@ float width = chf("width");
 ```
 **CURVAS // Eliminar primer y ultimo punto de una primitiva (típicamente curvas)**
 ```C#
-// Delete first and last curve points
-//set a wrangle to run over primitives
+// Delete first and last curve points //set a wrangle to run over primitives
 int primpts[] = primpoints(0,@primnum);
 removepoint(0,primpts[0]);  // First point
 removepoint(0,primpts[-1]); // Last point
 ```
 **CURVAS // MULTI CARVE: hacer un carve animado en el que las curvas no acaban todas al mismo tiempo**
 ```C#
-// MULTI CARVE. Needs a "mesure" SOP node with computed @perimeter for prims
-//set a wrangle to run over primitives
+// MULTI CARVE. Needs a "mesure" SOP node with computed @perimeter for prims //set a wrangle to run over primitives
 #include <groom.h>
 
 float turbulence = rand(@primnum); // get a random number
