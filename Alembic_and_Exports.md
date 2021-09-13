@@ -2,6 +2,7 @@
 
 - El "frame rate" del Alembic y la escena deben coincidir.
 - Se puede hacer "time shift" en el nodo de Alembic en el campo "frame" con la expresión $FF+offset
+- Para reposicionar un "alembic archive" lo mejor es poner un nulo, y emparentarlo (como padre) al alembic (como hijo). Luego se aplican las típicas TRS para ajustar a plano.
 
 
 ### ALEMBIC exports to Maya
