@@ -1,3 +1,8 @@
+### ALEMBIC in Houdini
+
+- El "frame rate" del Alembic y la escena deben coincidir.
+- Se puede hacer "time shift" en el nodo de Alembic en el campo "frame" con la expresión $FF+offset
+
 
 ### ALEMBIC exports to Maya
 
