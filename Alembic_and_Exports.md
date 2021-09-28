@@ -4,6 +4,17 @@
 - Se puede hacer "time shift" en el nodo de Alembic en el campo "frame" con la expresión $FF+offset
 - Para reposicionar un "alembic archive" lo mejor es poner un nulo, y emparentarlo (como padre) al alembic (como hijo). Luego se aplican las típicas TRS para ajustar a plano.
 
+### ALEMBIC IMPORT in Houdini
+
+- Para saber cuando empieza y cuando acaba un alembic, pinchar "info" en el nodo SOP del alembic. Lo pone en segundos, no en frames.
+- El fotograma actual del alembic está en el "primitive intrinsic" abcframe. Está en segundos, no en frames.
+- el intrinsic "abcframe" se puede manipular en VEX para tocar velocidad de un alembic:
+```C#
+// VEX running on primitive. Poner solo una de las lineas.
+setprimintrinsic(0, "abcframe", @primnum, 2.0, "set"); // forzamos el segundo 2
+setprimintrinsic(0, "abcframe", @primnum, 0.5, "mult"); // Velocidad a mitad
+```
+
 
 ### ALEMBIC exports to Maya
 
