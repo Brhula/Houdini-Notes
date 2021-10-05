@@ -8,6 +8,8 @@
 ### INTRODUCCION ###
 El elemento esencial de los crowds son los "packed agents". Es parecido a una "packed primitive", ya que es un punto que incluye toda la información sobre la geometria, clips de animación, metadata y otros elementos.   
 
+En los "intrinsics" del "packed agent" está la información necesaria para procesar el "agent".
+
 
 ### NOTAS ###   
 - Si la particula tienen velocidad inicial ("v"), entonces ignora el parametro "heading".   
