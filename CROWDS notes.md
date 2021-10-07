@@ -44,7 +44,10 @@ Nodos interesantes en DOP:
 - en el "AGENT" se pone el personaje en T-pose y SIN animación.   
 - En el "AGENT  CLIP" se ponen las animaciones de los joints (sin necesidad de tener "skin")   
 - Los clips de animación deben tener un loop perfecto para que no haya saltos. NO hay que tenerlos en T-pose al principio   
-- IMPORTANTE: La estructura de los joints debe ser la misma en el RIG que en los clips de animación. De lo contrario se hace un lio en Houdini.   
+- IMPORTANTE: 
+  - La estructura de los joints debe ser la misma en el RIG que en los clips de animación. De lo contrario se hace un lio en Houdini.   
+  - El NOMBRE de los joints debe coincidir
+  - Asegurarse que el esqueleto animado está exactamente en el plano XZ con los pies en el suelo. Si no, flota.
 
 ## CROWD WORKFLOW   
 
