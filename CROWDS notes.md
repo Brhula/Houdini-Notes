@@ -38,6 +38,14 @@ Nodos interesantes en DOP:
 **POP Steer SOLVER** : Used internally in the crowd solver to integrate steering forces. Se pone al final de las fuerzas "steer", para que haga los calculos. Si se utiliza, parece que las fuerzas funcionan mejor para separar las particulas y los obstaculos.   
 
 
+
+## FBX PREPARATION
+
+- en el "AGENT" se pone el personaje en T-pose y SIN animación.   
+- En el "AGENT  CLIP" se ponen las animaciones de los joints (sin necesidad de tener "skin")   
+- Los clips de animación deben tener un loop perfecto para que no haya saltos. NO hay que tenerlos en T-pose al principio   
+- IMPORTANTE: La estructura de los joints debe ser la misma en el RIG que en los clips de animación. De lo contrario se hace un lio en Houdini.   
+
 ## CROWD WORKFLOW   
 
 - Agent : Nodo basico para importar el "agente" (el modelo fbx/rig/etc). Se puede poner el modelo en T-pose y luego incorporar animaciones. Crea un "packed agent"
