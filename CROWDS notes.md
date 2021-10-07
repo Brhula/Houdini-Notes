@@ -48,6 +48,7 @@ Nodos interesantes en DOP:
   - La estructura de los joints debe ser la misma en el RIG que en los clips de animación. De lo contrario se hace un lio en Houdini.   
   - El NOMBRE de los joints debe coincidir
   - Asegurarse que el esqueleto animado está exactamente en el plano XZ con los pies en el suelo. Si no, flota.
+  - Al exportar animación, vigilar que solo se exporte la parte del clip animada. Si no, el clip se para.
 
 ## CROWD WORKFLOW   
 
