@@ -6,28 +6,12 @@ En una ventana (nueva o ya existente) seleccionar:
 
 Podemos añadir un "style sheet" a un objeto, o a la escena entera.
 
+- STYLE: Contiene especificaciones para el "TARGET" y una lista de "OVERRIDES" para modificar el "TARGETED GEO"
+- TARGET: A que geometria debe aplicarse las modificaciones.
+- OVERRIDE: Como modificar los materiales de la geometria seleccionada.   
+   
+- El orden de los elementos en el stylesheet es importante. Se ejecutan de arriba hacia abajo. Los ultimos tienen preferencia sobre los primeros.   
+- los objetos adicionales (sombreros, cascos, herramientas) anadidos mediante "LAYERS" se acceden en el primer grupo de sub-targets (Agent Shape)
+- 
+
 [PETfactory Style Sheets](https://www.petfactory.se/notes/houdini_stylesheets/)   
-
-- El orden de los elementos en el stylesheet es importante. Se ejecutan de arriba hacia abajo. Los ultimos tienen preferencia sobre los primeros.
-
-### INTRODUCCION ###
-El elemento esencial de los crowds son los "packed agents". Es parecido a una "packed primitive", ya que es un punto que incluye toda la información sobre la geometria, clips de animación, metadata y otros elementos.   
-
-
-### NOTAS ###   
-- Si la particula tienen velocidad inicial ("v"), entonces ignora el parametro "heading".   
-- Aumentar los "sub-steps" en el DOP hace que mejore el comportamiento en giros y obstaculos ("espasmos" en los agentes).   
-
-
-### "Intrinsics" interesantes:
-- agentclipnames : name of current clip
-- agentcliptimes : contiene el "time" en el que se encuentra el clip. Se puede manipular directamente. Por ejemplo:
-```C++
-float t[];
-t[0] = @startoffset + @Time/@pscale*2;
-setagentcliptimes(0,@primnum,t);
-```
-
-steer forces are normalised, so playing with the weights is key   
-
-## CROWDS // MATERIAL StyleSheets ##   
