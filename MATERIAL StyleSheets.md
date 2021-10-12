@@ -8,6 +8,8 @@ Podemos añadir un "style sheet" a un objeto, o a la escena entera.
 
 [PETfactory Style Sheets](https://www.petfactory.se/notes/houdini_stylesheets/)   
 
+- El orden de los elementos en el stylesheet es importante. Se ejecutan de arriba hacia abajo. Los ultimos tienen preferencia sobre los primeros.
+
 ### INTRODUCCION ###
 El elemento esencial de los crowds son los "packed agents". Es parecido a una "packed primitive", ya que es un punto que incluye toda la información sobre la geometria, clips de animación, metadata y otros elementos.   
 
