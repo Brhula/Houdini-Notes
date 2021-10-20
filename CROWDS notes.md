@@ -65,6 +65,8 @@ Nodos interesantes en DOP:
 - SIMULATION
 
 
-## CROWD RENDERING
+## CROWD HOW TO   
+
+- SABER QUE NOMBRES HAY EN @agenshapename PARA ASIGNARLOS A STYLESHEET: utilizar un nodo "unpack" o "agent unpack" y mirar en las primitivas. En la columna "agentshapename" deben aparecer los nombres. Además deberian coincidir con los "mesh names" de la jerarquía Maya y el equivalente en C4D. 
 
 
