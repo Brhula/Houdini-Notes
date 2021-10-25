@@ -4,4 +4,5 @@
    
 
 [Mantra Tips](https://vfxbrain.wordpress.com/2016/03/16/mantra-tips/)   
-[Procedural Material with Material Builder](https://www.artstation.com/blogs/sercan/vpZZ/houdini-procedural-material-with-material-builder)
+[Procedural Material with Material Builder](https://www.artstation.com/blogs/sercan/vpZZ/houdini-procedural-material-with-material-builder)   
+[Houdini 16 MasterClass - custom shading](https://www.youtube.com/watch?v=e14kHmVSbIc&t=40s)   
