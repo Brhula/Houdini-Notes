@@ -4,3 +4,4 @@
    
 
 [Mantra Tips](https://vfxbrain.wordpress.com/2016/03/16/mantra-tips/)   
+[Procedural Material with Material Builder](https://www.artstation.com/blogs/sercan/vpZZ/houdini-procedural-material-with-material-builder)
