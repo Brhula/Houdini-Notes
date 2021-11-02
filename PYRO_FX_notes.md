@@ -16,12 +16,13 @@
    - Valor alto --> Temperatura mas baja   
    - Valor bajo --> Temperatura mas alta    
 - **DISSIPATION** : [0-1]como de rapido desaparece es gas. Numeros mas altos hacen desaparecer mas rapido.   
-- **DISTURBANCE** : Anyade ruido blanco a la simulcaion, para romper uniformidad. Sirve para romper "mushrooms". Demasiado y sera muy evidente.   
+- **DISTURBANCE** : Anyade ruido blanco a la simulacion, para romper uniformidad. Sirve para romper "mushrooms". Demasiado y sera muy evidente.   
 
 ### MICROSOLVERS:   
 - **DISTURBANCE (v2.0)** : Agrega detalles finos a una simulación de humo aplicando fuerzas de "perturbación" a la velocidad. Recomendado para romper "mushrooms". Es buena idea aplicar varios con diferentes parametros  (tipicamente "block-size").   
    - Strength : fuerza del efecto   
    - Threshold range : toma el input (densidad tipicamente) y lo remapea como 0-1 para multiplicarlo por "disturbance" (strength). Cualquier valor por encima de 0.05 no se vera afectado (valores con mayor densidad), cuanto más cerca de 0  más se vera afectado. Basicamente lo que hace es potenciar el efecto en los bordes del humo para conseguir más detalle.   
+- **GAS BLUR** : Sirve para "suavizar" (blur) el campo indicado. RECORDAR de poner en el "field" lo que queramos blurear (típicamente será "density").   
    
 ### COLISIONES con PYRO:   
 **Utilzar VDB para el calculo de colisiones**   
