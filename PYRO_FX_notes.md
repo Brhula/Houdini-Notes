@@ -1,3 +1,11 @@
+## PYRO FX H18.5 and UP   
+El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y unos presets en "SOPS" que permiten cosas complejas sin necesidad de entrar en "DOPS"   
+### Workflow para la versión 18.5 y posteriores:   
+
+### Notas para fuego:
+- Necesitamos al menos "Temperature" y "burn". "Burn" se utiliza como emisor del fuego.
+- Mejor dejar "density" para que haga un poco de "smoke". Se puede controlar en el shading.
+- Desactivar "expansion" para que no haga "bolas de fuego" (como en las explosiones). en H19 Tab "Shape-->Flame Expansion.   
 ## PYRO FX NOTES
 
 ### WORKFLOW tipico:   
