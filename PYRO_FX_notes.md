@@ -64,3 +64,4 @@ Luego, para hacer la cache, poner un TimeWarp para recuperar velocidad original.
 - **SIMULAR EL VIENTO SUAVE QUE MUEVE EL HUMO:**   
    - Incluir un nodo (o mas de uno) de "turbulence", con settings suaves para que mueva un poco el humo.   
    - Incorporar un nodo de "DRAG FORCE" a la simulacion, para que vaya frenando progresivamente las fuerzas que impulsaron originariamente el humo (un escape, explosion, etc.). Eso le da realismo al frenar el humo, y el "turbulence" se encarga de que no se quede completamente parado.
+- **BOLA DE FUEGO y luego LLAMAS** : Animar en el PyroSolver  el "shape->Flame expansion" que controla la tendencia a que el fuego se expanda. Sirve normalmente para explosiones.   
