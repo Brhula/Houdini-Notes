@@ -9,7 +9,10 @@ El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y 
 - Para hacer el shading, convertir el volument en VDB (ConvertVDB-->VDB). Es mucho más rápido de calculo.   
 
 ## PYRO SOURCE SPREAD   
-- "Combustion --> Ignition Temperature" marca la sensibilidad a la que el FUEL comenzara a quemar. Cuanto mas bajo, mas facimente prende.
+- **Hacer que el "BURN" siga al fuel** : Jugar con los siguentes parametros.
+   - "Combustion --> Ignition Temperature" marca la sensibilidad a la que el FUEL comenzara a quemar. Cuanto mas bajo, mas facimente prende.
+   - Subir en "Temnperature change" el "Search Radius"  y "Max Neighbors".
+   - Si le estamos metiendo la "Temperature" blurearla tambien ayuda.
 
 ## PYRO FX NOTES
 
