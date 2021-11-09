@@ -15,6 +15,7 @@ El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y 
 - Para hacer el shading, convertir el volument en VDB (ConvertVDB-->VDB). Es mucho más rápido de calculo.   
 
 ## PYRO SOURCE SPREAD   
+- Vigilar el parametro "Fuel-->Injection Rate". Este parametro incorpora nuevo fuel en cada iteracion. Si queremos que se queme y desaparezca, hay qe ponerlo a cero.
 - **Hacer que el "BURN" siga al fuel** : Jugar con los siguentes parametros.
    - "Combustion --> Ignition Temperature" marca la sensibilidad a la que el FUEL comenzara a quemar. Cuanto mas bajo, mas facimente prende.
    - Subir en "Temnperature change" el "Search Radius"  y "Max Neighbors".
