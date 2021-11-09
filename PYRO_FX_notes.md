@@ -1,5 +1,11 @@
 ## PYRO FX H18.5 and UP   
-El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y unos presets en "SOPS" que permiten cosas complejas sin necesidad de entrar en "DOPS"   
+El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y unos presets en "SOPS" que permiten cosas complejas sin necesidad de entrar en "DOPS"     
+   
+**FUEL**: combustible a quemar. Para fuegos que estan quemando siempre necesita "regenerarse" (con "injection", por ejemplo)
+**TEMPERATURE**: Temperatura. A una determinada temperatura, el fuel hace combustion y da origen al "BURN".
+**BURN**: en donde actualmente esta quemando (burning)   
+**TOTAL BURN**: lor que en algun momento se ha quemado   
+
 ### Workflow para la versión 18.5 y posteriores:   
 
 ### Notas para fuego:
