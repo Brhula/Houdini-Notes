@@ -6,6 +6,8 @@ El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y 
 - Necesitamos al menos "Temperature" y "burn". "Burn" se utiliza como emisor del fuego.
 - Mejor dejar "density" para que haga un poco de "smoke". Se puede controlar en el shading.
 - Desactivar "expansion" para que no haga "bolas de fuego" (como en las explosiones). en H19 Tab "Shape-->Flame Expansion.   
+- Para hacer el shading, convertir el volument en VDB (ConvertVDB-->VDB). Es mucho más rápido de calculo.   
+
 ## PYRO FX NOTES
 
 ### WORKFLOW tipico:   
