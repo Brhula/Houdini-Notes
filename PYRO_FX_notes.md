@@ -15,6 +15,8 @@ El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y 
 - Para hacer el shading, convertir el volument en VDB (ConvertVDB-->VDB). Es mucho más rápido de calculo.   
 
 ## PYRO SOURCE SPREAD   
+   
+Parametros y elementos que influencian el comportamiento de este nodo:   
 ![Alt text](images/PYRO_source_spread.jpg?raw=true "Title")   
 - Vigilar el parametro "Fuel-->Injection Rate". Este parametro incorpora nuevo fuel en cada iteracion. Si queremos que se queme y desaparezca, hay qe ponerlo a cero.
 - **Hacer que el "BURN" siga al fuel** : Jugar con los siguentes parametros.
