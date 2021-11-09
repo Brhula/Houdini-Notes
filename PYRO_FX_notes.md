@@ -8,6 +8,9 @@ El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y 
 - Desactivar "expansion" para que no haga "bolas de fuego" (como en las explosiones). en H19 Tab "Shape-->Flame Expansion.   
 - Para hacer el shading, convertir el volument en VDB (ConvertVDB-->VDB). Es mucho más rápido de calculo.   
 
+## PYRO SOURCE SPREAD   
+- "Combustion --> Ignition Temperature" marca la sensibilidad a la que el FUEL comenzara a quemar. Cuanto mas bajo, mas facimente prende.
+
 ## PYRO FX NOTES
 
 ### WORKFLOW tipico:   
