@@ -8,6 +8,7 @@
 
 - Para saber cuando empieza y cuando acaba un alembic, pinchar "info" en el nodo SOP del alembic. Lo pone en segundos y en frames.
 - El fotograma actual del alembic está en el "primitive intrinsic" abcframe. Está en segundos, no en frames.
+- Los ficheros alembic soportan "sub-frame animation" al utilizar un escalar (float) como número de frame, de forma que se pueden poner a "slow motion" con facilidad.
 - el intrinsic "abcframe" se puede manipular en VEX para tocar velocidad de un alembic:
 ```C#
 // VEX running on primitive. Poner solo una de las lineas.
