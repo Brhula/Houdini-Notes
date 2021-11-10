@@ -1,3 +1,17 @@
+## PYRO FX CONCEPTS   
+   
+### FIELDS   
+   
+- **VEL (vector)** : Velocity field. El movimiento del PYRO queda definido por este campo vectorial (es una direccion).   
+- **DENSITY (scalar)** : Contiene un "float" por voxel que indica la visibilidad del "smoke".   
+- **TEMPERATURE (scalar)** : Distribución del calor.
+   - El gas más caliente tiene tendencia a subir más rápido por la flotabilidad (buoyancy)
+   - Los valores deben ir (preferiblemente) entre 0.0 y 1.0
+   - Una temperatura de 0.0 corresponde a temperatura ambiente (no "cero grados").   
+- **FLAME (scalar)** : contiene el tiempo de vida que le queda al "reactante".   
+- **DIVERGENCE (scalar)** : captura la expansión y compresión.   
+- **COLLISION and COLLISIONVEL** : contienen una máscara (mask) que indica la presencia de un objeto de colisión y la velocidad que tiene. COLLISION es positivo en las áreas que están ocupadas y negativo en el resto.
+- **ACTIVE** : es una máscara que indica en el "sparse solver" que regiones del PYRO están activas.
 ## PYRO FX H18.5 and UP   
 El workflow ha cambiado un poco, al incluir algunas herramientas interesantes y unos presets en "SOPS" que permiten cosas complejas sin necesidad de entrar en "DOPS"     
    
