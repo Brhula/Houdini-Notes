@@ -90,6 +90,7 @@ float _errorx = ch("errorx");
 float _errory = ch("errory");
 float _errorz = ch("errorz");
 
+// if ((_ndc[0] < 0 - _errorx) || (_ndc[0] > 1 + _errorx))   removepoint(geoself(), @ptnum,1); // Borrar tambien primitivas asociadas
 if ((_ndc[0] < 0 - _errorx) || (_ndc[0] > 1 + _errorx))   removepoint(geoself(), @ptnum);
 if ((_ndc[1] < 0 - _errory) || (_ndc[1] > 1 + _errory))   removepoint(geoself(), @ptnum);
 if ((_ndc[2] > 0 + _errorz))   removepoint(geoself(), @ptnum);
