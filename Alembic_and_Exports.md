@@ -26,7 +26,21 @@ Alembic "need to know" things:
 - Pack Geometry for every group of primitives before exporting. Every paked geo will appear as a Maya "shape" node.   
 - Name of last node in Houdini before "ROP Alembic" node will appear as the root transform in Maya.
 
-### Exportar GEO a Maya   
+### Exportar GEO a Maya (Metodo 1)   
+Y que en Maya aparezca con una jerarquía en el Outliner (para mejorar organizacion):
+- crear un nodo CONNECTIVITY en modo PRIMITIVE. Dejar el atributo por defecto "class"
+- crear un PRIMITIVE WRANGLER con el siguiente código (modificarlo según interese que aparezcan los nombres en Maya):
+```C++
+// Para exportar a Maya con estructura
+// wireGRP : nombre del nodo "top" de la jerarquia
+// wireGEO : nombre del nodo "transform" para cada elemento
+// wireGEOShape : nombre del nodo "shape"
+
+s@path = 'wireGRP/wireGEO' + itoa(i@class) + '/wireGEOShape' + itoa(i@class) ; 
+```
+- Utilizar un nodo ROP ALEMBIC para exportar la geometria, y activar la opción *Build Hierarchy From Attribute (path)*    
+
+### Exportar GEO a Maya (Metodo 2)   
 Y que en Maya aparezca con una jerarquía en el Outliner (para mejorar organizacion):
 - para cada elemento que queramos que aparezca por separado, hacer un ""name"" attribute. Se puede utilizar el nodo ""name"" (SOP)
 - En el "ROP Alembic" utilizar:
