@@ -19,7 +19,8 @@ setprimintrinsic(0, "abcframe", @primnum, 0.5, "mult"); // Velocidad a mitad
 
 ### ALEMBIC exports to Maya
 
-https://medium.com/@jessicabeckenbach/exporting-alembic-files-from-houdini-using-the-path-attribute-ac9f34f5ab1
+https://medium.com/@jessicabeckenbach/exporting-alembic-files-from-houdini-using-the-path-attribute-ac9f34f5ab1   
+https://ddankhazi.com/2019/07/04/houdini-to-maya-export-an-alembic-file/comment-page-1/   
 
 Alembic "need to know" things:   
 - Pack Geometry for every group of primitives before exporting. Every paked geo will appear as a Maya "shape" node.   
