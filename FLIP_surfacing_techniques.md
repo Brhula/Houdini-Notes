@@ -5,9 +5,15 @@ Técnicas para mejorar la creación de un "mesh" despues da haber simulado las p
 
 ### NODOS:   
 **FLUID COMPRESS**   
-
+Comprime particulas y volumen.
 - Generalmente merece la pena hacer "cache" justo después de este nodo.
 - En "Keep Attributes" suele merecer la pena dejar solo "v pscale id" y poco más. Lo demás ocupa sitio y no se suele usar.
+
+**PARTICLE FLUID SURFACE**   
+Genera la superficie àra hacer render y precios
+- Generalmente merece la pena hacer "cache" justo después de este nodo.
+- En "Keep Attributes" suele merecer la pena dejar solo "v pscale id" y poco más. Lo demás ocupa sitio y no se suele usar.
+
 
 **Check animation**   
 - Deactivate ""brain"" to avoid simulations   
