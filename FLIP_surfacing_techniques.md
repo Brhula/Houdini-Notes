@@ -20,7 +20,7 @@ OPTIMIZACIONES para PREVIEW:
 PARAMETROS ÚTILES:  
 Dependiendo de donde está la camara, con el "motion blur" y demás, nos interesara más o menos detalle y tamaño.
 - Particle Separation: distancia entre puntos. Mejor desligarlo de la simulación. Se puede  reconstruir a partir del "pscale" de la cache.    
-- Voxel Scale: impacta en la fidelidad del "mesh" resultante. Bajarlo mejora la calidad. CUIDADO MEMORIA!!
+- Voxel Scale: impacta en la fidelidad del "mesh" resultante. Bajarlo mejora la calidad. CUIDADO MEMORIA!! Además ralentiza notablemente el proceso.
 - Droplet scale: multiplicador del "pscale".    
 - 
 Ejemplo típico: Voxel Scale (0.45) / Influence Scale (2) / Droplet Scale (0.5)    
