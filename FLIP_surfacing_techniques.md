@@ -10,7 +10,7 @@ Comprime particulas y volumen.
 - En "Keep Attributes" suele merecer la pena dejar solo "v pscale id" y poco más. Lo demás ocupa sitio y no se suele usar.
 
 **PARTICLE FLUID SURFACE**   
-Genera la superficie para hacer render y precios
+Genera la superficie para hacer render y precios   
 OPTIMIZACIONES:
 - "Transfer attributes": merece la pena desactivarlo para ir más rápido e iterar. Activarlo para hacer render y que transfiera velocidad y demás.
 - En "Region-->Bounding Box" desactivar "Closed Boundaries". Solo hará surfacing de la superficie del FLIP.
