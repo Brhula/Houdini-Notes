@@ -19,7 +19,9 @@ OPTIMIZACIONES para PREVIEW:
 PARAMETROS ÚTILES:   
 - Particle Separation: distancia entre puntos. Mejor desligarlo de la simulación. Se puede  reconstruir a partir del "pscale" de la cache.    
 - Voxel Scale: impacta en la fidelidad del "mesh" resultante. Bajarlo mejora la calidad. CUIDADO MEMORIA!!
-- Droplet scale: multiplicador del "pscale".
+- Droplet scale: multiplicador del "pscale".    
+- 
+Ejemplo típico: Voxel Scale (0.45) / Influence Scale (2) / Droplet Scale (0.5)    
 
 - Union Compressed Fluid Surface: Junta las particulas con el volumen bajo el agua. Hay que dejarlo ON generalmente.
 - Collisions--> Substrackt Collision Volumes: En el "plug" de en medio del nodo podemos conectar geometría (generalmente la que colisiona). Puede ser VDB o la geometria en sí. Mejor VDB para mejores resultados. ES MUY LENTO!. No usarlo hasta hacer el cakculo final.
