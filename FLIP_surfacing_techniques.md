@@ -14,9 +14,15 @@ Genera la superficie para hacer render. NODO LENTO! Mejor hacer "fine tuning" an
 OPTIMIZACIONES para PREVIEW:
 - "Transfer attributes": merece la pena desactivarlo para ir más rápido e iterar. Activarlo para hacer render y que transfiera velocidad y demás.
 - En "Region-->Bounding Box" desactivar "Closed Boundaries". Solo hará surfacing de la superficie del FLIP.
-- Utilizar un "bounding box" más pequeño que toda la extensión de ka simulación (conectado a un cubo, o a mano)
+- Utilizar un "bounding box" más pequeño que toda la extensión de ka simulación (conectado a un cubo, o a mano)   
 
+PARAMETROS ÚTILES:   
+- Particle Separation: distancia entre puntos. Mejor desligarlo de la simulación. Se puede  reconstruir a partir del "pscale" de la cache.    
+- Voxel Scale: impacta en la fidelidad del "mesh" resultante. Bajarlo mejora la calidad. CUIDADO MEMORIA!!
+- Droplet scale: multiplicador del "pscale".
 
+- Union Compressed Fluid Surface: Junta las particulas con el volumen bajo el agua. Hay que dejarlo ON generalmente.
+- Collisions--> Substrackt Collision Volumes: En el "plug" de en medio del nodo podemos conectar geometría (generalmente la que colisiona). Puede ser VDB o la geometria en sí. Mejor VDB para mejores resultados. ES MUY LENTO!. No usarlo hasta hacer el cakculo final.
 
 **Check animation**   
 - Deactivate ""brain"" to avoid simulations   
