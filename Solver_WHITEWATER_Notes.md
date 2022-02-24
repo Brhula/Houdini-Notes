@@ -1,7 +1,10 @@
 ## WHITEWATER Solver  
 
 
-### Render de una secuencia sin licencia (con WaterMark):   
+### Attributes:   
+
+Depth : positivo, encima del agua. Negativo, sumergido. Se puede meter en le shader para re-mapear color.
+
 
 Hay que desactivar en la pestaña "main" el check  “Report Errors/Warnings to the ROP Node” del nodo "RS ROP". De lo contrario el render se para en cuanto la licencia falla.
 
