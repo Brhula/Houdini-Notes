@@ -1,9 +1,10 @@
 ## WHITEWATER Solver  
 
+Este solver se crea sobre (on top) de la simulacion FLIP. Por ello suele hacerse una cache del FLIP, y luego, usando los datos de la cache, se simula el "whiteweater"
 
 ### Attributes:   
 
-Depth : positivo, encima del agua. Negativo, sumergido. Se puede meter en le shader para re-mapear color.
+Depth : positivo, encima de la superficie del agua. Negativo, sumergido. CUIDADO! La superficie tambien puede ser el lado del fip que toca un colisionador! Se puede meter en le shader para re-mapear color.
 
 
 Hay que desactivar en la pestaña "main" el check  “Report Errors/Warnings to the ROP Node” del nodo "RS ROP". De lo contrario el render se para en cuanto la licencia falla.
