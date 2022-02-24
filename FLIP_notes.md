@@ -1,5 +1,9 @@
 ## FLIP NOTES
 
+### LINKs INTERESANTES:   
+
+http://www.cgchannel.com/2020/03/10-expert-tips-for-better-houdini-flip-fluid-simulations/
+
 Si estamos emitiendo fluido, el fotograma inicial de la simulación debe tener geometria desde la que emitir. De lo contrario el solver se quejará.   
 
 En la simulación FLIP se utilizan " volumes" y "grid", por ello las colisiones funcionan mejor con "volumes".   
