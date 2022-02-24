@@ -5,9 +5,14 @@ Este solver se crea sobre (on top) de la simulacion FLIP. Por ello suele hacerse
 
 ### Componentes:   
 
-- source (SOP): aqui se define las zonas donde nace y crece el "whitewater". Tambien se puede inducir manualmente.  Es en donde la simulacion busca cuales son los emisores de las particulas de "whitewater" 
-- simulate (DOP) : propiamente la simulacion, que pilla el "source" para generar y calcular el "whitewater". Es donde mas parametros suelen tocarse.
-- import (SOP) : importamos la sim, para generar le geometria que hacer render   
+- (1) source (SOP): aqui se define las zonas donde nace y crece el "whitewater". Tambien se puede inducir manualmente.  Es en donde la simulacion busca cuales son los emisores de las particulas de "whitewater" 
+- (2) simulate (DOP) : propiamente la simulacion, que pilla el "source" para generar y calcular el "whitewater". Es donde mas parametros suelen tocarse.
+- (3) import (SOP) : importamos la sim, para generar le geometria que hacer render   
+
+### (1) SOURCE (SOP):   
+
+- Se considera aceleracion, curvatura y vorticidad
+- output es un emission VDB
 
 ### Attributes:   
 
