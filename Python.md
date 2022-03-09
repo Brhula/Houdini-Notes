@@ -7,7 +7,10 @@ https://github.com/kiryha/Houdini/wiki/Python-for-artists
 https://ikrima.dev/houdini/basics/hou-python/#get-houdini-environment-variable   
 
 ```Python
-// que nodos hay seleccionados
+# que nodos hay seleccionados
 hou.selectedNodes()
 ```
-
+```Python
+# variables locales a la sesion de Houdini ($JOB,  $HIP, etc)
+hou.text.expandString('$HIP')
+```
