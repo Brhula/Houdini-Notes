@@ -39,4 +39,7 @@ Seleccionar elemento de una lista
 list = ["first","second","and third"]
 hou.ui.selectFromList(list, message='Select Parms to bake key')
 ```
-
+Seleccionar un fichero (abre un "browser")   
+```Python
+file = hou.ui.selectFile()
+```
