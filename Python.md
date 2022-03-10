@@ -28,7 +28,15 @@ hou.text.expandString('$VAMPIRE_PACKAGE/scripts')
 hou.getenv("HOUDINI_PATH") 
 ```
 ## UI STUFF:   
+Mensaje directo simple:   
 ```Python
 # Mostrar un mensaje en una ventana (bloquea houdini hasta que la cerramos)
 hou.ui.displayMessage("run! Forrest run! ")
+hou.ui.displayMessage('Hello', buttons=('OK','NO',)) 
 ```
+Seleccionar elemento de una lista   
+```Python
+list = ["first","second","and third"]
+hou.ui.selectFromList(list, message='Select Parms to bake key')
+```
+
