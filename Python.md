@@ -30,5 +30,5 @@ hou.getenv("HOUDINI_PATH")
 ## UI STUFF:   
 ```Python
 # Mostrar un mensaje en una ventana (bloquea houdini hasta que la cerramos)
-hou.ui.displayMessage("run! forrest run! ")
+hou.ui.displayMessage("run! Forrest run! ")
 ```
