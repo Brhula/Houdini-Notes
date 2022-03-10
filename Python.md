@@ -50,5 +50,6 @@ file = hou.ui.selectFile()
 Seleccionar un nodo (abre un selector "outliner")   
 ```Python
 hou.ui.selectNode()
+hou.ui.selectNode(initial_node=hou.node('/obj')) # abre el selector con "torus1" del contexto /obj seleccionado 
 ```
 
