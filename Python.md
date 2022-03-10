@@ -16,6 +16,15 @@ A partir de aquí tenemos acceso a las funciones de Houdini en Python. Ejemplos:
 hou.selectedNodes()
 ```
 ```Python
-# variables locales a la sesion de Houdini ($JOB,  $HIP, etc)
+# obtener variables locales a la sesion de Houdini ($JOB,  $HIP, etc)
 hou.text.expandString('$HIP')
+```
+```Python
+# obtener variables de Windows validas a la sesion de Houdini (PATH, HOUDINI_PATH, etc.)
+hou.getenv("HOUDINI_PATH") 
+```
+## UI STUFF:   
+```Python
+# Mostrar un mensaje en una ventana (bloquea houdini hasta que la cerramos)
+hou.ui.displayMessage("I ran! I ran so far away!")
 ```
