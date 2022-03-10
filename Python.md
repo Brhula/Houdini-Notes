@@ -34,6 +34,10 @@ Mensaje directo simple:
 hou.ui.displayMessage("run! Forrest run! ")
 hou.ui.displayMessage('Hello', buttons=('OK','NO',)) 
 ```
+Muestra texto en la barra inferior de información   
+```Python
+hou.ui.setStatusMessage("Working on it!")
+```
 Seleccionar elemento de una lista   
 ```Python
 list = ["first","second","and third"]
@@ -43,3 +47,8 @@ Seleccionar un fichero (abre un "browser")
 ```Python
 file = hou.ui.selectFile()
 ```
+Seleccionar un nodo (abre un selector "outliner")   
+```Python
+hou.ui.selectNode()
+```
+
