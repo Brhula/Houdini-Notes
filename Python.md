@@ -1,5 +1,7 @@
 ### PYTHON in Houdini
 
+Estas notas están basadas en Houdini 19 funcionando con Python3.7   
+
 ## Links interesantes:   
 
 https://www.tokeru.com/cgwiki/index.php?title=HoudiniPython   
