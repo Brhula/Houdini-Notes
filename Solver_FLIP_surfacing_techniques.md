@@ -39,7 +39,7 @@ Ejemplo típico: Voxel Scale (0.45) / Influence Scale (2) / Droplet Scale (0.5)
 Comprobamos cuantas particulas hay alrededor, y multiplicamos el numero encontrado por el "pscale". De esta forma "pscale" es mayor cuantas más particulas hay alrededor, y mas pequeño si está aislado.
 ```C++
 // Get near points with a distance. With Maximum numbre of points
-int gatheNearPoints[] = nearpoints(0,@P,chf("maxDistance", chi("maxPoints")); 
+int gatheNearPoints[] = nearpoints(0,@P,chf("maxDistance"), chi("maxPoints")); 
 // How many points are close to our point?
 float pscaleMult = len(gatheNearPoints); 
 // Compute new "pscale", with an additional global multiply.
