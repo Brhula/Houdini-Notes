@@ -30,6 +30,21 @@ hou.text.expandString('$VAMPIRE_PACKAGE/scripts')
 # obtener variables de Windows validas a la sesion de Houdini (PATH, HOUDINI_PATH, etc.)
 hou.getenv("HOUDINI_PATH") 
 ```
+## INSTALAR librerias/packages  externos:   
+
+Para instalar de forma permanente una libreria/package de Python en una versión de Houdini   
+Abrimos un windows shell externo (desde Houdini podemos hacer windows-->shell).    
+
+Cargamos PIP en houdini (lo ponemos en un directorio temporal antes de instalar)   
+```console
+curl https://bootstrap.pypa.io/get-pip.py -o D:/EXAMPLE/get-pip.py
+hython D:/EXAMPLE/get-pip.py
+```
+Y ya podemos instalar el modulo por su nombre. Por ejemplo scipy
+```console
+- hython -m pip install XXXXXXX
+```   
+
 ## UI STUFF:   
 Mensaje directo simple:   
 ```Python
