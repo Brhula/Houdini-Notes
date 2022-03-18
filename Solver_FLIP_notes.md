@@ -51,23 +51,23 @@ Factor de escalado del volumen que se utiliza para hacer el calculo de la veloci
 
 ### HOW TO / TIPS AND TRICKS   
 
-**Kill FLIP particle at some age (VEX)**   
+**// Kill FLIP particle at some age (VEX)**   
 - Activate ""life"" at ""Source Volume"" 
 - Activate ""Age Particles"" at ""FLIP Solver""
 - Create a pop Wrangler with code:   
     `if (@dead==1) removepoint(0,@ptnum);`
 
-**H17 use SOP volume fields**   
+**// H17 use SOP volume fields**   
 - create vector **velocity** on points (Geometry)
 - Use ""Volume rasterize attribute"" to create ""v"" volume
 - On DOP, use ""volume source"" DOP to convert ""v"" source volume to ""vel""
 
-**Improve smoothness of surface on small scale liquids**   
+**// Improve smoothness of surface on small scale liquids**   
 Increase number of particles via reseeding
 FLIP SOLVER --> Particle Motion--> Reseedin:
   - Increment ""surface oversampling"" (from 1.5 to 10 - 48)
   - Rise ""Oversamblipng Bandwith""  (like 1.5)
   
-**Que el fluido "resbale" por la superficie aunque tenga viscosidad**   
+**// Que el fluido "resbale" por la superficie aunque tenga viscosidad**   
 Añadir un field ""slip"" en SOP. Importar field ""slip"" en DOPs con ""sopScalarField"". 
 slip = 0, no resbala. slip=1 resbala a tope
