@@ -51,6 +51,12 @@ Factor de escalado del volumen que se utiliza para hacer el calculo de la veloci
 
 ### HOW TO / TIPS AND TRICKS   
 
+**// crear un INITIAL STATE**   
+- (1) Dentro de la "DOP network" poner al final un nodo de "file" en modo "write" que apunte a un fichero que utilizaremos como "initial state". 
+- (2) Ir hasta un fotograma que nos interese/guste (tipico posición de reposo del fluid)
+- (3) Cambiar el nodo de "write" a "read".
+- (4) conectar a un "switch" el "Flip Fluid Object" (primero) y en nodo "file" con el "initial state" (segundo) con la expresión `$SF==1`. El "simulation frame" == a 1 impica que el nodo "file" solo se leerá en el primer fotograma de la simulación, luego va por el "flip fluid object"
+
 **// Kill FLIP particle at some age (VEX)**   
 - Activate ""life"" at ""Source Volume"" 
 - Activate ""Age Particles"" at ""FLIP Solver""
@@ -70,4 +76,5 @@ FLIP SOLVER --> Particle Motion--> Reseedin:
   
 **// Que el fluido "resbale" por la superficie aunque tenga viscosidad**   
 Añadir un field ""slip"" en SOP. Importar field ""slip"" en DOPs con ""sopScalarField"". 
-slip = 0, no resbala. slip=1 resbala a tope
+slip = 0, no resbala. slip=1 resbala a tope    
+
