@@ -36,3 +36,6 @@
 
 [vfxbrain intro to PYTHOM](https://vfxbrain.wordpress.com/2016/03/15/python-in-houdini/)   
 
+### POINT CLOUD to 3D MODEL
+
+https://docs.microsoft.com/es-es/dynamics365/mixed-reality/guides/3d-content-guidelines/houdini-point-cloud
