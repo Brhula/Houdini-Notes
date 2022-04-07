@@ -36,6 +36,12 @@ Use node "Bump Blender" to combine Normal and Bump mapping.
 
 ![Alt text](images/RedShift_PBR.jpg?raw=true "Title")   
 
+### Material LAYERING  
+Utilizar un nodo "Material Blender", conectando:
+- "Base Color": es el primer material
+- En el "Layer Color 1" el material (shader) que queramos mezclar
+- En el "blend color" la máscara (textura) utilizada para mezclar los dos materiales.
+    
 ### VOLUME Rendering   
 - Add "Volume" shader to object   
 - In "volume shader", add "density" to "Channel" to create SMOKE. Its empty by default   
