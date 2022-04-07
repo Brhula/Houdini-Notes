@@ -42,6 +42,8 @@ Utilizar un nodo "Material Blender", conectando:
 - En el "Layer Color 1" el material (shader) que queramos mezclar
 - En el "blend color" la máscara (textura) utilizada para mezclar los dos materiales.
     
+Utilizar también un "Displacement Blender" y un "Bump blender".   
+
 ### VOLUME Rendering   
 - Add "Volume" shader to object   
 - In "volume shader", add "density" to "Channel" to create SMOKE. Its empty by default   
