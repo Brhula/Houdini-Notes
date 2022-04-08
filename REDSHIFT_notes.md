@@ -1,20 +1,20 @@
 ## Redshift en HOUDINI   
 
 
-### Render de una secuencia sin licencia (con WaterMark):   
+### // Render de una secuencia sin licencia (con WaterMark):   
 
 Hay que desactivar en la pestaña "main" el check  “Report Errors/Warnings to the ROP Node” del nodo "RS ROP". De lo contrario el render se para en cuanto la licencia falla.
 
-### Instancias (copy to points y similares):   
+### // Instancias (copy to points y similares):   
 
 Hay que activar en la pestaña "Instancing" en las opciones de Redshift del objeto la opción "instancing using --> Redshift Point Clouds". De lo contrario el render va muy lento.   
 
-### CROWDS:   
+### // CROWDS:   
 
 Actualmente hace falta hacer "agent unpack" para que Redshift pille bien los agentes del crowd, por lo que es bastante poco eficiente. Se pasa mucho tiempo preparando la escena antes de empezar el render.   
 
 
-### NOISE (reducir ruido)   
+### // NOISE (reducir ruido)   
 Parámetro a tocar // Tipo de ruido al que afecta.
 ```C#
 Unified samples         //  Motion blur and depth of field noise   
@@ -23,7 +23,7 @@ Shader samples          //  Indirect specular noise
 GI samples              //  GI noise   
 Volume samples (lights) //  VDBs and volumes noise 
 ```
-### PBR Materials   
+### // PBR Materials   
 Toggle "Gamma override" check on "texture" node if dealing with gray scale images.   
 Use node "Bump Blender" to combine Normal and Bump mapping.   
 - Albedo/Diffuse/Base/Color : diffuse color   
@@ -36,7 +36,7 @@ Use node "Bump Blender" to combine Normal and Bump mapping.
 
 ![Alt text](images/RedShift_PBR.jpg?raw=true "Title")   
 
-### Material LAYERING  
+### // Material LAYERING  
 Utilizar un nodo "Material Blender", conectando:
 - "Base Color": es el primer material
 - En el "Layer Color 1" el material (shader) que queramos mezclar
@@ -44,7 +44,7 @@ Utilizar un nodo "Material Blender", conectando:
     
 Utilizar también un "Displacement Blender" y un "Bump blender".   
 
-### VOLUME Rendering   
+### // VOLUME Rendering   
 - Add "Volume" shader to object   
 - In "volume shader", add "density" to "Channel" to create SMOKE. Its empty by default   
 - In "volume shader", add 'HEAT' (or 'TEMPERATURE') to the emission -> Channel to get fire and incandescence   
@@ -53,24 +53,24 @@ Utilizar también un "Displacement Blender" y un "Bump blender".
 - Turn ON "Global Illumination" to let the fire "light" the volume   
 - Check "advanced" tab in Volume shader to remap HEAT or TEMPERATURE and bring the numbers down (HEAT value is usually lower than TEMPERATURE). Like mapping 50 to 1 for TEMPERATURE  and 15 to 1 on HEAT
 	
-### VOLUME Shader   
+### // VOLUME Shader   
 - Absortion: (like "transparency") cuanto más alto, más denso el humo
 - Scatter:  (like "diffuse") tiende a hacer más brillante el humo
 - Emission: (like "incandescence") para fuego. Utilizar "head" o "Temperature" para conseguir la incandescencia del fuego.
 - Shadow density: densidad de las sombras. Valores bajos para nubes más transparentes
 
-### STRANDS and CURVES   
+### // STRANDS and CURVES   
 - No admite color (u otros atributos) por "point", solo por cada curva. Los colores (Cd) son uno por curva. Si hay que hacer render con mas de un color hay que transformarlo a "mesh"
 - Para tener strands/curvas con colores diferentes, colorear "por primitiva" y luego hacer un "attribute promote" a "points". De esta forma si pilla los colores (para cada curva completa). Entonces se puede pillar el "RS color data" en el shader.   
 
-### RENDER REFRACTANDO FONDO PERO SIN VERLO   
+### // RENDER REFRACTANDO FONDO PERO SIN VERLO   
 Si ponemos un background en el HDRI (enable background + backplate) se vera el fondo. La unica manera de hacer que el fondo refracte (con cristales por ejemplo) y que no se vea, es hacer una esfera gigante y convertirla en "matte object". Hay que desactivar todos sus componentes de visibilidad excepto "primary", de lo cantrario hara sombras y demas interferencias.
 
-### TIPS:   
+### // TIPS:   
 - *Volumen mas o menos opaco:* incrementat tanto el "Absortion coefficient" como el "scatter coefficient" al mismo tiempo mas brillante o  más oscuro: modificar solamente "scatter coefficient"
 - *Color de todo el volumen:* modificar "scatter tint". Utilizar la rampa para remapear según la densidad: Izquierda--> menos denso, derecha--> más densidad
 - **OVERSCAN:** para hacer "overscan" del render (para "plates" sin distorsion, al volver a aplicarles la distorsion), utilizar "overscan mode" a pixeles en "ROP redshift".
 	
-### WARNINGS:   
+### // WARNINGS:   
 - *Texturas:* Parece que los ficheros ".pic" de Houdini no le gustan. Hace cosas raras en el render.   
 	
