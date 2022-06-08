@@ -10,7 +10,7 @@ Notas sobre los "Vellum grains".
 
 **HOW TO**   
 
-- UTILIZAR "velocity VDB" para mover los grains: No se puede hacer un "volume source" (al estilo de "pyro"), ya que son particulas. Hay que poner un nodo "POP advect by volume" y conectarlo a "force"   
+- UTILIZAR "velocity VDB" para mover los grains: No se puede hacer un "volume source" (al estilo de "pyro"), ya que son particulas. Hay que poner un nodo "POP advect by volume" que apunte al nodo SOP y conectarlo a "force" dentro del "Vellum solver".      
 - GRANOS DE TAMAÑO DIFERENTE: hay que tocar el "pscale" antes de meterlo en el solver, y en "advanced-->grain collision" desactivar "assume uniform radius".
 
 MEJORAR SIMULACIÓN:   
