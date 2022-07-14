@@ -13,6 +13,7 @@ Notas sobre los "Vellum grains".
 - UTILIZAR "velocity VDB" para mover los grains: No se puede hacer un "volume source" (al estilo de "pyro"), ya que son particulas. Hay que poner un nodo "POP advect by volume" que apunte al nodo SOP y conectarlo a "force" dentro del "Vellum solver".      
 - GRANOS DE TAMAÑO DIFERENTE: hay que tocar el "pscale" antes de meterlo en el solver, y en "advanced-->grain collision" desactivar "assume uniform radius".
 - TOCAR PROPIEDADES o ATRIBUTOS DURANTE LA SIMULACION: Dentro del DOP utilizar el nodo "vellumconstraintproperty" para tocar parametros. Se puede conectar con VEX a otros SOP.
+- COLISIONES : Funciona mucho mejor con VOLUME COLLIDERS.  Con "surface" hace tonterias.   
 
 MEJORAR SIMULACIÓN:   
   1) probar incrementando ""sub-steps"".En cloth es conveniente comenzar con 4 o 5.   
