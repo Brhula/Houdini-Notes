@@ -7,6 +7,7 @@ Notas sobre los "Vellum grains".
 - MASS: Afecta a como interaciona con las "POP forces" y como de fuertes son los "constraints". Cuanto mayor, mas "pesada" es la tela. Cuanto menor, mas "liviana" la tela. Al pesar mas o menos, también estira más el tejido.   
 - DENSITY (depende de MASS): Multiplicador de la masa. Forma rápida de tocar todo el "peso" del tejido cuando Vellum calcula la masa. Admite multiplicarlo por un atributo.   
 - THICKNESS: grosor del punto. Se almacana en "pscale".   
+- SUB STEPS : Lo estandar es 4. Menos va mal para "grains".   
 
 **HOW TO**   
 
