@@ -3,7 +3,6 @@
 Colección de "snippets" (trozos de código) para realizar funciones concretas. Se aplica a "wranglers" (nodos específicos de Houdini para albergar código VEX), o bien a otros nodos.   
 
 **LINKS a otras paginas con "wranglers" interesantes:**    
-- [Shades of Orange](http://shadesoforange.de/wrangles/)   
 - [lex.ikoon](http://lex.ikoon.cz/vex-snippets/)   
 - [TOSIN AKINWOYE](https://tosinakinwoye.com/2017/01/23/houdini-vex-snippets/)   
 - [Kiryha](https://github.com/kiryha/Houdini/wiki/vex-snippets)   
