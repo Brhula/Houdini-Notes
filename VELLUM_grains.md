@@ -2,6 +2,12 @@
 
 Notas sobre los "Vellum grains".  
 
+El número de "grains" afecta a la simulación. El comportamiento es diferente según el "particle separation". Eso puede ser un problema si se intenta hacer una simulación en baja y luego replicarla en alta..   
+
+Cuando el "particle separation" es pequeño (muchas particulas) los grains tienden a colapsar por la gravedad.
+
+Puede ser interesante repetir la simulación con un "seed" diferente y combinarlo después (merge), para de esta forma tener más particulas con el mismo comportamiento. Cuidado porque entonce se "meten" las unas dentro de las otras.
+
 **ATRIBUTOS/PARAMETROS.**   
 - Por defecto 
 - MASS: Afecta a como interaciona con las "POP forces" y como de fuertes son los "constraints". Cuanto mayor, mas "pesada" es la tela. Cuanto menor, mas "liviana" la tela. Al pesar mas o menos, también estira más el tejido.   
