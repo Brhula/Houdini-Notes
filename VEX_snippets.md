@@ -183,6 +183,17 @@ for ( int i = 0; i < len(prim_points); i++ ){
     setattrib(geoself(), "point", "N", prim_points[i], 0, dir, "set");
 }
 ```
+**PUNTOS // Empujar un objeto contra otro**
+```C#
+vector dir = -@N;
+vector hit_pos, hit_uv; //for fetching into the intersect function below
+int ray_intersect = intersect(1, @P, dir, hit_pos, hit_uv);
+float hit_dist = distance(@P, hit_pos);
+@P += @N*hit_dist*-1*chf("intensity"); //you can multiply a custom float to adjust the intensity
+// INPUT 0: objeto a empujar / INPUT 1 : Objeto que empuja
+// Al objeto que empuja se le puede convertir en VDB y hacer un "reshape" para "engordarlo"
+// El resultado, si se hace un "smooth", queda más fino
+```
 
 **POINTCLOUD // Eliminar puntos aislados con una tolerancia.**
 ```C#
