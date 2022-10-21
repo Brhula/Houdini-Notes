@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mainMenu>
+  <menuBar>
+
+    <subMenu id="Vampire">
+      <label>Vampire</label>
+  
+	   <scriptItem>
+        <label>Set basic scene settings</label>
+        <scriptPath>GWB_vampire_set_basic_scene_parameters.py</scriptPath>
+      </scriptItem>
+	  
+	  <scriptItem>
+        <label>Create Render Node (ROP)</label>
+        <scriptPath>GWB_vampire_create_ROP.py</scriptPath>
+      </scriptItem>
+
+      <separatorItem id="gw_scripts_menu_sep_1"/>
+
+      <scriptItem>
+        <label>Add GW Shelves</label>
+        <scriptPath>$HSITE/Houdini18.0/scripts/GW_Add_Shelves.py</scriptPath>
+      </scriptItem>
+
+ </subMenu>
+
+	
+  </menuBar>
+</mainMenu>
+
+   
