@@ -1,0 +1,16 @@
+{
+	"path" : "$VAMPIRE_PACKAGE",
+	"load_package_once": true,
+	"enable" : true,
+	"env" : [
+		{"VAMPIRE_PROJECT" : "//sloth/jobs/vampire_academy_1172"},
+		{"VAMPIRE_PACKAGE" : "$HOUDINI_PACKAGE_PATH/vampire_site"},
+		{"ASSETS" : "${VAMPIRE_PROJECT}/assets"},
+		{"VA_101" : "${VAMPIRE_PROJECT}/films/va_101/shots"},
+		{"VA_102" : "${VAMPIRE_PROJECT}/films/va_102/shots"},
+		{"VA_103" : "${VAMPIRE_PROJECT}/films/va_103/shots"},
+		{"VA_104" : "${VAMPIRE_PROJECT}/films/va_104/shots"},
+		{"VA_105" : "${VAMPIRE_PROJECT}/films/va_105/shots"}
+		
+	]
+}
