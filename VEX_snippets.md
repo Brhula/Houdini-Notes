@@ -142,6 +142,13 @@ vector min, max;
 getbbox(0, min, max);
 @Cd = vector(chramp("reMap",fit(@P.y, min.y, max.y, 0,1)));
 ```
+Otra version parecida:
+```C#
+// Create attribute ramp based on the relative position in one axis
+f@density = 0;
+vector test = relpointbbox(0, @P);
+@density = chramp('ramp', test.y);
+```
 
 **PUNTOS // Transfer de color (y P, posición) desde el segundo input.**
 ```C#
