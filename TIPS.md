@@ -1,3 +1,10 @@
+***HOW TO***
+
+*IMPORT ILLUSTRATOR FILES*  
+Lo más sencillo es importar en Maya el fichero illustrator (en versión 8, lo carga mejor), y alli pasarlo a FBX. De esta manera no sepierden puntos ni hace cosas raras en las curvas.
+
+Si no es posible, exportamos el "illustrator" a versión 8, e importamos con un "file node". Con el comando "ends" podemos hacer que las curvas queden abiertas.  
+
 ***MODELLING***   
 
 Edge Loops   
