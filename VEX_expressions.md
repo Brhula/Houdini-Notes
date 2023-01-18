@@ -11,3 +11,12 @@ f@group_t = @P.x<0; // group "t" with all points/primitives where X coordinate i
 f@group_r = rand(@ptnum) < 0.5; // new group "r" with 50% of the points/primitives
 f@group_end = neighbourcount(0,@ptnum)==1; // new group "end" with all points with ONLy one edge (end points)
 ```
+
+**SWITCH NODE**   
+Expresiones interesantes para el nodo SWITCH.   
+
+```int  haspointattrib(<geometry>geometry, string attribute_name)```   
+Ejemplo: Determine if the "pscale" attribute exists.    
+```C#
+haspointattrib("../previous_node", "pscale");
+```
