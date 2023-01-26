@@ -1,6 +1,9 @@
 # Houdini-Notes
 Houdini Notes <br />
 
+Notas personales sobre HOUDINI, para aprender y recordar.   
+Personal notes for SIDEFX HOUDINI, to learn and remenber :-)   
+
 &nbsp;&nbsp;&nbsp;&nbsp;  [Attributes](Attributes.md) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [File name path manipulation](image_names_handling.md) <br />
 
