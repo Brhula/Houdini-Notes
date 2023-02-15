@@ -16,9 +16,39 @@ float @mass = 1 / area;  // Error
 vector @up = set(0, 1, 0);  // Error
 ```
 
-hijack from http://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html
+hijack from http://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html   
+       new link https://wiki.johnkunz.com/index.php?title=VEX_Attribute_Glossary   
 
 ### Common Geometry Attributes
+
+**Global Variables // A list of variables available in wrangles.**    
+```C++
+// Available in all SOP wrangles
+f@Frame     //The current floating frame number, equivalent to the $FF Hscript variable
+f@Time      //The current time in seconds, equivalent to the $T Hscript variable
+i@SimFrame  //The integer simulation timestep number ($SF), only present in DOP contexts.
+f@SimTime   //The simulation time in seconds ($ST), only present in DOP contexts.
+f@TimeInc   //The timestep currently being used for simulation or playback.
+
+// Available in Attribute Wrangle
+v@P         //The position of the current element.
+i@ptnum     //The point number attached to the currently processed element.
+i@vtxnum    //The linear number of the currently processed vertex.
+i@primnum   //The primitive number attached to the currently processed element.
+i@elemnum   //The index number of the currently processed element.
+i@numpt     //The total number of points in the geometry.
+i@numvtx    //The number of vertices in the primitive of the currently processed element.
+i@numprim   //The total number of primitives in the geometry.
+i@numelem   //The total number of elements being processed.
+
+// Available in Volume Wrangle
+v@P                     //The position of the current voxel.
+f@density               //The value of the density field at the current voxel location.
+v@center                //The center of the current volume.
+v@dPdx, v@dPdy, v@dPdz  //These vectors store the change in P that occurs in the x, y, and z voxel indices.
+i@ix, i@iy, i@iz        //Voxel indices. For dense volumes (non-VDB) these range from 0 to resolution-1.
+i@resx, i@resy, i@resz  //The resolution of the current volume.
+```
 
 **Frequently used attributes. Houdini knows to cast these to the appropriate VEX datatype.**
 ```C++
