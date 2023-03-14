@@ -24,12 +24,12 @@ Edge Loops
 ### CONVERT HIP FILES ###     
 Para saltar limitacion. Utilizamos el Textport (Windows > Hscript Textport).
 
-Cargamos escena de origen, escribir en el Textport algo parecido:   
+Cargamos escena de origen, escribir en el Textport algo parecido para grabar fichero con la escena en texto:   
 ```C++
 opscript -G -r / > $TEMP/temp.cmd
 ```
 
-En escena de destino (escena nueva), tambien en Textport:   
+En escena de destino (escena nueva), tambien en Textport, cargamos el fichero generado con:   
 ```C++
 cmdread $TEMP/temp.cmd
 ```
