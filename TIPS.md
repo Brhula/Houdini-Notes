@@ -20,3 +20,18 @@ Edge Loops
 - poner una expresion para desplazar un objeto respecto al bounding box: **bbox("../Base_line", D_YMAX)**
 - pintar la dirección de las normales: nodo "COMB"
 - Utilizar el nodo TRANSFORM para cambiar normales o velocidades en uno o varios puntos: poner el atributo (tipicamente v o N) en el nodo "Attributes" en vez de "*" que hay por defecto.
+
+### CONVERT HIP FILES ###     
+Para saltar limitacion. Utilizamos el Textport (Windows > Hscript Textport).
+
+Cargamos escena de origen, escribir en el Textport algo parecido:   
+```C++
+opscript -G -r / > $TEMP/temp.cmd
+```
+
+En escena de destino (escena nueva), tambien en Textport:   
+```C++
+cmdread $TEMP/temp.cmd
+```
+
+
