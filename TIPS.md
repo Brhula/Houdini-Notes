@@ -28,8 +28,8 @@ Cargamos escena de origen, escribir en el Textport algo parecido para grabar fic
 ```C++
 opscript -G -r / > $TEMP/temp.cmd
 ```
-
-En escena de destino hacemos una escena nueva, con los mismos FPS de la de origen).    
+Salimos de H y arrancamos la aplicacion de nuevo.
+Hacemos una escena nueva, con los mismos FPS de la de origen (y copiando el $JOB u otras variables).    
 Despues tambien en Textport, cargamos el fichero generado anteriormente con:   
 ```C++
 cmdread $TEMP/temp.cmd
