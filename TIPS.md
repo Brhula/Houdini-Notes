@@ -29,9 +29,11 @@ Cargamos escena de origen, escribir en el Textport algo parecido para grabar fic
 opscript -G -r / > $TEMP/temp.cmd
 ```
 
-En escena de destino (escena nueva), tambien en Textport, cargamos el fichero generado con:   
+En escena de destino hacemos una escena nueva, con los mismos FPS de la de origen).    
+Despues tambien en Textport, cargamos el fichero generado anteriormente con:   
 ```C++
 cmdread $TEMP/temp.cmd
 ```
-
+Comprobar los nodos que dependen de $JOB y $HIP, ya que habra que ajustar para que vuelva a funcionar todo.     
+Tambien hay que comprobar que los nodos de simulacion esten correctamente transpasados.
 
