@@ -94,8 +94,11 @@ if ((_ndc[0] < 0 - _errorx) || (_ndc[0] > 1 + _errorx))   removepoint(geoself(),
 if ((_ndc[1] < 0 - _errory) || (_ndc[1] > 1 + _errory))   removepoint(geoself(), @ptnum);
 if ((_ndc[2] > 0 + _errorz))   removepoint(geoself(), @ptnum);
 ```
-
-
+**PUNTOS // Proyectar los puntos del objeto sobre la superficie del otro objeto (Como el SOP RAY)** 
+```C#
+// Project point to minimum distance like RAY Sop // set a wrangle to run over points
+@P=minpos(1,@P);
+```
 **PUNTOS // Normales aleatorias en los puntos** 
 ```C#
 // Random normals // set a wrangle to run over points
