@@ -21,7 +21,7 @@ Edge Loops
 - pintar la dirección de las normales: nodo "COMB"
 - Utilizar el nodo TRANSFORM para cambiar normales o velocidades en uno o varios puntos: poner el atributo (tipicamente v o N) en el nodo "Attributes" en vez de "*" que hay por defecto.
 
-### CONVERT HIP FILES ###     
+### CONVERTIR HIP FILES ###     
 Para saltar limitacion. Utilizamos el Textport (Windows > Hscript Textport).
 
 Cargamos escena de origen, escribir en el Textport algo parecido para grabar fichero con la escena en texto:   
