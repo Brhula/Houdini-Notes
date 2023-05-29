@@ -1,6 +1,7 @@
 
-## "cycle" del fondo del viewport    
-Poner el sigueinte codigo en un "tool" del Shelf, y asignarle alguna tecla en el hotkey editor (alt+B para que sea como Maya)   
+### Cambiar de forma ciclica el fondo del *"viewport"*    
+Poner el sigueinte codigo en un *"tool"* del Shelf, y asignarle alguna tecla en el hotkey editor (con ponerlo en el contexto *"general"* es suficiente).    
+alt+B para que sea como Maya, pero con CTRL+ALT+B no hay tanto conflicto     
 
 ```python
 import sys
