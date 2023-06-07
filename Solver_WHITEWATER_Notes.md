@@ -3,19 +3,23 @@
 Solver para simular espuma, burbujas y micro-gotas voladoras en liquidos.
 Este solver se crea sobre (on top) de la simulacion FLIP. Por ello suele hacerse una cache del FLIP, y luego, usando los datos de la cache, se simula el "whiteweater"
 
+La simulación del WHITEWATER puede tener una resolución diferente de la del FLIP. Es posible un FLIP de baja o media resolución, y un WW de alta resolución.
+
 ### Componentes:   
 
 - (1) source (SOP): aqui se define las zonas donde nace y crece el "whitewater". Tambien se puede inducir manualmente.  Es en donde la simulacion busca cuales son los emisores de las particulas de "whitewater" 
-- (2) simulate (DOP) : propiamente la simulacion, que pilla el "source" para generar y calcular el "whitewater". Es donde mas parametros suelen tocarse.
+- (2) simulate (DOP) : propiamente la simulacion, que pilla el "source" para generar y calcular el "whitewater". Es donde mas parametros suelen tocarse. 
 - (3) import (SOP) : importamos la sim, para generar le geometria que hacer render   
 
 ### (1) SOURCE (SOP):   
 
-- Se considera aceleracion, curvatura y vorticidad
-- output es un emission VDB
+En el nodo "whitwatersource" de SOP se pueden controlar los siguentes parametros para posibilitar la creación de espuma:   
+- Aceleracion, curvatura y vorticidad (este último tiene que activarse al generar el FLIP)
+- output es un VDB que debe tener el nombre de "emit" en vez de "density"   
 
 ### (2) SIMULATION (DOP):   
 
+tiene solo dos componentes necesarios:   
 - whitewaterobject: parametros de colision
 - whitewatersolver: Se encarga de emitir y matar las particulas   
 
