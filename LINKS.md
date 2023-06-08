@@ -1,4 +1,5 @@
 ### GENERAL   
+[Awesome Houdini // A collection of awesome Free/Open Source things regarding the SideFx Houdini ecosystem](https://github.com/wyhinton/AwesomeHoudini)   
 [FX REFEERNCES and TUTORIALS](http://ref-fx.com/)   
 [FX Resources](https://www.johnkunz.com/resources)   
 [FX Tips and Notes](https://www.katexagoraris.com/)   
