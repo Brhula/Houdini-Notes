@@ -1,7 +1,7 @@
 ## WHITEWATER Solver  
 
 Solver para simular espuma, burbujas y micro-gotas voladoras en liquidos.
-Este solver se crea sobre (on top) de la simulacion FLIP. Por ello suele hacerse una cache del FLIP, y luego, usando los datos de la cache, se simula el "whiteweater"
+Este solver se crea sobre (on top) de la simulacion FLIP. Por ello suele hacerse una cache del FLIP, y luego, usando los datos de la cache, se simula el "whitewater" (WW)    
 
 La simulación del WHITEWATER puede tener una resolución diferente de la del FLIP. Es posible un FLIP de baja o media resolución, y un WW de alta resolución.
 
