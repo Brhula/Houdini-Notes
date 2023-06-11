@@ -45,3 +45,11 @@ Que determina la probabilidad de eliminar una particula:
 ### Attributes:   
 
 Depth : positivo, encima de la superficie del agua. Negativo, sumergido. CUIDADO! La superficie tambien puede ser el lado del fip que toca un colisionador! Se puede meter en le shader para re-mapear color.
+
+### RENDER:   
+
+Se renderizan las particulas, NO SE HACE MESHING.    
+- Construimos un shader con el difuso blanco puro, o casi. Poca reflexion. Un poco de transparencia. Casi completamente plano.   
+- Multiplicamos el tamaño de las pariculas para hacerlas mas pequeñas (por ejemplo 0.2)   
+   
+Ponemos a render junto con el "meshing" de la superfice del mar, y andando...   
