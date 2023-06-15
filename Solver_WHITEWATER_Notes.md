@@ -11,7 +11,7 @@ La simulación del WHITEWATER puede tener una resolución diferente de la del FL
 - (2) simulate (DOP) : propiamente la simulacion, que pilla el "source" para generar y calcular el "whitewater". Es donde mas parametros suelen tocarse. 
 - (3) import (SOP) : importamos la sim, para generar le geometria que hacer render   
 
-### (1) SOURCE (SOP):   
+### (1) SOURCE (Nodos en SOP):   
 
 En el nodo "whitwatersource" de SOP se pueden controlar los siguentes parametros para posibilitar la creación de espuma:   
 - Aceleracion, curvatura y vorticidad (este último tiene que activarse al generar el FLIP)
