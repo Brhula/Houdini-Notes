@@ -14,6 +14,8 @@ float  fit01(float value, float nmin, float nmax) ; // de (0, 1) a nuevo rango
 float  clamp(float value, float min, float max);
 float floor(float n); // FLOOR: Returns the largest integer less than or equal to the argument.
 float ceil(float n); // CEIL: Returns the smallest integer greater than or equal to the argument.
+
+vector  getbbox_center(<geometry> geometry) // Nos da el centroide de la geometria
 ```
 **Cambio de tipo de datos.**   
 Otras combinacione posibles.
