@@ -56,7 +56,8 @@ Utilizar también un "Displacement Blender" y un "Bump blender".
 
 ### // STRANDS and CURVES   
 - No admite color (u otros atributos) por "point", solo por cada curva. Los colores (Cd) son uno por curva. Si hay que hacer render con mas de un color hay que transformarlo a "mesh"
-- Para tener strands/curvas con colores diferentes, colorear "por primitiva" y luego hacer un "attribute promote" a "points". De esta forma si pilla los colores (para cada curva completa). Entonces se puede pillar el "RS color data" en el shader.   
+- Para tener strands/curvas con colores diferentes, colorear "por primitiva" y luego hacer un "attribute promote" a "points". De esta forma si pilla los colores (para cada curva completa). Entonces se puede pillar el "RS color data" en el shader.
+- No le gustan los "packed objects" al hacer render como "strands". Mejor "desempaquetarlos", de lo contrario se pasa un buen rato "pensando".
 
 ### // RENDER REFRACTANDO FONDO PERO SIN VERLO   
 Si ponemos un background en el HDRI (enable background + backplate) se vera el fondo. La unica manera de hacer que el fondo refracte (con cristales por ejemplo) y que no se vea, es hacer una esfera gigante y convertirla en "matte object". Hay que desactivar todos sus componentes de visibilidad excepto "primary", de lo cantrario hara sombras y demas interferencias.
