@@ -4,6 +4,8 @@ Houdini Notes <br />
 Notas personales sobre HOUDINI, para aprender y recordar.   
 Personal notes for SIDEFX HOUDINI, to learn and remenber :-)   
 
+[Awesome Houdini // Toneladas de links a recursos grátis. IMPRESCINDIBLE](https://github.com/wyhinton/AwesomeHoudini)
+
 &nbsp;&nbsp;&nbsp;&nbsp;  [Attributes](Attributes.md) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [File name path manipulation](image_names_handling.md) <br />
 
