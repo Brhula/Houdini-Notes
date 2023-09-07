@@ -18,7 +18,8 @@ $GWVDB
 
 ***PACKAGES***   
 
-En "packages" la entrada "hpath" se refiere en realidad a "$HOUDINI_PATH". Para referirse a "$PATH" se utiliza "PATH".
+En "packages" la entrada __"hpath"__ se refiere en realidad a __"$HOUDINI_PATH"__.   
+Para referirse a __"$PATH"__ se utiliza __"PATH"__.
 
 Estructura de directorios de los "Packages" (directorio // descripción):   
 - desktop //  Desktops:  Contains .desk file(s).   
