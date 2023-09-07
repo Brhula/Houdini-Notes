@@ -2,6 +2,7 @@
 
 ***VARIABLES en el File Browser***   
 Se deben añadir al fichero "jump.pref" que suele estar en la raíz de las preferencias.   
+También se puede añadir en la raíiz de un "package".
 Por ejemplo incorporar variables varias:   
 
 ```C#
