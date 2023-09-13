@@ -17,7 +17,7 @@ $GWVDB
 ```   
 
 ***STARTUP SCRIPTS***    
-Houdini busca en los directorios de $HOUDINI_PATH los siguientes ficheros:   
+Houdini busca en los directorios de $HOUDINI_PATH los siguientes ficheros (si hay mas de uno en el path, ejecuta el primero que encuentra):   
 - python2.7libs/pythonrc.py : Se ejecutan al arrancar Houdini   
 - scripts/123.py : Se ejecuta con escenas vacias. Interesante para configurar antes cargar escenas.
 - scripts/456.py : Se ejecuta al cargar una escena.   
@@ -36,8 +36,15 @@ Estructura de directorios de los "Packages" (directorio // descripción):
 - toolbar // Shelf tools: Contains .shelf file(s). The shelf tools are loaded but not active in a shelf set.
 - viewer_states // Viewer states: Contains python states implementation files.
 - viewer_handles // Viewer handles: Contains python handles implementation files.
-
   
 Links interesantes sobre "packages":   
 - [Houdini packages doc](https://www.sidefx.com/docs/houdini/ref/plugins.html)   
 - [Toadstorm basic explanation of packages](https://www.toadstorm.com/blog/?p=722)   
+
+***PYTHON***   
+
+- Cambiar o crear una variable dentro de la escena:
+```python
+# creamos una variable $CACHE visible en edit-->Variables
+hou.hscript("set -g CACHE=//path/a/algun/sitio")
+```   
