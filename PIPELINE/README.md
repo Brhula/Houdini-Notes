@@ -43,7 +43,7 @@ Links interesantes sobre "packages":
 
 ***PYTHON***   
 
-- Cambiar o crear una variable dentro de la escena:
+- Cambiar o crear una variable dentro de la escena (se puede ver y modificar en "EDIT-->ALIASES AND VARIABLES"):   
 ```python
 # creamos una variable $CACHE visible en edit-->Variables
 hou.hscript("set -g CACHE=//path/a/algun/sitio")
