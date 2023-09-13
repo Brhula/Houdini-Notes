@@ -48,3 +48,8 @@ Links interesantes sobre "packages":
 # creamos una variable $CACHE visible en edit-->Variables
 hou.hscript("set -g CACHE=//path/a/algun/sitio")
 ```   
+- Recuperar una variable:   
+```python
+# recuperamos la variable $CACHE visible en edit-->Variables
+variable_from_houdini=hou.getenv("CACHE")
+```   
