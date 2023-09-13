@@ -16,6 +16,13 @@ $GWVDB
 //sloth/jobs/
 ```   
 
+***STARTUP SCRIPTS***    
+Houdini busca en los directorios de $HOUDINI_PATH los siguientes ficheros:   
+- python2.7libs/pythonrc.py : Se ejecutan al arrancar Houdini   
+- scripts/123.py : Se ejecuta con escenas vacias. Interesante para configurar antes cargar escenas.
+- scripts/456.py : Se ejecuta al cargar una escena.   
+
+
 ***PACKAGES***   
 
 En "packages" la entrada __"hpath"__ se refiere en realidad a __"$HOUDINI_PATH"__.   
