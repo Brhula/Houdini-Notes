@@ -45,11 +45,13 @@ Links interesantes sobre "packages":
 
 - Cambiar o crear una variable dentro de la escena (se puede ver y modificar en "EDIT-->ALIASES AND VARIABLES"):   
 ```python
+import hou
 # creamos una variable $CACHE visible en edit-->Variables
 hou.hscript("set -g CACHE=//path/a/algun/sitio")
 ```   
 - Recuperar una variable:   
 ```python
+import hou
 # recuperamos la variable $CACHE visible en edit-->Variables
 variable_from_houdini=hou.getenv("CACHE")
 ```   
