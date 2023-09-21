@@ -80,6 +80,10 @@ if ( rand(@ptnum) > ch('threshold') ) {
    removepoint(0,@ptnum);
 }
 ```
+**PUNTOS // Desplazar puntos en la dirección de la normal a la superficie**   
+```C#   
+@P += @N * chf('dist');
+```   
 **PUNTOS // Borrar puntos fuera de la vista de la CAMARA (con una tolerancia)** 
 ```C#
 // Clip points from camera
