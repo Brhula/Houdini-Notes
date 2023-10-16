@@ -79,5 +79,5 @@ Orientamos todos los puntos hacia el {0,0,0}
 
 ### Documentación adicional
 
-[Point Instance procedural](http://www.sidefx.com/docs/houdini/nodes/vop/ptinstance)   
+[Point Instance procedural](https://www.sidefx.com/docs/houdini/nodes/vop/ptinstance.html)   
 [Optimize copies - stamping or not](https://forums.odforce.net/topic/25971-optimize-copies-stamping-or-not-solved/?page=2&tab=comments#comment-151013)   
