@@ -43,6 +43,9 @@
 ### PYTHON in HOUDINI
 
 [vfxbrain intro to PYTHOM](https://vfxbrain.wordpress.com/2016/03/15/python-in-houdini/)   
+[Tokeru Python](https://www.tokeru.com/cgwiki/index.php?title=HoudiniPython)   
+[Python for Artists](https://github.com/kiryha/Houdini/wiki/Python-for-artists)   
+[Interesting Python snippets](https://github.com/kiryha/Houdini/wiki/python-snippets)   
 
 ### POINT CLOUD to 3D MODEL
 
