@@ -67,7 +67,6 @@ Si ponemos un background en el HDRI (enable background + backplate) se vera el f
 - *Color de todo el volumen:* modificar "scatter tint". Utilizar la rampa para remapear según la densidad: Izquierda--> menos denso, derecha--> más densidad
 - VOLUME MOTION BLUR: Parece que no hace bien el mb con VDB, hay que convertirlo a HOUDINI VOLUMES.
 - **OVERSCAN:** para hacer "overscan" del render (para "plates" sin distorsion, al volver a aplicarles la distorsion), utilizar "overscan mode" a pixeles en "ROP redshift".
-- Los volumenes en VDB tienen problemas con el "motion blur". Mejor hacer render de Houdini Volumes para que pille el grid de velocidad.   
 	
 ### // WARNINGS:   
 - *Texturas:* Parece que los ficheros ".pic" de Houdini no le gustan. Hace cosas raras en el render.   
