@@ -30,7 +30,7 @@ Este nodo indica el "domain" del fluido, el espacio donde se simula.
 ### `NODO // PARTICLE FLUID SURFACE` (crear un `mesh` de la simulación)   
 
 Parametros:
-- Influence scale : maxima distancia a la que las particulas interaccionan, es mutiplicador del "particle separation". Valor de habitual tipo 2.
+- Influence scale : maxima distancia a la que las particulas interaccionan, es mutiplicador del "particle separation". Valor de habitual tipo 2. MAyor numero, mesh más suave y con menos detalles. Valor manor, mesh más definida y con más detalle.
 - Droplet Scale: Tamaño de las gotita. Típico 0.75 (gotitas más finas)
 
 ### BEFORE START SIMULATION:   
