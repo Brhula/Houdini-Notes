@@ -31,7 +31,7 @@ Este nodo indica el "domain" del fluido, el espacio donde se simula.
 
 Colisiones (animadas también) con el fluido. Recipientes, rocas, etc.  Parámetros:
 - Velocity scale: si lo ponemos a mas de 1 los objetos "empujan" con más fuerza el liquido al moverse. En objetos que "emergen" le da un poco más de espectacularidad.
-- 
+- Desactivando el "Surface Collider" la SIM va mucho más rápida. Algunos "gurus" dicen que tambíen funciona mejor. La SIM cambia un poco, mirar que va mejor.
 
 ### `NODO // PARTICLE FLUID SURFACE` (crear un `mesh` de la simulación)   
 
