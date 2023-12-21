@@ -12,7 +12,7 @@ Notas sobre el flujo de trabajo (workflow) para el FLIP SOP solver y demás comp
 
 ### FLUJO CLASICO PARA TRABAJAR:   
 
-- nodo `Flip Contaibner` o "Flip Tank": preparamos la "caja contenedora" o "domain" donde se calcula el FLIP. Aquí indocamos también la RESOLUCIÓN del FLIP.
+- nodo `Flip Container` o "Flip Tank": preparamos la "caja contenedora" o "domain" donde se calcula el FLIP. Aquí indocamos también la RESOLUCIÓN del FLIP.
 - nodo `Flip Collide`: Aquí metemos todos los objetos con los que choca el FLIP. Pueden estar animados.
 - nodo `FLip Solver`: Pues eso, donde se hacen los cálculos.
 
