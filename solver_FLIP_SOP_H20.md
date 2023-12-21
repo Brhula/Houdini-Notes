@@ -10,16 +10,22 @@ Notas sobre el flujo de trabajo (workflow) para el FLIP SOP solver y demás comp
 [Añadir espuma (white water)](https://www.youtube.com/watch?v=L-o0SEijZ7U)
 
 
+### FLUJO CLASICO PARA TRABAJAR:   
+
+- nodo `Flip Contaibner` o "Flip Tank": preparamos la "caja contenedora" o "domain" donde se calcula el FLIP. Aquí indocamos también la RESOLUCIÓN del FLIP.
+- nodo `Flip Collide`: Aquí metemos todos los objetos con los que choca el FLIP. Pueden estar animados.
+- nodo `FLip Solver`: Pues eso, donde se hacen los cálculos.
+
 ### PREPARAR LOS ELEMENTOS PARA SIMULAR:   
 
 #### `NODO // FLIP TANK`   
 
 Este nodo indica el "domain" del fluido, el espacio donde se simula.   
 
-"particle separation": indican cuantas particulas por unidad de Houdini indicandolo por la distancia entre ellas. Las simulaciones varian según el numero de particulas que tienen, no es lo mismo una simulación con un `paricle separation` de 0.1 que de 0.04. Las físicas se comportan distinto. Pôr eso es importante:    
-- Que fijemos un `particle separation` que funcione bien desde el principio.
-- Si la simulación es muy lenta, mejor ponemos un "domain" que solo pille un trozo y así vemos que tal el comportamiento básico. Al poner luego el "domain" completo no tendremos sorpresas en cuanto al comportamiento.   
-
+- "particle separation": indican cuantas particulas por unidad de Houdini indicandolo por la distancia entre ellas. Las simulaciones varian según el numero de particulas que tienen, no es lo mismo una simulación con un `paricle separation` de 0.1 que de 0.04. Las físicas se comportan distinto. Pôr eso es importante:    
+  - Que fijemos un `particle separation` que funcione bien desde el principio.
+  - Si la simulación es muy lenta, mejor ponemos un "domain" que solo pille un trozo y así vemos que tal el comportamiento básico. Al poner luego el "domain" completo no tendremos sorpresas en cuanto al comportamiento.   
+- Vigilar que tenga activado "vorticity" si queremos hacer espuma (white water)   
 
 ### SURFACING (crear un `mesh` de la simulación)   
 
