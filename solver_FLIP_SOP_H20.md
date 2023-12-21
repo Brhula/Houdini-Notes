@@ -27,6 +27,12 @@ Este nodo indica el "domain" del fluido, el espacio donde se simula.
   - Si la simulación es muy lenta, mejor ponemos un "domain" que solo pille un trozo y así vemos que tal el comportamiento básico. Al poner luego el "domain" completo no tendremos sorpresas en cuanto al comportamiento.   
 - Vigilar que tenga activado "vorticity" si queremos hacer espuma (white water)   
 
+#### `NODO // FLIP COLLIDE`   
+
+Colisiones (animadas también) con el fluido. Recipientes, rocas, etc.  Parámetros:
+- Velocity scale: si lo ponemos a mas de 1 los objetos "empujan" con más fuerza el liquido al moverse. En objetos que "emergen" le da un poco más de espectacularidad.
+- 
+
 ### `NODO // PARTICLE FLUID SURFACE` (crear un `mesh` de la simulación)   
 
 Parametros:
