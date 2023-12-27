@@ -15,6 +15,7 @@ f@group_end = neighbourcount(0,@ptnum)==1; // new group "end" with all points wi
 // VEX EXPRESSIONS 
 @ptnum%(@numpt-1)==0; // group of first and last point
 @name=="pepe"; // grupo con todos los que tienen "pepe" como valor del atributo @name
+@P.y>0; // Grupo con todos los elementos en las Y positivas
 ```
 
 **SWITCH NODE**   
