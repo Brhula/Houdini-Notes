@@ -24,6 +24,7 @@ Típicamente:
 - nodo `Fluid Compress` : Suele utilizarse para comprimir la info del `Flip Solver` y suele seguirse de una caché para grabar en disco.
 - nodo `White water Source`: donde se prepara un VDB desde donde se emitirá la espuma, burbujas, porquería flotante...
 - nodo `White Water Solver` : Aquí se hace el cálculo de espuma, burbujas y demás.
+- nodo `White water postprocess` : Preparamos particulas de espuma para hace render. Como puntos, VDB o mesh. También puede "chafar" las particulas fuera del area de "interes".
 
 ### PREPARAR LOS ELEMENTOS PARA SIMULAR:   
 
