@@ -14,8 +14,8 @@ Notas sobre el flujo de trabajo (workflow) para el FLIP SOP solver y demás comp
 
 - nodo `Flip Container` o "Flip Tank": preparamos la "caja contenedora" o "domain" donde se calcula el FLIP. Aquí indocamos también la RESOLUCIÓN del FLIP.
 - nodo `Flip Collide`: Aquí metemos todos los objetos con los que choca el FLIP. Pueden estar animados.
-- nodo `FLip Solver`: Pues eso, donde se hacen los cálculos.
-- nodo `white water Source`: donde se prepara un VDB desde donde se emitirá la espuma, burbujas, porquería flotante...
+- nodo `Flip Solver`: Pues eso, donde se hacen los cálculos.
+- nodo `White water Source`: donde se prepara un VDB desde donde se emitirá la espuma, burbujas, porquería flotante...
 - nodo `White Water Solver` : Aquí se hace el cálculo de espuma, burbujas y demás.
 
 ### PREPARAR LOS ELEMENTOS PARA SIMULAR:   
