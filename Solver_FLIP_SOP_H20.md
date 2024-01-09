@@ -28,7 +28,8 @@ Este nodo indica el "domain" del fluido, el espacio donde se simula.
 - "particle separation": indican cuantas particulas por unidad de Houdini indicandolo por la distancia entre ellas. Las simulaciones varian según el numero de particulas que tienen, no es lo mismo una simulación con un `paricle separation` de 0.1 que de 0.04. Las físicas se comportan distinto. Pôr eso es importante:    
   - Que fijemos un `particle separation` que funcione bien desde el principio.
   - Si la simulación es muy lenta, mejor ponemos un "domain" que solo pille un trozo y así vemos que tal el comportamiento básico. Al poner luego el "domain" completo no tendremos sorpresas en cuanto al comportamiento.   
-- Vigilar que tenga activado "vorticity" si queremos hacer espuma (white water)   
+- Vigilar que tenga activado "vorticity" si queremos hacer espuma (white water)
+- Si le enchufamos un objeto, el "domain" no será un cubo, si no tendrá la forma del objeto. Se puede animar (baquitos moviendose, por ejemplo)
 
 #### `NODO // FLIP COLLIDE`   
 
