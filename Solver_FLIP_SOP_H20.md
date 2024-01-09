@@ -2,7 +2,13 @@
 
 `rgb(9, 105, 218)`
 
-Notas sobre el flujo de trabajo (workflow) para el FLIP SOP solver y demás componentes (como espuma, surfacing, etc.)
+Notas sobre el flujo de trabajo (workflow) para el FLIP SOP solver y demás componentes (como espuma, surfacing, etc.).
+
+Típicamente:
+- Hacer una simulación "Flip" (partículas) de las partes que chocan, emergen, se deslizan, etc... Todo lo que tenga movimiento.
+- "Meshing" o "surfacing" es convertir los puntitos en una superficie poligonal 8típicamnete)
+- Calculo del "white water" para poner encima del "mesh", es decir, una simulación de particulas que genera la espuma, burbujas y demás componentes del efecto.
+- Oceano, si hace falta, se mezcla con un oceano para integrarlo en aguas abiertas. Esto no es simulación.
 
 ### LINKs INTERESANTES:   
 
