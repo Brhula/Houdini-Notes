@@ -169,6 +169,17 @@ if(i@many>0){
      v@P = lerp(v@P, lookup_P, chf("Position_mix"));
 }
 ```
+**PUNTOS // orientar objeto al primer punto del segundo input("look at").**
+```C#
+// Orient (-Z) object to second input first point
+vector source = getbbox_center ( 0 );
+vector target = point ( 1, "P", 0 );
+
+matrix3 m = lookat ( source, target );
+@P -= source;
+@P *= m;
+@P += source;
+```
 **PUNTOS // orientar objeto a un punto ("look at"). Deforma el objeto**
 ```C#
 // set a wrangle to run over points
