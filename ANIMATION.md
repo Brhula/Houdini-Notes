@@ -1,3 +1,9 @@
+*ANIMACION (editors y viewport)*   
+
+
+K : keyframe en todas las transformaciones (TRS)
+
+
 ***PANEL shortcuts***   
 
 SHIFT+left mouse button : añadir los canales animados al "Animation editor"   
