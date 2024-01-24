@@ -1,4 +1,4 @@
-*ANIMACION (editors y viewport)*   
+## ANIMACION (editors y viewport)    
 
 
 K : keyframe en todas las transformaciones (TRS)
