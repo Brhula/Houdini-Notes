@@ -1,5 +1,6 @@
 ## ANIMACION (editors y viewport)    
 
+***Shortcuts pata TODAS las ventanas***   
 
 K : keyframe en todas las transformaciones (TRS)
 
