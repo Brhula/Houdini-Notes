@@ -5,7 +5,8 @@
 [FX Tips and Notes](https://www.katexagoraris.com/)   
 [Houdini Tutorials Tailored for Mathematicians.](http://dgd.service.tu-berlin.de/wordpress/houdini/)   
 
-Houdini is HIP video tutorials: https://www.youtube.com/@NineBetween/videos
+Houdini is HIP video tutorials: https://www.youtube.com/@NineBetween/videos   
+Procedural Content Generation, mini tutoriales interesantes: https://procegen.konstantinmagnus.de/   
 
 ### IMPORTANT HOUDINI RESOURCES FOR LEARNING
 [CgWiki](https://www.tokeru.com/cgwiki/index.php?title=Main_Page)   
