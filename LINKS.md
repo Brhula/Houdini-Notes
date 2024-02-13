@@ -7,6 +7,8 @@
 
 Houdini is HIP video tutorials: https://www.youtube.com/@NineBetween/videos   
 Procedural Content Generation, mini tutoriales interesantes: https://procegen.konstantinmagnus.de/   
+Houdini SNIP, para guardar y cargar "snippets": https://www.richardcthomas.com/houdini-snip   
+VSCode con Houidini y Python: https://jtomori.github.io/2022/2022-07-07.html   
 
 ### IMPORTANT HOUDINI RESOURCES FOR LEARNING
 [CgWiki](https://www.tokeru.com/cgwiki/index.php?title=Main_Page)   
