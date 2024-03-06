@@ -11,8 +11,9 @@ Masterclass de pegar animación MoCap en FBX a otro character FBX :  https://www
 ### Nodos KineFX interesantes
 
 - `skeleton` : para dibujar joints (puntos unidos por curvas)
+- `Reparent Joints` : emparenta los puntos para que el padre pueda "arrastrar" al hijo.
 - `Joint Capture Biharmonic` : hace el "pesado" automatico de la geometria para deformarla luego.
-- `Rig Pose` : Aquí podemos modificar la posición de los puntos (joints) para animarlos o preparar un rig.
+- `Rig Pose` : Aquí podemos modificar la posición de los puntos (joints) para animarlos o preparar un rig. Si están conectados el "padre" arrastra al "hijo".
 - `Skeleton Blend` : podemos hacer "blend" de diferentes esqueletos (modificados por `rig pose` por ejemplo.
 - `Bone Deform` : realiza la deformación de la geometría que tiene los atributos de "captura" con el esqueleto.
 
