@@ -4,6 +4,7 @@ Masterclass de pegar animación MoCap en FBX a otro character FBX :  https://www
 
 
 ## KineFX
+[Working with skeletons](https://www.sidefx.com/docs/houdini/character/kinefx/skeletons.html#creatingskels)
 ### Conceptos:
 - Las curvas son tomadas como la estructura jerarquica: los puntos son donde están los "joints" y la conexion entre ellos (*"poly lines"*) define la relación padre/hijo
 - Un punto es un *joint* si tiene los  atributos "name" y "transform"
