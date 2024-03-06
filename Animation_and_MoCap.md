@@ -10,7 +10,7 @@ Masterclass de pegar animación MoCap en FBX a otro character FBX :  https://www
 
 ### Nodos KineFX interesantes
 
-- `skeleton` : para dibujar joints (puntos unidos por curvas)
+- `skeleton` : para dibujar joints (puntos unidos por curvas) ([docs](https://www.sidefx.com/docs/houdini/character/kinefx/skeletons.html#creatingskels))
 - `Reparent Joints` : emparenta los puntos para que el padre pueda "arrastrar" al hijo.
 - `Joint Capture Biharmonic` y `Capture Proximity`: hace el "pesado" automatico de la geometria para deformarla luego.
 - `Joint Capture Paint`  para pintar los pesos a mano ([docs](https://www.sidefx.com/docs/houdini/nodes/sop/kinefx--jointcapturepaint.html)).
