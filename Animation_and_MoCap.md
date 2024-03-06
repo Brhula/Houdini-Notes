@@ -4,6 +4,9 @@ Masterclass de pegar animación MoCap en FBX a otro character FBX :  https://www
 
 
 ## KineFX
+### Conceptos:
+- Las curvas son tomadas como la estructura jerarquica: los puntos son donde están los "joints" y la conexion entre ellos (lineas) define la relación padre/hijo
+
 
 ### Nodos KineFX interesantes
 
