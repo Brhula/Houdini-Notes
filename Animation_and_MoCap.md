@@ -1,3 +1,7 @@
+## MoCAP
+
+Masterclass de pegar animación MoCap en FBX a otro character FBX :  https://www.youtube.com/watch?v=KHPpztrZtyw
+
 ## ANIMACION (editors y viewport)    
 
 ***Shortcuts pata TODAS las ventanas***   
