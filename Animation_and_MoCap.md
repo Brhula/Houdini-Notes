@@ -9,6 +9,7 @@ Masterclass de pegar animación MoCap en FBX a otro character FBX :  https://www
 - SOLVER: `full body IK` se encarga de pegar la animación al nuevo esqueleto.
 - finalemnte pegamos el esqueleto animado típicamente con `Bone deform`.
 
+![MoCap mapping example](./images/MoCap_workflow_1.jpg)
 ![MoCap mapping example](./images/MoCap_remapping.jpg)
 
 ## KineFX
