@@ -2,6 +2,14 @@
 
 Masterclass de pegar animación MoCap en FBX a otro character FBX :  https://www.youtube.com/watch?v=KHPpztrZtyw
 
+### Nodos para MoCap
+- IMPORTAR ANIMACIONES (y también RIGs ya existentes) :`FBX Character Import`. Si solo es la animación del esqueleto con `FBX animation import` ya vale.
+- AJUSTAR RIG: `rig match pose`, ajustamos la T-pose del esqueleto con animación. 
+- MAPEAR JOINTS: `map points`, indicamos qué joints van donde (source <-> target)
+- SOLVER: `full body IK` se encarga de pegar la animación al nuevo esqueleto.
+- finalemnte pegamos el esqueleto animado típicamente con `Bone deform`.
+
+![MoCap mapping example](./images/MoCap_remapping.jpg)
 
 ## KineFX
 https://www.sidefx.com/docs/houdini/character/kinefx/index.html   
