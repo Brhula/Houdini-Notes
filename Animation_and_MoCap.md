@@ -13,7 +13,8 @@ https://www.sidefx.com/docs/houdini/character/kinefx/index.html
 
 ### Nodos KineFX interesantes
 
-- CREAR JOINTS : `skeleton` : para dibujar joints (puntos unidos por curvas) ([docs](https://www.sidefx.com/docs/houdini/character/kinefx/skeletons.html#creatingskels)). También se puede hacer con `Rig Doctor`+ `rig pose`.
+- CREAR JOINTS : `skeleton` : para dibujar joints (puntos unidos por curvas) ([docs](https://www.sidefx.com/docs/houdini/character/kinefx/skeletons.html#creatingskels)). También se puede hacer con una curva ya existente y `Rig Doctor`+ `rig pose`.
+- ORIENTAR JOINTS : `Orient Joints`.
 - `Reparent Joints` : emparenta los puntos para que el padre pueda "arrastrar" al hijo.
 - `Joint Capture Biharmonic` y `Capture Proximity`: hace el "pesado" automatico de la geometria para deformarla luego.
 - `Joint Capture Paint`  para pintar los pesos a mano ([docs](https://www.sidefx.com/docs/houdini/nodes/sop/kinefx--jointcapturepaint.html)).
