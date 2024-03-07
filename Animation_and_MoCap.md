@@ -41,13 +41,13 @@ https://www.sidefx.com/docs/houdini/character/kinefx/index.html
 
 ***Shortcuts pata TODAS las ventanas***   
 
-K : keyframe en todas las transformaciones (TRS)
+`K` : keyframe en todas las transformaciones (TRS)
 
 
 ***PANEL shortcuts***   
 
-SHIFT+left mouse button : añadir los canales animados al "Animation editor"   
-SHIFT+middle mouse button : añadir el canal que se selecciona al "Animation editor" aunque no tenga animación.   
+`SHIFT+left mouse button` : añadir los canales animados al "Animation editor"   
+`SHIFT+middle mouse button` : añadir el canal que se selecciona al "Animation editor" aunque no tenga animación.   
 
 ***ANIMATION EDITOR shortcuts***   
    
