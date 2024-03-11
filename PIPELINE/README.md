@@ -2,7 +2,8 @@
 
 ***ENVIROMENT VARIABLES***
 
-- `HOUDINI_PATH` : Este es el path a los directorios donde Houdini busca los ficheros de configuración [Más info en SideFx](https://www.sidefx.com/docs/houdini/basics/houdinipath.html). 
+- `HOUDINI_PATH` : Este es el path a los directorios donde Houdini busca los ficheros de configuración [Más info en SideFx](https://www.sidefx.com/docs/houdini/basics/houdinipath.html).
+- `PATH` : Este es el 2system path" para que encuentre ejecutables.
 
 
 
