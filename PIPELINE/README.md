@@ -1,5 +1,11 @@
 **PIPELINE STUFF**   
 
+***ENVIROMENT VARIABLES***
+
+- `HOUDINI_PATH` : Este es el path a los directorios donde Houdini busca los ficheros de configuración. 
+
+
+
 ***VARIABLES en el File Browser***   
 Se deben añadir al fichero "jump.pref" que suele estar en la raíz de las preferencias.   
 También se puede añadir en la raíiz de un "package".
