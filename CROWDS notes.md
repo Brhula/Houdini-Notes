@@ -5,6 +5,8 @@
 [SIDEFX Intro to crowds 2020](https://www.sidefx.com/tutorials/intro-to-crowds/)   
 [SIDEFX crowds example with bats 2019](https://www.sidefx.com/tutorials/crowd-workshop/)   
 
+SIDEFX nuevo sistema más sencillo en SOP para crowds simples de [Houdini 20](https://www.youtube.com/watch?v=z8Z5PsnWFto)
+
 ### INTRODUCCION ###
 El elemento esencial de los crowds son los "packed agents". Es parecido a una "packed primitive", ya que es un punto que incluye toda la información sobre la geometria, clips de animación, metadata y otros elementos.   
 
