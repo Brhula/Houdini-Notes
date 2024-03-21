@@ -49,6 +49,27 @@ Links interesantes sobre "packages":
 - [Houdini packages doc](https://www.sidefx.com/docs/houdini/ref/plugins.html)   
 - [Toadstorm basic explanation of packages](https://www.toadstorm.com/blog/?p=722)   
 
+Ejemplos:   
+Buscar en el *path* de los packages un "pakage" en concreto, y cargarlo SOLO una vez (por si está repetido).   
+```json
+{
+  "load_package_once": true,
+  "path": "$HOUDINI_PACKAGE_PATH/nombre-del-paquete"
+}
+```
+Ejemplo del package de GW:   
+```json
+{
+	"path" : "$GW_TOOLS",
+	"load_package_once": true,
+	"enable" : true,
+	"env" : [
+		{"HOUDINI_OTLSCAN_PATH" :"$GW_TOOLS/otls/glassworks;$GW_TOOLS/otls/external;$GW_TOOLS/otls/experimental;@/otls"},
+		{"GW_TOOLS" : "$HSITE/packages/gw_tools"}	
+	]
+}
+```
+
 ***PYTHON***   
 
 - Cambiar o crear una variable dentro de la escena (se puede ver y modificar en "EDIT-->ALIASES AND VARIABLES"):   
