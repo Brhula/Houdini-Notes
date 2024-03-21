@@ -1,6 +1,6 @@
 ## CROWD notas ##   
 
-[CgWiki sobre Crowds](https://www.tokeru.com/cgwiki/index.php?title=HoudiniCrowd)   
+[CgWiki sobre Crowds](http://tokeru.com/cgwiki/HoudiniCrowd.html)   
 [Few notes on Crowd Sim](https://tosinakinwoye.com/2018/10/25/a-few-notes-on-houdini-crowd-simulations/)   
 [SIDEFX Intro to crowds 2020](https://www.sidefx.com/tutorials/intro-to-crowds/)   
 [SIDEFX crowds example with bats 2019](https://www.sidefx.com/tutorials/crowd-workshop/)   
