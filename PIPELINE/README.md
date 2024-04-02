@@ -6,7 +6,14 @@ Variables etípicamente en *HOUDINI.ENV*.
 - `HOUDINI_PATH` : Este es el path a los directorios donde Houdini busca los ficheros de configuración [Más info en SideFx](https://www.sidefx.com/docs/houdini/basics/houdinipath.html).
 - `PATH` : Este es el "system path" para que encuentre ejecutables.
 
+***COMMAND LINE TOOLS***   
+   
+[Quicktip hconfig utility](https://houdinitricks.tumblr.com/post/122304825634/quicktip-hconfig-utility)   
+Abre un shell que sirve para ver las variables y configuración.    
+Lo arrancamos buscando "command line tools" en el buscador de Windows   
 
+`hconfig -a` para que vuelque todas las variables en la consola.   
+`hconfig -H HOUDINI_USER_PREF_DIR` para ayuda en una variable en particular   
 
 ***VARIABLES en el File Browser***   
 Se deben añadir al fichero "jump.pref" que suele estar en la raíz de las preferencias.   
