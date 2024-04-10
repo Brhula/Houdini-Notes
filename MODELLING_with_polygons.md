@@ -1,4 +1,5 @@
-#### SELECCION INTERACTIVA
+#### <ins>SELECCION INTERACTIVA</ins>
+
 - `Edge Loop`: doble click en el *edge*. Con SHIFT y CTRL te permiten añadir o eliminar mas *loops*
 - `Face loop`: manten pulsa la tecla A, al mover el cursor hace *preview* de como quedara. Boton central (MMB) selecciona el loop.
 - `Face loop parcial`: Igual que antes, pero botón izquierdo (LMB)
@@ -11,11 +12,10 @@
 - `CTRL I`: Invertir selección
 
 Con el modo "SELECT" puesto   
-
 - `doble clic en un polygono` : Seleccionamos la "polygon Island". Con `control` y `shift` podemos añadir o eliminar mas cosas.
 
 
-#### HOW TO con nodos
+#### <ins>HOW TO con nodos</ins>
 
 - `Convert triangles to hexagons` : Utilizamos el nodo `divide` con la opción `compute dual`
 - `BAD NORMALS` : Cuando las normales se queden "feas" hay que poner un nodo `normal` preferentemente con la opción "weighting method" en "By Face Area". Eso las recoloca bien.
