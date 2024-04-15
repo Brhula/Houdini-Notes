@@ -19,7 +19,8 @@ GI samples              //  GI noise
 Volume samples (lights) //  VDBs and volumes noise 
 ```
 #### SSS RANDOM WALK FLICKERING   
-A veces SSS Random Walk hace flicker, para solucionarlo poner GI en Brute Force + Brute Force. Más lento pero lo elimina   
+- A veces SSS Random Walk hace flicker, para solucionarlo poner GI en Brute Force + Brute Force. Más lento pero lo elimina
+- Otra solución es aumentar en el GI secundario el Irradiance Point Cloud (IPC) el parámetro `RayTrace threshol` a 3 (por ejemplo). Se supone que es más rápido que el anterior.
 
 ### // PBR Materials   
 Toggle "Gamma override" check on "texture" node if dealing with gray scale images.   
