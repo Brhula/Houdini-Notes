@@ -10,7 +10,7 @@ Actualmente hace falta hacer "agent unpack" para que Redshift pille bien los age
 
 
 ### // NOISE (reducir ruido)   
-Parámetro a tocar // Tipo de ruido al que afecta.
+Parámetro a tocar // Tipo de ruido al que afecta.   
 ```C#
 Unified samples         //  Motion blur and depth of field noise   
 light samples           //  Shadows and direct specular noise   
@@ -18,6 +18,9 @@ Shader samples          //  Indirect specular noise
 GI samples              //  GI noise   
 Volume samples (lights) //  VDBs and volumes noise 
 ```
+#### SSS RANDOM WALK FLICKERING   
+A veces SSS Random Walk hace flicker, para solucionarlo poner GI en Brute Force + Brute Force. Más lento pero lo elimina   
+
 ### // PBR Materials   
 Toggle "Gamma override" check on "texture" node if dealing with gray scale images.   
 Use node "Bump Blender" to combine Normal and Bump mapping.   
