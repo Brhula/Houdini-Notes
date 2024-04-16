@@ -3,7 +3,8 @@
 ### // Instancias (copy to points y similares):   
 
 - Hay que activar en la pestaña "Instancing" en las opciones de Redshift del objeto la opción "instancing using --> Redshift Point Clouds". De lo contrario el render va muy lento.
-- Para que los colores se propaguen por las instacias, activar en el objecto (en propiedades de RS --> Settings --> Instancing) el `Instances SOP Level Packed Primitives` 
+- Para que los colores se propaguen por las instacias, activar en el objecto (en propiedades de RS --> Settings --> Instancing) el `Instances SOP Level Packed Primitives`
+- TESSELATION : Para que subdivida correctamente las `packed primitives` hay que deconectar Tesselation --> Screen Space Adaptive.
 
 ### // CROWDS:   
 
