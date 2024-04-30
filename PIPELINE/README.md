@@ -1,4 +1,4 @@
-**PIPELINE STUFF**   
+*PIPELINE STUFF*   
 
 ***ENVIROMENT VARIABLES***   
 
@@ -91,3 +91,8 @@ import hou
 # recuperamos la variable $CACHE visible en edit-->Variables
 variable_from_houdini=hou.getenv("CACHE")
 ```   
+
+
+***MENUS***   
+
+- La variable `HOUDINI_MENU_PATH` se lee de derecha a izquierda (!!).   
