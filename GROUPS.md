@@ -18,3 +18,7 @@ Group expression útiles en el nodo para seleccionar según el caso. Metemos exp
   // Run over primitives y seleccionando el grupo de "edges" en el campo Group
   i@group_nuevoGrupo=1;
   ```  
+
+#### <ins>TIPS</ins>   
+
+- Highlight de un grupo: usar `group combine` y combinar consigo mismo. Eso hace que podamos verlo en el viewport sin necesidad de ponerle un "color". Tabién se puede usar VEX en Bindings->Output Selection Group   
