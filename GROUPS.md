@@ -9,3 +9,12 @@ Group expression útiles en el nodo para seleccionar según el caso. Metemos exp
   ```C#
   `0  nprims("0")-1`
   ```  
+
+
+#### <ins>PROMOTE GROUPs</ins>   
+
+- Para convertir edges en primitivas, mejor utilizar VEX. Si utilizamos "group promote" se convierten también las primitivas que solo tocan un punto.
+  ```C#
+  // Run over primitives y seleccionando el grupo de "edges" en el campo Group
+  i@group_nuevoGrupo=1;
+  ```  
