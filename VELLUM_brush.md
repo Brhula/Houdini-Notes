@@ -32,3 +32,15 @@ En los parametros a tener en cuenta:
 ![MoCap mapping example](./images/Vellum_Brush_workflow_with_solver.jpg)
 
 2) CLOTH pequeño // Empezar directamente con el `vellum brush`
+
+
+
+**TIPS**   
+
+- Grabar una `"sesión en vivo"` de "Vellum Brush":
+   1) Entrar en el tool de Vellum Brush, y en el solver llamado `dopnet minimal` activamos la caché.
+   2) conectamos un `null` a esta cache (para usarlo fuera del  "Vellum Brush").
+   3) Le damos al play y usando el "Vellum Brush". Vemos el resultado al visualizar el nulo.
+   4) En el nivel de arriba (SOP), hacemos un `Object merge` que apunte al null que hemos creado dentro del "Vellum Brush".
+   5) Conectamos un `file node` en modo "write" al `Object merge`
+   6) Le damos al play y se grabará en disco.
