@@ -15,6 +15,13 @@ En los parametros a tener en cuenta:
 - `Bend` : Cuanto se dobla (rigidez / flexibilidad).
 - `Sub Steps`: poner a 4, como en el `Vellum Solver`.
 
+**MODOS de MANIPULACIÓN del CLOTH**   
+   
+- `Brush` : mueve suavemente el cloth en la dirección indicada.
+- `Drag` : "arrastra" el cloth, más contundente que `Brush`.
+- `Contract / Expand` : para "arrugar" y "planchar" el tejido.
+- `Rotate` : pues eso, rota respecto al "brush".
+- `Crease / Ruffle` : hace los polygonos del cloth más pequeños/grandes. Es como un "zurcido" o "expandido"
 
 **WORKFLOW**   
 
