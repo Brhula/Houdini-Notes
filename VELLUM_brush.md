@@ -13,3 +13,10 @@ En los parametros a tener en cuenta:
 - `Density`: indica lo "pesado" que es el tejido.
 - `Stretch`: Si se comprime / expande (elasticidad).
 - `Bend` : Cuanto se dobla (rigidez / flexibilidad).
+
+
+
+**WORKFLOW**   
+
+1) CLOTH grande // Utilizar un VELLUM SOLVER para hacer la forma inicial, y luego con `vellum brush` hacer el acabado.
+2) CLOTH pequeño // Empezar directamente con el `vellum brush`
