@@ -18,10 +18,10 @@ En los parametros a tener en cuenta:
 
 **WORKFLOW**   
 
-- Poner los sub-steps a 4 y los constraint iteratios a unos 200 (si no, el tejido se simula mal)
-
 1) CLOTH grande // Utilizar un `VELLUM SOLVER` para hacer la forma inicial, y luego con `vellum brush` hacer el acabado.
-   
+
+- Poner los sub-steps a 4 y los constraint iteratios a unos 200 (si no, el tejido se simula mal)
+     
 ![MoCap mapping example](./images/Vellum_Brush_workflow_with_solver.jpg)
 
 2) CLOTH pequeño // Empezar directamente con el `vellum brush`
