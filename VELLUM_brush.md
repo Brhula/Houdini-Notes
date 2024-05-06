@@ -12,4 +12,4 @@ En los parametros a tener en cuenta:
 
 - `Density`: indica lo "pesado" que es el tejido.
 - `Stretch`: Si se comprime / expande (elasticidad).
-- `Bend` : Cuanto se dobla (rigidez).
+- `Bend` : Cuanto se dobla (rigidez / flexibilidad).
