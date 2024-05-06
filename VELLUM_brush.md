@@ -13,7 +13,7 @@ En los parametros a tener en cuenta:
 - `Density`: indica lo "pesado" que es el tejido.
 - `Stretch`: Si se comprime / expande (elasticidad).
 - `Bend` : Cuanto se dobla (rigidez / flexibilidad).
-
+- `Sub Steps`: poner a 4, como en el `Vellum Solver`.
 
 
 **WORKFLOW**   
