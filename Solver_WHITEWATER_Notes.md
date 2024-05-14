@@ -50,7 +50,7 @@ Depth : positivo, encima de la superficie del agua. Negativo, sumergido. CUIDADO
 
 ### RENDER:   
 
-Se renderizan las particulas, NO SE HACE MESHING.    
+Se renderizan las particulas (o con VDB), NO SE HACE MESHING.    
 - Construimos un shader con el difuso blanco puro, o casi. Poca reflexion. Un poco de transparencia. Casi completamente plano.   
 - Multiplicamos el tamaño de las pariculas para hacerlas mas pequeñas (por ejemplo 0.2)   
    
