@@ -5,6 +5,8 @@ SOPS:
 
 ### WORKFLOW TÍPICO (manual)   
 
+![MoCap mapping example](./images/UV_flatten.jpg)
+
 1) `UV flatten` : nodo para seleccionar los edges, y trocear las UVs. Trocear modelo hasta conseguir una distribución del grid de UVs sin demasiadas distorsiones
 2) `UV Layout` : reorganiza las islas de UVs sin solaparse y rellenando el espacio.
 3) `UV QuickShade` : Simplemente para comprobar que todo está funcionando
