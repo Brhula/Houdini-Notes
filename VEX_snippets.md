@@ -103,6 +103,13 @@ if ((_ndc[2] > 0 + _errorz))   removepoint(geoself(), @ptnum);
 // Project point to minimum distance like RAY Sop // set a wrangle to run over points
 @P=minpos(1,@P);
 ```
+Alternativamente:
+```C#
+int pt = nearpoint( 1, @P ); // Cual es el punto mas cercano
+@P = point( 1, "P", pt ); // Copiamos posicion
+```
+
+
 **PUNTOS // Normales aleatorias en los puntos** 
 ```C#
 // Random normals // set a wrangle to run over points
