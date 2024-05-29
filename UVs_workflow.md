@@ -1,7 +1,8 @@
 
 SOPS:
 
-- SPLIT UV SEAMS: separa las UVs para que no tenga problemas al procesarlo despues (con un nodo "remesh" poir ejemplo)
+- SPLIT UV SEAMS: separa las UVs para que no tenga problemas al procesarlo despues (con un nodo "remesh" poir ejemplo).
+- `ReMesh` destroza las UVs. Mejor hacer luego un `LABS UV transfer` para arreglarlas.
 
 ### WORKFLOW TÍPICO (manual)   
 
