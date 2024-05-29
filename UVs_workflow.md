@@ -15,6 +15,8 @@ SOPS:
 
 ### DESPLEGAR UVs como geometría normal y vollver a UVs (para usar herremientas de modelado al hacer UVs)   
 
+![UVs to mesh](./images/UVs_to_mesh_and_back.jpg)
+
 1) Nodo `Point Split` para cortar mesh por las "UV islands"
 2) Wrangler para desplegar UVs en P:
 ```C++
