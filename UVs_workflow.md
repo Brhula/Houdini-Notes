@@ -13,7 +13,7 @@ SOPS:
 
 
 
-### DESPLEGAR UVs como geometría normal y vollver a UVs (para usar herremientas de modelado al hacer UVs)   
+### DESPLEGAR UVs como geometría normal y volver a convertir en UVs (para usar herremientas de modelado al hacer UVs)   
 
 ![UVs to mesh](./images/UVs_to_mesh_and_back.jpg)
 
