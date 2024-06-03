@@ -12,6 +12,10 @@
 - `SHIFT S` : Reduce seleccion
 - `CTRL I`: Invertir selección
 
+#### <ins>CONVERTIR polys to points y demás</ins>
+
+botón de la derecha del ratón y seleccionar `Convert selection to...`
+
 #### <ins>HOW TO con nodos</ins>
 
 - `Convert triangles to hexagons` : Utilizamos el nodo `divide` con la opción `compute dual`
