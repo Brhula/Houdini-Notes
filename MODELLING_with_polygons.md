@@ -1,3 +1,10 @@
+## MODELLING with POLYGONS
+
+#### TIPs
+
+https://www.youtube.com/watch?v=kAXUfg2FbYY
+
+
 #### <ins>SELECCION INTERACTIVA</ins>
 
 - `Edge Loop`: doble click en el *edge*. Con SHIFT y CTRL te permiten añadir o eliminar mas *loops*
