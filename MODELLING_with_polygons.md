@@ -19,6 +19,14 @@ https://www.youtube.com/watch?v=kAXUfg2FbYY
 - `SHIFT S` : Reduce seleccion
 - `CTRL I`: Invertir selección
 
+#### <ins>CURVE SOP</ins>
+
+- Alinear puntos:
+  1) Activar `Point Snapping`
+  2) Activar `Edit mode` en el nodo curva, y tocar tecla `K` ("Toggle transform handle")
+  3) Movemnos el punto en cuestión hacia el punto de referencia al que queremos aliear.
+
+
 #### <ins>CONVERTIR polys to points y demás</ins>
 
 botón de la derecha del ratón y seleccionar `Convert selection to...`
