@@ -1,7 +1,7 @@
 
 ### TIPS   
 - `UV SNAPSHOT` : dentro de SOPs, ratón encima del nodo que queramos hacer el "snapshot", boton derecho y `save --> UV Texture image`
-
+- `CUBIC MAPPING` : con el nodo `UV unwrap`.
 
 SOPS:
 
