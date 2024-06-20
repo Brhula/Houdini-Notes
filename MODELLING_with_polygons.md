@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=kAXUfg2FbYY
 - Alinear puntos:
   1) Activar `Point Snapping`
   2) Activar `Edit mode` en el nodo curva, y tocar tecla `K` ("Toggle transform handle")
-  3) Movemnos el punto en cuestión hacia el punto de referencia al que queremos aliear.
+  3) Movemos el punto en cuestión hacia el punto de referencia al que queremos aliear.
 
 
 #### <ins>CONVERTIR polys to points y demás</ins>
