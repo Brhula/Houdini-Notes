@@ -12,7 +12,10 @@ POLY SELECTION
 `F12` :        UV VERTEX    // `CONTROL` + `F9` :                      VERTEX   
 </pre>
 
-`CONTROL`+`E` : Poly Extrude   
+`CONTROL`+`E` : Extrude   
+`CONTROL`+`B` : Bevel   
+
+
 
 ### CUSTOM KEYS
 
