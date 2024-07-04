@@ -12,9 +12,12 @@ POLY SELECTION
 `F12` :        UV VERTEX    // `CONTROL` + `F9` :                      VERTEX   
 </pre>
 
-`CONTROL`+`E` : Extrude   
-`CONTROL`+`B` : Bevel   
+`ALT`+`E` : Extrude   
+`ALT`+`B` : Bevel   
 
+### CONTRUCTION PLANE:
+
+- ORIENT CONSTRUCTION PLANE: Hit the `/` key. Click on prim. Hit the `/` key again. 
 
 
 ### CUSTOM KEYS
