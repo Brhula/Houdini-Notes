@@ -18,7 +18,7 @@ POLY SELECTION
 ### CONTRUCTION PLANE:
 
 - ORIENT CONSTRUCTION PLANE: Hit the `/` key. Click on prim. Hit the `/` key again. 
-
+- ALIGN to GEOMETRY : hold `/` key, then click on primitive, edge or point to align.
 
 ### CUSTOM KEYS
 
