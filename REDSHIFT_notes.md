@@ -68,6 +68,13 @@ Utilizar también un "Displacement Blender" y un "Bump blender".
 ### // RENDER REFRACTANDO FONDO PERO SIN VERLO   
 Si ponemos un background en el HDRI (enable background + backplate) se vera el fondo. La unica manera de hacer que el fondo refracte (con cristales por ejemplo) y que no se vea, es hacer una esfera gigante y convertirla en "matte object". Hay que desactivar todos sus componentes de visibilidad excepto "primary", de lo cantrario hara sombras y demas interferencias.
 
+### // RENDER MAPS (para hacer "bake" de las texturas con la luz de la escena)   
+- (!!!) Vigilar las normales de los objetos, si no, el render sale negro.
+- (!!!) UVs no deben solaparse, si no el render sale mal.
+- UVs en el espacio [0-1] preferiblemente.
+- En "OBJECTS" forzamos los objetos que queramos que se consideren en el render (tanto para que se renderizen como para que hagan sombras o rebotes de luz).
+- En "RENDER MAPS -> Render Map Object" ponemos el objeto que queramos hacer "bake" de sus textras con la luz.
+
 ### // TIPS:   
 - *Volumen mas o menos opaco:* incrementat tanto el "Absortion coefficient" como el "scatter coefficient" al mismo tiempo mas brillante o  más oscuro: modificar solamente "scatter coefficient"
 - *Color de todo el volumen:* modificar "scatter tint". Utilizar la rampa para remapear según la densidad: Izquierda--> menos denso, derecha--> más densidad
