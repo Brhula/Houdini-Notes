@@ -68,6 +68,9 @@ Utilizar también un "Displacement Blender" y un "Bump blender".
 ### // RENDER REFRACTANDO FONDO PERO SIN VERLO   
 Si ponemos un background en el HDRI (enable background + backplate) se vera el fondo. La unica manera de hacer que el fondo refracte (con cristales por ejemplo) y que no se vea, es hacer una esfera gigante y convertirla en "matte object". Hay que desactivar todos sus componentes de visibilidad excepto "primary", de lo cantrario hara sombras y demas interferencias.
 
+### // CRYPTOMATTE   
+Si quereos que el fichero d Cryptomatte no acabe coo "*.exr.cryptomatte" tenemos que poner $AOV en el OUTPUT path, tipo  `$HIP/render/$HIPNAME/$HIPNAME.$OS.$AOV.$F4.exr`.    
+
 ### // RENDER MAPS (para hacer "bake" de las texturas con la luz de la escena)   
 ![Alt text](images/Render_Maps.jpg?raw=true "Title")   
 
