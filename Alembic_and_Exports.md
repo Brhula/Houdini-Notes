@@ -64,7 +64,8 @@ El metodo es hacer un "stitch" fde la secuancia de alembics de salida:
 **Change all objects selected for a new one inside Maya**   
    
 ```C++
-// Substitute obects 
+// Substitute obects
+// Cambiamos todos los objetos selecionados por una instancia (mismo shape)
 
 string $instance ="pCube13"; // Maya object to use as instance.
 
