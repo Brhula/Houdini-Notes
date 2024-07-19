@@ -1,3 +1,11 @@
+### FBX en Houdini
+
+Utilizaremos el atributo `s@path` (en las "primitivas") para construir la jerarquía y que los objetos queden organizados. 
+
+Para ello podemos utilizar el nodo `name` poniendo en el atributo a construir `path`, o tambien con VEX (es un stributo de tipo "string").
+
+No parece que se puedan enviar animacipones de puntos. Para eso mejor Alembic.
+
 ### ALEMBIC in Houdini
 
 - El "frame rate" del Alembic y la escena deben coincidir.
