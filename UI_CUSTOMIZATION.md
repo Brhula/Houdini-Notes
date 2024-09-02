@@ -14,6 +14,7 @@ POLY SELECTION
 
 `ALT`+`E` : Extrude   
 `ALT`+`B` : Bevel   
+`ALT`+`F` : Fill (polygons)   
 
 ### CONTRUCTION PLANE:
 
