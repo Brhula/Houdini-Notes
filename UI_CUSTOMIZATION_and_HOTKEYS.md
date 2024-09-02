@@ -30,4 +30,4 @@ POLY SELECTION
 ### COMO HACER HOTKEYS:   
 
 - Utilizando los `shelf tools`, hay una pestanya especifica.
-- 
+- Si es una accion con un script de Python, cremos un shelf tool y le asignamos el 'hotkey'.
