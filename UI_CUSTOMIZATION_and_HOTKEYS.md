@@ -29,5 +29,5 @@ POLY SELECTION
 
 ### COMO HACER HOTKEYS:   
 
-- Utilizando los `shelf tools`, hay una pestanya especifica.
+- Utilizando los `shelf tools`, hay una pestanya especifica. Muchos de los nodos tienen un sshelf tool.
 - Si es una accion con un script de Python, cremos un shelf tool y le asignamos el 'hotkey'.
