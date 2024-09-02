@@ -95,4 +95,17 @@ variable_from_houdini=hou.getenv("CACHE")
 
 ***MENUS***   
 
-- La variable `HOUDINI_MENU_PATH` se lee de derecha a izquierda (!!).   
+- La variable `HOUDINI_MENU_PATH` se lee de derecha a izquierda (!!).
+
+
+***VS CODE // EDITOR EXTERNO***   
+   
+Para hacer que el editor de VS CODE entienda la libreria `"hou"`, editar "settings.json" en VScode (`">open settings.json"`) y anyadir (cambiando el path):   
+
+```json
+"python.analysis.extraPaths": [
+	"C:\\Program Files\\Side Effects Software\\Houdini 19.5.303\\houdini\\python3.9libs",
+	"C:\\Program Files\\Side Effects Software\\Houdini 19.5.303\\python39\\lib\\site-packages-forced"
+]
+```   
+De esta fora no da error en el "package" "hou".
