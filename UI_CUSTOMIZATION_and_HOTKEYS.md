@@ -25,3 +25,9 @@ POLY SELECTION
 ### CUSTOM KEYS
 
 `CONTROL`+`SHIFT`+`C` : Clear All Templates    
+
+
+### COMO HACER HOTKEYS:   
+
+- Utilizando los `shelf tools`, hay una pestanya especifica.
+- 
