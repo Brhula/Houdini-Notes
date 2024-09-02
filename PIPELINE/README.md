@@ -1,4 +1,8 @@
-*PIPELINE STUFF*   
+## PIPELINE STUFF   
+
+***INTERESTING LINKS***   
+
+- Python hacks and stuff in [HouPy Wiki](https://www.houpywiki.com)
 
 ***ENVIROMENT VARIABLES***   
 
