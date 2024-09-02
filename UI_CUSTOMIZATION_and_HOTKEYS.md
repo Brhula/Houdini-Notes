@@ -33,3 +33,4 @@ POLY SELECTION
 - Si es una accion con un script de Python, cremos un shelf tool y le asignamos el 'hotkey'.
 - Con el `HotKeys` editor.
 -  `control`+`alt`+`shift`+click en elento del interface abre el `hotkeys` editor.
+- Tambien se puede asignar un 'hotkey' a un menu radial (en su propio editor).
