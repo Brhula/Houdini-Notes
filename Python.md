@@ -17,6 +17,13 @@ A partir de aquí tenemos acceso a las funciones de Houdini en Python. Ejemplos:
 # que nodos hay seleccionados
 hou.selectedNodes()
 ```
+Activar / desactivar un nodo (bypass)
+```Python
+n = hou.node('/obj/geo1/font1')
+n.bypass(1)   # node is now bypassed
+n.bypass(0)   # node is now active
+```
+
 ```Python
 # obtener variables locales a la sesion de Houdini ($JOB,  $HIP, etc)
 hou.text.expandString('$HIP')
