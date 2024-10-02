@@ -6,6 +6,12 @@ Para ello podemos utilizar el nodo `name` poniendo en el atributo a construir `p
 
 No parece que se puedan enviar animacipones de puntos. Para eso mejor Alembic.
 
+### Inspeccionar ALEMBIC con herramienta externas (de Houdini)
+
+- Abrir una consola  `Command Line Tools` de Houdini
+- utilizar el comando `abcinfo <fichero alembic>` para objeter info basica (fps, frame start and end)
+- utilizar comando `abcecho <fichero alebic>` para obtener info detallada, inlcuyendo de donde viene el alembic, objetos que contiene y demas.
+
 ### ALEMBIC in Houdini
 
 - El "frame rate" del Alembic y la escena deben coincidir.
@@ -23,7 +29,6 @@ No parece que se puedan enviar animacipones de puntos. Para eso mejor Alembic.
 setprimintrinsic(0, "abcframe", @primnum, 2.0, "set"); // forzamos el segundo 2
 setprimintrinsic(0, "abcframe", @primnum, 0.5, "mult"); // Velocidad a mitad
 ```
-
 
 ### ALEMBIC exports to Maya
 
