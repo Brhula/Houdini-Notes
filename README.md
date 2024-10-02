@@ -2,7 +2,7 @@
 Houdini Notes <br />
 
 Notas personales sobre HOUDINI, para aprender y recordar.   
-Personal notes for SIDEFX HOUDINI, to learn and remenber :-)   
+Personal notes for SIDEFX HOUDINI, to learn and remember :-)   
 
 [Awesome Houdini // Toneladas de links a recursos grátis. IMPRESCINDIBLE](https://github.com/wyhinton/AwesomeHoudini)
 
