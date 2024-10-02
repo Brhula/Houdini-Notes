@@ -9,7 +9,7 @@ No parece que se puedan enviar animacipones de puntos. Para eso mejor Alembic.
 ### Inspeccionar ALEMBIC con herramienta externas (de Houdini)
 
 - Abrir una consola  `Command Line Tools` de Houdini
-- utilizar el comando `abcinfo <fichero alembic>` para objeter info basica (fps, frame start and end)
+- utilizar el comando `abcinfo <fichero alembic>` para objeter info basica (fps, frame start and end) . https://www.sidefx.com/docs/houdini/ref/utils/abcinfo.html
 - utilizar comando `abcecho <fichero alebic>` para obtener info detallada, inlcuyendo de donde viene el alembic, objetos que contiene y demas.
 
 ### ALEMBIC in Houdini
