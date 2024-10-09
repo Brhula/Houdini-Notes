@@ -49,7 +49,7 @@ Nodos interesantes en DOP:
 - Para poder poner shaders separados a diferentes partes del "agent" (cara, camisa, zapatos, etc.), debe haber un "Maya mesh" distinto en cada uno de ellos. De esta manera en el "style sheet" se puede poner un "sub-target" apuntando a ese "Maya mesh" y asignarle un nuevo shader/textura
 - IMPORTANTE: 
   - La estructura de los joints debe ser la misma en el RIG que en los clips de animación. De lo contrario se hace un lio en Houdini.   
-  - El NOMBRE de los joints debe coincidir
+  - El NOMBRE de los joints debe coincidir (CUIDADO CON MIXAMO!!! A VECES EL NOMBRE/NAMESPACE CAMBIA!!! Comprobar que el RIG y la ANIMACION tienen el mismo nombre!)
   - Asegurarse que el esqueleto animado está exactamente en el plano XZ con los pies en el suelo. Si no, flota.
   - Al exportar animación, vigilar que solo se exporte la parte del clip animada. Si no, el clip se para.
 
