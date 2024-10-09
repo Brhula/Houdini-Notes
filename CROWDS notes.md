@@ -55,9 +55,9 @@ Nodos interesantes en DOP:
 
 ## CROWD WORKFLOW   
 
-- Agent : Nodo basico para importar el "agente" (el modelo fbx/rig/etc). Se puede poner el modelo en T-pose y luego incorporar animaciones. Crea un "packed agent"
-- Agent Clip: Selecciona que clip animado utilizamos con este "agent"
-- Agent Prep: Permite a los pies quedarse quietos cuando pisan el suelo. Para que no patine. Pone una cadena de IK junto con un CHOP para fijar las piernas.
+- `Agent` : Nodo basico para importar el "agente" (el modelo fbx/rig/etc). Se puede poner el modelo en T-pose y luego incorporar animaciones. Crea un "packed agent"
+- `Agent Clip`: Selecciona que clip animado utilizamos con este "agent"
+- `Agent Prep`: Permite a los pies quedarse quietos cuando pisan el suelo. Para que no patine. Pone una cadena de IK junto con un CHOP para fijar las piernas.
 
 **Agent Terrain Adaptation**: Hace que los agentes se desplacen por una superficie irregular.
 
