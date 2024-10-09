@@ -44,7 +44,7 @@ Nodos interesantes en DOP:
 ## FBX PREPARATION
 
 - en el "AGENT" se pone el personaje en T-pose y SIN animación.   
-- En el "AGENT  CLIP" se ponen las animaciones de los joints (sin necesidad de tener "skin")   
+- En el "AGENT  CLIP" se ponen las animaciones de los joints (sin necesidad de tener "skin"). ATENCION MIXAMO!!!! El esueleto de animacion en el `AGENT CLIP` y el del rig del `AGENT` deben tener el mismo nombre, para que los huesos encajen!    
 - Los clips de animación deben tener un loop perfecto para que no haya saltos. NO hay que tenerlos en T-pose al principio   
 - Para poder poner shaders separados a diferentes partes del "agent" (cara, camisa, zapatos, etc.), debe haber un "Maya mesh" distinto en cada uno de ellos. De esta manera en el "style sheet" se puede poner un "sub-target" apuntando a ese "Maya mesh" y asignarle un nuevo shader/textura
 - IMPORTANTE: 
