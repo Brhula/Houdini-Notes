@@ -52,7 +52,7 @@ Nodos interesantes en DOP:
   - El NOMBRE de los joints debe coincidir (CUIDADO CON MIXAMO!!! A VECES EL NOMBRE/NAMESPACE CAMBIA!!! Comprobar que el RIG y la ANIMACION tienen el mismo nombre!)
   - Asegurarse que el esqueleto animado está exactamente en el plano XZ con los pies en el suelo. Si no, flota.
   - Al exportar animación, vigilar que solo se exporte la parte del clip animada. Si no, el clip se para.
-  - WARNING!!!! Si utilizaos "convert units" los `PROPS` para poner en el `agent layer` deberan ser escalados (x100 normalmente). Si se puede, pillar FBX que esten ya en la escala de Houdini. Todo se simplifica.
+  - WARNING!!!! Si utilizamos "convert units" los `PROPS` para poner en el `agent layer` deberan ser escalados (x100 normalmente). Si se puede, pillar FBX que esten ya en la escala de Houdini. Todo se simplifica.
 
 ## CROWD WORKFLOW   
 
