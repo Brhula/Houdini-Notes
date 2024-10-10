@@ -54,10 +54,10 @@ Nodos interesantes en DOP:
   - Al exportar animación, vigilar que solo se exporte la parte del clip animada. Si no, el clip se para.
   - WARNING!!!! Si utilizamos "convert units" los `PROPS` para poner en el `agent layer` deberan ser escalados (x100 normalmente). Si se puede, pillar FBX que esten ya en la escala de Houdini. Todo se simplifica.
 
-## FBX MIXAO PREPARATION
+## FBX MIXAMO PREPARATION
 
-- Las escalas vienen mal (son x100) y muchas veces el `namespace` es distinto. Por ello es IMPORTANTE pasar tanto el RIG como las ANIMACIONES por Maya, eliminar el `namespace` y exportar en METROS (no centimetros, que es lo que viene por defecto). Asi en Houdini tenemos la escala correxcta, y eliminamos problemas con los nombres   
-
+- Las escalas vienen mal (son x100) y muchas veces el `namespace` es distinto. Por ello es IMPORTANTE pasar tanto el RIG como las ANIMACIONES por Maya, eliminar el `namespace` y exportar en METROS (no centimetros, que es lo que viene por defecto). Asi en Houdini tenemos la escala correcta, y eliminamos problemas con los nombres.   
+- Si pegamos un esqueleto de un personaje a otro, probablemente tengamos (por la diferencia de estructura) un resultado "raruno" con estiramientos y demas. Segun sea el crowd, puede ser suficiente. Si estan muy cerca entonces se va a notar.    
 
 ## CROWD WORKFLOW   
 
