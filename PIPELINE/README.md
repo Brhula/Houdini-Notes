@@ -7,8 +7,14 @@
 ***ENVIROMENT VARIABLES***   
 
 Variables típicamente en *HOUDINI.ENV*.   
+(Ahora es ejor utilizar `packages`, explicados mas abajo.)
 - `HOUDINI_PATH` : Este es el path a los directorios donde Houdini busca los ficheros de configuración [Más info en SideFx](https://www.sidefx.com/docs/houdini/basics/houdinipath.html).
 - `PATH` : Este es el "system path" para que encuentre ejecutables.
+
+***$HSITE***   
+
+- Variable que permite buscar packages en red.   
+- `$HSITE/houdini‹major›.‹minor›/packages` (for example, $HSITE/houdini18.0/packages) IMPORTANTE SEGUIR ESTA NOMENCLATURA!
 
 ***COMMAND LINE TOOLS***   
    
