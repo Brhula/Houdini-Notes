@@ -109,7 +109,7 @@ variable_from_houdini=hou.getenv("CACHE")
 
 - Los menus se pueden meter en los packages, que es muy interesante para no liarla. Son XML.
 - La variable `HOUDINI_MENU_PATH` se lee de derecha a izquierda (!!).
-- Hay que poner ID="algo" para que Houdini no se haga la picha un lio y repita menus. Coo en este ejemplo:
+- Hay que poner ID="algo" en los items de XL para que Houdini no se haga la picha un lio y repita menus. Coo en este ejemplo:
 ```xml
   	<scriptItem id="Open_NODE_Outputs_in_Explorer">
             <label>Open NODE Outputs in Explorer</label>
