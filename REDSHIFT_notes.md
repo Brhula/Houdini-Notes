@@ -1,5 +1,8 @@
 ## Redshift en HOUDINI   
 
+- [Redshift OSL shaders](https://github.com/redshift3d/RedshiftOSLShaders?tab=readme-ov-file)   
+
+
 ### // Instancias (copy to points y similares):   
 
 - Hay que activar en la pestaña "Instancing" en las opciones de Redshift del objeto la opción "instancing using --> Redshift Point Clouds". De lo contrario el render va muy lento.
