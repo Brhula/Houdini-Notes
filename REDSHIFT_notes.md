@@ -1,6 +1,6 @@
 ## Redshift en HOUDINI   
 
-- [Redshift OSL shaders](https://github.com/redshift3d/RedshiftOSLShaders?tab=readme-ov-file) Con cosas soo blurear texturas y otras utilidades.   
+- [Redshift OSL shaders](https://github.com/redshift3d/RedshiftOSLShaders?tab=readme-ov-file) Con cosas como blurear texturas y otras utilidades.   
 
 
 ### // Instancias (copy to points y similares):   
