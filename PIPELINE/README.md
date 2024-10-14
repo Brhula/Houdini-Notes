@@ -15,7 +15,7 @@ Variables típicamente en *HOUDINI.ENV*.
 
 - Variable que permite buscar packages en red. Houdini ya busca por version del software.     
 - `$HSITE/houdini‹major›.‹minor›/packages` (for example, $HSITE/houdini18.0/packages) IMPORTANTE SEGUIR ESTA NOMENCLATURA!   
-- Se puede poner $SITE apuntando a algun sitio en la red (por ejemplo en `Y:\houdini`) y con directorios tipo houdini20.0, houdini20.5, etc. para que escanee segun la version.   
+- Se puede poner $HSITE apuntando a algun sitio en la red (por ejemplo en `Y:\houdini`) y con sub-directorios tipo houdini20.0, houdini20.5, etc. para que escanee segun la version cuales son los packages disponibles.   
 
 ***COMMAND LINE TOOLS***   
    
