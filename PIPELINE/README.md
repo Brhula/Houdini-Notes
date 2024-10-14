@@ -107,9 +107,15 @@ variable_from_houdini=hou.getenv("CACHE")
 
 ***MENUS***   
 
+- Los menus se pueden meter en los packages, que es muy interesante para no liarla. Son XML.
 - La variable `HOUDINI_MENU_PATH` se lee de derecha a izquierda (!!).
-
-
+- Hay que poner ID="algo" para que Houdini no se haga la picha un lio y repita menus. Coo en este ejemplo:
+```xml
+  	<scriptItem id="Open_NODE_Outputs_in_Explorer">
+            <label>Open NODE Outputs in Explorer</label>
+            <scriptPath>GW_openInExplorer.py</scriptPath>
+         </scriptItem>
+```
 ***VS CODE // EDITOR EXTERNO***   
    
 Para hacer que el editor de VS CODE entienda la libreria `"hou"`, editar "settings.json" en VScode (`">open settings.json"`) y anyadir (cambiando el path):   
