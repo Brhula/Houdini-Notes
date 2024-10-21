@@ -15,7 +15,20 @@ Toolkit para Maya :  https://github.com/shotgunsoftware/tk-maya
 
 ### Para actualizar el `tk-houdini` (por ejemplo de la version v1.8.6 a la v.9.3 que permite arrancar Houdini 20.5):
 
-- descargamos la version de `tk-houdini` correspondiente.
+- descargamos la version de $\color{blue}{\textsf{Tk-houdini}}$ correspondiente.
 - La descomprimimos en el proyecto donde toca en el proyecto, por ejemplo `...\000_pipeline\pipeline_test_7777_SGT\install\github\gwbcn\tk-houdini` en la carpeta `v1.9.3`
 - Actualizar el fichero `engine_locations.yml` que esta en `...\000_pipeline\pipeline_test_7777_SGT\config\env\includes` (ejemplo de proyecto). Aqui cambiamos la version que apunta a houdini (por ejemplo v1.8.6 la pasamos a v1.9.3).
 - Cache de shotgrid en Windows (ejemplo): `C:\Users\marco\AppData\Roaming\Shotgun` . Se necesita borrar esta cache a veces cuando Houdini no arranca porque busca la version antigua del toolkit.
+
+
+ 	$${\color{green}Green}$$
+
+A very <span style='color: red;'>long</span> sentence.
+
+$\color{red}{Some \space text \space here}$ <br>
+$\color{green}{\textsf{Tk-houdini}}$
+$\color{blue}{\textsf{Tk-houdini}}$
+$\color{brown}{\textsf{Tk-houdini}}$
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
