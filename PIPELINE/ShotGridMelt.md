@@ -25,6 +25,7 @@ Toolkit para Maya :  https://github.com/shotgunsoftware/tk-maya
 
 -  `.\tank core` : Update  Toolkit Core API.
 -  `.\tank updates ALL tk-maya` : check all Maya apps in all enviroments.
+-  `.\tank updates ALL tk-maya tk-multi-loader` : Make sure the loader app is up to date in maya.
 
 
  	$${\color{green}Green}$$
