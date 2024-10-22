@@ -21,6 +21,12 @@ Toolkit para Maya :  https://github.com/shotgunsoftware/tk-maya
 - Cache de shotgrid en Windows (ejemplo): `C:\Users\marco\AppData\Roaming\Shotgun` . Se necesita borrar esta cache a veces cuando Houdini no arranca porque busca la version antigua del toolkit.
 
 
+### TANK commands   
+
+-  `.\tank core` : Update  Toolkit Core API.
+-  `.\tank updates ALL tk-maya` : check all Maya apps in all enviroments.
+
+
  	$${\color{green}Green}$$
 
 A very <span style='color: red;'>long</span> sentence.
