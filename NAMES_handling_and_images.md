@@ -1,3 +1,13 @@
+### Incorporar el nombre  del nodo del contexto OBJ   
+Con la funcion : `opname("..")`.
+
+Por ejemplo ponemos en un "file cache node" el nombre del nodo OBJ que lo contiene:
+```C++
+$HIP/vdb/hero/`opname("..")`_FULL.vdb
+```
+
+
+
 ### Manipular nombre en el campo "file"   
 padzero: para añadir ceros al numero de frame. En caso de numeración sin ceros, eliminarlo.   
 
