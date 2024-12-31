@@ -29,3 +29,8 @@ $HIP/maps/my_map.`padzero(4, min($F , 250))`.exr // last
 $HIP/maps/my_map.`padzero(4, max($F , 1))`.exr // first
 $HIP/maps/my_map.`padzero(4, clamp($F,1,250))`.exr // both
 ```
+### Usar nombre en el campo "file" de un nodo de input como output de otro nodo (cache)
+
+Por ejemplo para convertir de forma automatica ficheros en disco. Usamos el nodo `extract filename` para poner atributos en "details" con la info,
+
+![USE input filename as output filename](./images/NAME_use_filename_to_cache_file.jpg)
