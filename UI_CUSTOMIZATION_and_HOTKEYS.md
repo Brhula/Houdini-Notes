@@ -1,6 +1,7 @@
 ## LINKS to stuff
 
 [Houdini 19 | Adjusting Modelling Hotkeys](https://www.youtube.com/watch?v=d1PIlA6_KmM)   
+[Houdini 20 | State of Modeling](https://www.youtube.com/watch?v=ROcOJfJhKQQ)   
 [Modelling enviroment for Houdini](https://miro.com/app/board/uXjVP06Hcz4=/)   
 [thread on Modelling and houdini](https://www.sidefx.com/forum/topic/93486/?page=1)   
    
