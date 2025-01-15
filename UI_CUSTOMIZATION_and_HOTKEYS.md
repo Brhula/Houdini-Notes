@@ -3,7 +3,9 @@
 [Houdini 19 | Adjusting Modelling Hotkeys](https://www.youtube.com/watch?v=d1PIlA6_KmM)   
 [Modelling enviroment for Houdini](https://miro.com/app/board/uXjVP06Hcz4=/)   
 [thread on Modelling and houdini](https://www.sidefx.com/forum/topic/93486/?page=1)   
-
+   
+   
+[Create Hotkey for Any Nodes](https://www.reddit.com/r/Houdini/comments/134cq1f/you_can_use_this_small_script_to_create_hotkey/)
 
 ## UI CUSTOM KEYMAP and MORE   
 
