@@ -1,3 +1,8 @@
+## LINKS to stuff
+
+[Houdini 19 | Adjusting Modelling Hotkeys](https://www.youtube.com/watch?v=d1PIlA6_KmM)
+
+
 ## UI CUSTOM KEYMAP and MORE   
 
 Recortes de teclado para hacer mas facil la navegacion, modelado, etc. En cierto modo, con algunas teclas parecidas a Maya
