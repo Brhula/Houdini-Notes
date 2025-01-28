@@ -17,4 +17,11 @@ Boton derecho en el nodo:
 
 #### NODOS INTERESANTES
 
-- `File Pattern` : Permite crear `work items` a partir de ficheros en el disco duro. Por ejemplo VDBs, alembics, imagenes, etc. Por ejemplo: `$HIP/vdb/*.vdb`
+- `File Pattern` : Permite crear `work items` a partir de ficheros en el disco duro. Por ejemplo VDBs, alembics, imagenes, etc.   
+                   Por ejemplo: `$HIP/vdb/*.vdb`
+- 
+
+
+#### ATTRIBUTES    
+
+Los atributos de los `Work Items` se pueden pasar al resto de Houdini con el prefijo @. Y hay que ponerle el "backtick" \` para que funcionen. Por ejemplo \`@pdg_output\`.   
