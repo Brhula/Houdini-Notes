@@ -13,3 +13,8 @@
 Boton derecho en el nodo:
 - GENERATE: Intenta construir los `work items` sin cocinarlos. Es como generar la lista de cosas a hacer, pero sin hacerlo. Bueno para ver los elementos que hay.
 - COOK: Efectivamente hace el trabajo, se pone a calcular y "cocinar" el resultado.
+
+
+#### NODOS INTERESANTES
+
+- `File Pattern` : Permite crear `work items` a partir de ficheros en el disco duro. Por ejemplo VDBs, alembics, imagenes, etc. Por ejemplo: `$HIP/vdb/*.vdb`
