@@ -11,5 +11,5 @@
 #### GENERATE vs COOK   
 
 Boton derecho en el nodo:
-- GENERATE: Intenta construir los `work items` sin cocinarlos. Bueno para ver los elementos que hay.
+- GENERATE: Intenta construir los `work items` sin cocinarlos. Es como generar la lista de cosas a hacer, pero sin hacerlo. Bueno para ver los elementos que hay.
 - COOK: Efectivamente hace el trabajo, se pone a calcular y "cocinar" el resultado.
