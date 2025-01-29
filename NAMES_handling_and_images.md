@@ -34,3 +34,16 @@ $HIP/maps/my_map.`padzero(4, clamp($F,1,250))`.exr // both
 Por ejemplo para convertir de forma automatica ficheros en disco. Usamos el nodo `extract filename` para poner atributos en "details" con la info,
 
 ![USE input filename as output filename](./images/NAME_use_filename_to_cache_file.jpg)
+
+### Op-Expressions   
+
+mirar esto: https://vfxbrain.wordpress.com/2018/10/02/opinput/
+
+Simple código para poner en un VEX y obtener en nombre del nodo en OBJ o uno mismo o el primer input
+```C++
+// Get name of node (myself): `opname(".")`
+// Get name of OBJ node: `opname("..")`
+// Get node name of fist input: `opinput(".",0)`
+s@nodename=chs("Name");
+printf(@nodename+" h ");
+```
