@@ -4,6 +4,7 @@
 [Few notes on Crowd Sim](https://tosinakinwoye.com/2018/10/25/a-few-notes-on-houdini-crowd-simulations/)   
 [SIDEFX Intro to crowds 2020](https://www.sidefx.com/tutorials/intro-to-crowds/)   
 [SIDEFX crowds example with bats 2019](https://www.sidefx.com/tutorials/crowd-workshop/)   
+https://crowdsinhoudini.notion.site
 
 SIDEFX nuevo sistema más sencillo en SOP para crowds simples de [Houdini 20](https://www.youtube.com/watch?v=z8Z5PsnWFto)
 
