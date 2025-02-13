@@ -7,7 +7,7 @@
 ***ENVIROMENT VARIABLES***   
 
 Variables típicamente en *HOUDINI.ENV*.   
-(Ahora es ejor utilizar `packages`, explicados mas abajo.)
+(Ahora es mejor utilizar `packages`, explicados mas abajo.)
 - `HOUDINI_PATH` : Este es el path a los directorios donde Houdini busca los ficheros de configuración [Más info en SideFx](https://www.sidefx.com/docs/houdini/basics/houdinipath.html).
 - `PATH` : Este es el "system path" para que encuentre ejecutables.
 
@@ -109,7 +109,7 @@ variable_from_houdini=hou.getenv("CACHE")
 
 - Los menus se pueden meter en los packages, que es muy interesante para no liarla. Son XML.
 - La variable `HOUDINI_MENU_PATH` se lee de derecha a izquierda (!!).
-- Hay que poner ID="algo" en los items de XML para que Houdini no se haga la picha un lio y repita menus. Coo en este ejemplo:
+- Hay que poner ID="algo" en los items de XML para que Houdini no se haga la picha un lio y repita menus. Como en este ejemplo:
 ```xml
   	<scriptItem id="Open_NODE_Outputs_in_Explorer">
             <label>Open NODE Outputs in Explorer</label>
