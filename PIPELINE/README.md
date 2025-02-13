@@ -17,6 +17,10 @@ Variables típicamente en *HOUDINI.ENV*.
 - `$HSITE/houdini‹major›.‹minor›/packages` (for example, $HSITE/houdini18.0/packages) IMPORTANTE SEGUIR ESTA NOMENCLATURA!   
 - Se puede poner $HSITE apuntando a algun sitio en la red (por ejemplo en `Y:\houdini`) y con sub-directorios tipo houdini20.0, houdini20.5, etc. para que escanee segun la version cuales son los packages disponibles.   
 
+***SHELF DEFINITIONS***    
+
+Para que no de el mensaje de error `Could not save some of the shelf elements to their definition files` copiar el fichero `ShelfDefinitions.shelf` desde el install (tipicamente `C:\Program Files\Side Effects Software\Houdini 20.5.410\houdini\toolbar`) a tus preferencias locale, como  `Documents\houdini20.5\toolbar`    
+
 ***COMMAND LINE TOOLS***   
    
 [Quicktip hconfig utility](https://houdinitricks.tumblr.com/post/122304825634/quicktip-hconfig-utility)   
