@@ -29,7 +29,7 @@ Lo arrancamos buscando "command line tools" en el buscador de Windows
 
 `hconfig -a` para que vuelque todas las variables en la consola.   
 `hconfig -H HOUDINI_USER_PREF_DIR` para ayuda en una variable en particular   
-`hconfig -ap` muestra el orden en el que busca los packages, coandos, path, etc.
+`hconfig -ap` muestra el orden en el que busca los packages, comandos, path, etc.
 
 ***VARIABLES en el File Browser***   
 Se deben añadir al fichero "jump.pref" que suele estar en la raíz de las preferencias.   
