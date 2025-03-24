@@ -3,6 +3,9 @@
 #### TIPs
 
 https://www.youtube.com/watch?v=kAXUfg2FbYY
+
+
+#### UI    
 - VIEWPORT SUBDIVISION (como `3` en Maya): (con teclado americano!) `SHIFT + =` : subdividimos. `SHIFT + -` : quitamos subdivision.
 
 #### <ins>SELECCION INTERACTIVA</ins>
