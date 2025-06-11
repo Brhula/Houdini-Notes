@@ -65,14 +65,14 @@ Nodos interesantes en DOP:
 
 ### To add "mixasmorig:" namespace run Rig Att. Wrangler:
 ```C++
-// ADD mixamo NameSpace // RUN on points
+// ADD mixamo NameSpace // RUN on points on a Rig Attribute Wrangler
 @name = "mixamorig:"+@name;
 ```
 
 ### To remove Mixamo namespace:
 ```C++
 
-// RUN on points
+// RUN on points on a Rig Attribute Wrangler
 // STRIP mixamo??: namespace
 string  mixamo[];
 mixamo =  split(@name, ":", 1);
