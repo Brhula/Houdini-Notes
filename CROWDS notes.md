@@ -63,13 +63,13 @@ Nodos interesantes en DOP:
 - Si no tenemos Maya, exportamos en ASCII FBX desde Mixamo y con un editor de texto hacemos `replace` del texto del `namespace`, por ejemplo "mixamorig:" por ""   
 - Si pegamos un esqueleto de un personaje a otro, probablemente tengamos (por la diferencia de estructura) un resultado "raruno" con estiramientos y demas. Segun sea el crowd, puede ser suficiente. Si estan muy cerca entonces se va a notar.    
 
-  To add namespace run:
+# To add "mixasmorig:" namespace run Rig Att. Wrangler:
 ```C++
 // ADD mixamo NameSpace // RUN on points
 @name = "mixamorig:"+@name;
 ```
 
-To remove Mixamo namespace:
+# To remove Mixamo namespace:
 ```C++
 
 // RUN on points
