@@ -63,6 +63,24 @@ Nodos interesantes en DOP:
 - Si no tenemos Maya, exportamos en ASCII FBX desde Mixamo y con un editor de texto hacemos `replace` del texto del `namespace`, por ejemplo "mixamorig:" por ""   
 - Si pegamos un esqueleto de un personaje a otro, probablemente tengamos (por la diferencia de estructura) un resultado "raruno" con estiramientos y demas. Segun sea el crowd, puede ser suficiente. Si estan muy cerca entonces se va a notar.    
 
+  To add namespace run:
+```C++
+// ADD mixamo NameSpace // RUN on points
+@name = "mixamorig:"+@name;
+```
+
+To remove Mixamo namespace:
+```C++
+
+// RUN on points
+// STRIP mixamo??: namespace
+string  mixamo[];
+mixamo =  split(@name, ":", 1);
+if (len(mixamo)>1) {
+    @name = mixamo[1];
+    }
+```
+
 ## CROWD WORKFLOW   
 
 - `Agent` : Nodo basico para importar el "agente" (el modelo fbx/rig/etc). Se puede poner el modelo en T-pose y luego incorporar animaciones. Crea un "packed agent"
