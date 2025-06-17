@@ -1,5 +1,7 @@
 ## HOUDINI TOPS    
 
+[TOPS Masterclass H20.5](https://www.youtube.com/watch?v=lxAHx4JNcp8)
+
 [intro to TOPS en CGwiki](https://www.tokeru.com/cgwiki/HoudiniTops)   
 [HOUDINI TOPS build-in attributes](https://www.sidefx.com/docs/houdini/tops/attributes.html#builtin)
 
