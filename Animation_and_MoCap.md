@@ -7,7 +7,7 @@ Masterclass de pegar animación MoCap en FBX a otro character FBX :  https://www
 - AJUSTAR RIG: `rig match pose`, ajustamos la T-pose del esqueleto con animación. 
 - MAPEAR JOINTS: `map points`, indicamos qué joints van donde (source <-> target)
 - SOLVER: `full body IK` se encarga de pegar la animación al nuevo esqueleto.
-- finalemnte pegamos el esqueleto animado típicamente con `Bone deform`.
+- finalmente pegamos el esqueleto animado típicamente con `Bone deform`.
 
 ![MoCap mapping example](./images/MoCap_workflow_1.jpg)
 ![MoCap mapping example](./images/MoCap_remapping.jpg)
