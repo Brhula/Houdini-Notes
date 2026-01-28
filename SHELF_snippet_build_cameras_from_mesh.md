@@ -3,6 +3,8 @@
 Builds a camera on every point of a mesh and aims them  towar centroid of mesh.   
 Used to make renders to simulate Gaussian Spatting.
 
+Copy code to SHELF tool and execute.
+
 
 ```python
 import hou
