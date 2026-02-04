@@ -1,4 +1,6 @@
-https://vfxbrain.wordpress.com/2018/10/02/opinput/
+## NAME HANDLING dentro de SOP, OBJ y en ROP   
+
+
 
 
 ### Incorporar el nombre  del nodo del contexto OBJ   
