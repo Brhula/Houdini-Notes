@@ -1,3 +1,6 @@
+https://vfxbrain.wordpress.com/2018/10/02/opinput/
+
+
 ### Incorporar el nombre  del nodo del contexto OBJ   
 Con la funcion : `opname("..")`.
 
