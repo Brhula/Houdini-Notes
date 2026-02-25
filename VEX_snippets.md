@@ -13,6 +13,11 @@ Colección de "snippets" (trozos de código) para realizar funciones concretas. 
 vector dir = normalize(v@v);    // direccion del vector de velocidad
 float speed = length(v@v);      // Magnitud de la velocidad
 ```   
+**RAMPA CON COLORES en vez de splines** 
+```C#
+v@Cd = vector(chramp("Color_Ramp", parametro);
+```   
+
 Distancia desde el centro del objeto:
 ```C#
 vector center = getbbox_center(0);
