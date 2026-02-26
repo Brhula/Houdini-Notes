@@ -1,5 +1,12 @@
 # RBD BULLET SOLVER en HOUDINI
 
+### // ATTRIBUTES   
+
+ -  s@name : nombre de las piezas a colisionar
+ -  i@active : 0 (static) 1 (active) // 0 si el objeto es "attrezzo" para colisionar
+ -  i@animated is 1, Bullet will read the intrinsic transform attribute from each packed primitive in SOPs, and update the transform in DOPs to match.
+ - 
+
 ### // NAME Attribute   
 
 - es el mas importante, todo lo que tenga el mismo nombre es una misma pieza para "bullet".
