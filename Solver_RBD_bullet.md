@@ -19,4 +19,4 @@ i@animated is 1, Bullet will read the intrinsic transform attribute from each pa
 - Si mezclamos objetos y en algunas piezas los nombres son los mismos, el resultado sera chungo.
 - Para hacer "convex hull" por pieza, que haya varias piezas que separadas tengan el mismo nombre.
 
-### // USAR PROXY GEOMETRY para ghacer los calculos (version simplificada de la geometria principal)   
+### // USAR PROXY GEOMETRY para hacer los calculos (version simplificada de la geometria principal)   
