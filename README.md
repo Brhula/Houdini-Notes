@@ -16,6 +16,9 @@ VEX: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [attibutes](Attributes.md) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [POP Wranglers](VEX_POP_wrangler.md) <br />
 
+
+https://dannylrsn.notion.site/VEX-cb3f29b754a742b4882121a65fd5b8e8
+
 VELLUM: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  [Vellum Notes](VELLUM_notes.md) <br />
 
