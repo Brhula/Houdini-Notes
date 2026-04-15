@@ -7,7 +7,7 @@ Group expression útiles en el nodo para seleccionar según el caso. Metemos exp
 - Primer punto de una primitiva : `vertexprimindex(0, @vtxnum)==0` poner el nodo en modo `point`.
 - Primera y última primitiva: poner en un `group node` la expresión:
   ```C#
-  `0  nprims("0")-1`
+  0  `nprims("0")-1`
   ```  
 
 
