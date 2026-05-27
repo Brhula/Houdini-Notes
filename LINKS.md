@@ -21,8 +21,8 @@ VSCode con Houidini y Python: https://jtomori.github.io/2022/2022-07-07.html
 [Houdini – Tips & Tricks / Kristian Jungk](https://www.kristianjungk.com/en/about/tipps-tricks/houdini/)   
 [Spare Inputs in Houdini](http://www.particle-effects.com/2019/05/spare-inputs-in-houdini.html)   
 [Multiple Object Switching in Copy to Points (Video)](https://www.youtube.com/watch?v=rSkLItyvBdE)   
-[Keaton Williamson Houdini Notes (and tools!)](https://www.keatonwilliamson.com/houdini)
-https://github.com/MysteryPancake/Houdini-Fun
+[Keaton Williamson Houdini Notes (and tools!)](https://www.keatonwilliamson.com/houdini)   
+https://github.com/MysteryPancake/Houdini-Fun   
 
 ### VEX
 https://dannylrsn.notion.site/VEX-cb3f29b754a742b4882121a65fd5b8e8   
