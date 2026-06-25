@@ -3,7 +3,9 @@
 [FX REFEERNCES and TUTORIALS](http://ref-fx.com/)   
 [FX Resources](https://www.johnkunz.com/resources)   
 [FX Tips and Notes](https://www.katexagoraris.com/)   
-[Houdini Tutorials Tailored for Mathematicians.](http://dgd.service.tu-berlin.de/wordpress/houdini/)   
+[Houdini Tutorials Tailored for Mathematicians.](http://dgd.service.tu-berlin.de/wordpress/houdini/)    
+[Snippest, scenes, guideas and coo stuff from VFX artist Carstenbaars](https://www.carstenbaars.com/guides)   
+
 
 Houdini is HIP video tutorials: https://www.youtube.com/@NineBetween/videos   
 Procedural Content Generation, mini tutoriales interesantes: https://procegen.konstantinmagnus.de/   
