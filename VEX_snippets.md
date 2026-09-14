@@ -132,6 +132,25 @@ v@N=set(fit01(rand(@ptnum),-1,1),fit01(rand(@ptnum+1),-1,1),fit01(rand(@ptnum+2)
 float angle = fit01(rand(@ptnum),0,360);
 p@orient = eulertoquaternion(radians(set(0, angle, 0)), 0);
 ```
+**PUNTOS // Rotación aleatoria teniendo ya N**   
+Usamos N como "up" para calcular una rotación aleatoria respecto al eje local.
+Útil para rotar en puntos "scattered" en una superficie respetando orientación. 
+```C#
+// Deepseek 4.1 script
+// Random spin angle
+float ang = radians( fit01( rand(@ptnum+458), -180, 180) );
+
+// 1) Build a quaternion that rotates world-Y onto your point's "up" (N)
+vector up = normalize(@N);
+vector4 q_align = dihedral({0,1,0}, up);
+
+// 2) Random rotation around the local Y axis (which is now 'up')
+vector4 q_spin = quaternion(ang, {0,1,0});
+
+// 3) Combine: spin first (in local space), then align to up
+@orient = qmultiply(q_align, q_spin);
+```
+
 **PUNTOS // Rotación aleatoria en puntos, ajustada mediante una rampa.**
 Borrar v@up en caso que ya exista.
 ```C#
