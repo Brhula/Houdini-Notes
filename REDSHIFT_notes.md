@@ -1,7 +1,7 @@
 ## Redshift en HOUDINI   
 
 - [Redshift OSL shaders](https://github.com/redshift3d/RedshiftOSLShaders) Con cosas como blurear texturas y otras utilidades.   
-
+- https://jigpx.com/houdini/loading-materials    
 
 ### // Instancias (copy to points y similares):   
 
