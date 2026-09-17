@@ -83,6 +83,8 @@ Si ponemos un background en el HDRI (enable background + backplate) se vera el f
 - En "OBJECTS" forzamos los objetos que queramos que se consideren en el render (tanto para que se renderizen como para que hagan sombras o rebotes de luz).
 - En "RENDER MAPS -> Render Map Object" ponemos el objeto que queramos hacer "bake" de sus textras con la luz.
 
+Mirar https://www.photoindra.com/all/baking-textures-with-redshift-inside-houdini/
+
 ### // TIPS:   
 - *Volumen mas o menos opaco:* incrementat tanto el "Absortion coefficient" como el "scatter coefficient" al mismo tiempo mas brillante o  más oscuro: modificar solamente "scatter coefficient"
 - *Color de todo el volumen:* modificar "scatter tint". Utilizar la rampa para remapear según la densidad: Izquierda--> menos denso, derecha--> más densidad
