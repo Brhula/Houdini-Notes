@@ -99,5 +99,14 @@ if (len(mixamo)>1) {
 ## CROWD HOW TO   
 
 - SABER QUE NOMBRES HAY EN @agenshapename PARA ASIGNARLOS A STYLESHEET: utilizar un nodo "unpack" o "agent unpack" y mirar en las primitivas. En la columna "agentshapename" deben aparecer los nombres. Además deberian coincidir con los "mesh names" de la jerarquía Maya y el equivalente en C4D. 
+- APLICAR VARIACION en en `CROWD STATE`: Activamos en el nodo la opción "use VEXexpression" y asi podemos pillar un atributo que haya en los puntos (crowd) y variar su valor. Por ejemplo para hacer que haya partes que van mas rápido que otras.  El siguiente codigo VEX acelera una parte mapeando un valor 0-1 con un valor puesto en un nulo:
+```C++
+// Pass Through
+clipspeedmultiplier = clipspeedmultiplier * fit(@mask_agent_speed,0,1,ch("../CONTROL/Min_Speed"), ch("../CONTROL/Max_Speed"));
+locomotionspeedmultiplier = locomotionspeedmultiplier * fit(@mask_agent_speed,0,1,ch("../CONTROL/Min_Speed"), ch("../CONTROL/Max_Speed"));
 
+randomizeclipspeed = randomizeclipspeed;
+clipspeedvariance = clipspeedvariance;
+clipspeedseed = clipspeedseed;
+```
 
