@@ -1,3 +1,10 @@
+### FILE IMPORT directorios o grupos de ficheros  Houdini
+
+  1) Crear un nodo TOP en dentro del nodo SOP
+  2) Dentro del TOP, crear un nodo `FILE PATTERN`
+  3) poner en el parametro `Pattern` la direccion con el "wildcard" que queramos: `$AGENTS/anim/*.bgeo` carga todos los `bgeo` en el directorio seleccionado. Eso debería cargar todos los ficheros indicados.  
+
+
 ### FBX en Houdini
 
 Utilizaremos el atributo `s@path` (en las "primitivas") para construir la jerarquía y que los objetos queden organizados. 
