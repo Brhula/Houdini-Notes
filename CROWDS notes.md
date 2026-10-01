@@ -15,8 +15,8 @@ En los "intrinsics" del "packed agent" está la información necesaria para proc
 
 
 ### NOTAS ###   
-- Si la particula tienen velocidad inicial ("v"), entonces ignora el parametro "heading".   
-- Aumentar los "sub-steps" en el DOP hace que mejore el comportamiento en giros y obstaculos ("espasmos" en los agentes).   
+- Si la partícula tienen velocidad inicial ("v"), entonces ignora el parámetro "heading".   
+- Aumentar los "sub-steps" en el DOP hace que mejore el comportamiento en giros y obstáculos ("espasmos" en los agentes).   
 
 
 ### "Intrinsics" interesantes:
@@ -34,7 +34,7 @@ Nodos interesantes en DOP:
 
 **POP Steer wander** : Incorpora aleatoriedad al movimiento (parecido a turbulencia)   
 
-**POP Steer separate** : Aplica fuerzas para mover a los agentes/particulas entre ellos. Steer Separate is a more subtle effect, and allows agents to speed up or brake to avoid collisions. Not as much as I'd like though. It also includes a sense of FOV for each agent to determine how aware they are.   
+**POP Steer separate** : Aplica fuerzas para mover a los agentes/partículas entre ellos. Steer Separate is a more subtle effect, and allows agents to speed up or brake to avoid collisions. Not as much as I'd like though. It also includes a sense of FOV for each agent to determine how aware they are.   
 
 **POP Steer avoid** : Aplica fuerzas de ANTICIPACION para evitar potenciales colisiones futuras entre agentes/particulas. Steer Avoid is a repulsion, like a pop interact, or another way to think of it is agent personal space. Turn it up too high and it behaves like pop grains; agents separate too quickly and too uniform, it loses the natural chaos of a crowd. It's required of course, but at small values.   
 
@@ -58,8 +58,8 @@ Nodos interesantes en DOP:
 
 ## FBX MIXAMO PREPARATION
 
-- Las escalas vienen mal (son x100) y muchas veces el `namespace` es distinto. ~~Por ello es IMPORTANTE pasar tanto el RIG como las ANIMACIONES por Maya~~ (mirar el punto siguiente), eliminar el `namespace` y exportar en METROS (no centimetros, que es lo que viene por defecto). Asi en Houdini tenemos la escala correcta, y eliminamos problemas con los nombres.
-- Si grabamos los ficheros en FBX ASCII entonces con un editor de texto podemos cabiar el "namespace", por ejemplo de `mixamorig9:` a `mixamorig:` de forma que pueda hacer el "mapping" de los joints sin problemas.
+- Las escalas vienen mal (son x100) y muchas veces el `namespace` es distinto. ~~Por ello es IMPORTANTE pasar tanto el RIG como las ANIMACIONES por Maya~~ (mirar el punto siguiente), eliminar el `namespace` y exportar en METROS (no centímetros, que es lo que viene por defecto). Así en Houdini tenemos la escala correcta, y eliminamos problemas con los nombres.
+- Si grabamos los ficheros en FBX ASCII entonces con un editor de texto podemos cambiar el "namespace", por ejemplo de `mixamorig9:` a `mixamorig:` de forma que pueda hacer el "mapping" de los joints sin problemas.
 - Si no tenemos Maya, exportamos en ASCII FBX desde Mixamo y con un editor de texto hacemos `replace` del texto del `namespace`, por ejemplo "mixamorig:" por ""   
 - Si pegamos un esqueleto de un personaje a otro, probablemente tengamos (por la diferencia de estructura) un resultado "raruno" con estiramientos y demas. Segun sea el crowd, puede ser suficiente. Si estan muy cerca entonces se va a notar.    
 
@@ -83,7 +83,7 @@ if (len(mixamo)>1) {
 
 ## CROWD WORKFLOW   
 
-- `Agent` : Nodo basico para importar el "agente" (el modelo fbx/rig/etc). Se puede poner el modelo en T-pose y luego incorporar animaciones. Crea un "packed agent"
+- `Agent` : Nodo básico para importar el "agente" (el modelo fbx/rig/etc). Se puede poner el modelo en T-pose y luego incorporar animaciones. Crea un "packed agent"
 - `Agent Clip`: Selecciona que clip animado utilizamos con este "agent"
 - `Agent Layer`: Permite poner "props" en el "agent", como sombreros, armas, utensilios... 
 - `Agent Prep`: Permite que Houidini utilice algunos de los joints para saber como utilizar el agent. Por ejemplo permite a los pies quedarse quietos cuando pisan el suelo. Para que no patine. Pone una cadena de IK junto con un CHOP para fijar las piernas.
@@ -98,8 +98,8 @@ if (len(mixamo)>1) {
 
 ## CROWD HOW TO   
 
-- SABER QUE NOMBRES HAY EN @agenshapename PARA ASIGNARLOS A STYLESHEET: utilizar un nodo "unpack" o "agent unpack" y mirar en las primitivas. En la columna "agentshapename" deben aparecer los nombres. Además deberian coincidir con los "mesh names" de la jerarquía Maya y el equivalente en C4D. 
-- APLICAR VARIACION en en `CROWD STATE`: Activamos en el nodo la opción "use VEXexpression" y asi podemos pillar un atributo que haya en los puntos (crowd) y variar su valor. Por ejemplo para hacer que haya partes que van mas rápido que otras.  El siguiente codigo VEX acelera una parte mapeando un valor 0-1 con un valor puesto en un nulo:
+- SABER QUE NOMBRES HAY EN @agenshapename PARA ASIGNARLOS A STYLESHEET: utilizar un nodo "unpack" o "agent unpack" y mirar en las primitivas. En la columna "agentshapename" deben aparecer los nombres. Además deberían coincidir con los "mesh names" de la jerarquía Maya y el equivalente en C4D. 
+- APLICAR VARIACIÓN en en `CROWD STATE` dentro de la simulación: Activamos en el nodo la opción "use VEXexpression" y así podemos pillar un atributo que haya en los puntos (crowd) y variar su valor. Por ejemplo para hacer que haya partes que van mas rápido que otras.  El siguiente código VEX acelera una parte mapeando un valor 0-1 con un valor puesto en un nulo:
 ```C++
 // Pass Through
 clipspeedmultiplier = clipspeedmultiplier * fit(@mask_agent_speed,0,1,ch("../CONTROL/Min_Speed"), ch("../CONTROL/Max_Speed"));
