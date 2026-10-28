@@ -109,4 +109,4 @@ randomizeclipspeed = randomizeclipspeed;
 clipspeedvariance = clipspeedvariance;
 clipspeedseed = clipspeedseed;
 ```
-
+- CONTROLAR QUE CLIPS VAN A CADA AGENT (point): Por ejemplo para hacer que haya mas gente con los brazos levantados en la parte cerca de un escenario en un concierto. Hay varias maneras de hacerlo. La mas sencilla es separar los puntos antes de procesarlos en donde van los crowds (split) y aplicar un nodo de `CROWD SOURCE` con los clips que queremos. Luego hacemos merge para juntar los distintos `CROWD SOURCE` de nuevo. También se puede hacer en VEX cambiando en un point wrangles `s@state = "Slow_Run_01";` y en un primitive wrangle `setprimintrinsic(0, "agentclipnames", @primnum, "Slow_Run_01", "set");` por ejemplo.
